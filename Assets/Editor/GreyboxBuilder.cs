@@ -97,10 +97,12 @@ public static class GreyboxBuilder
 
         // ---------- Other walkers ----------
         var walkers = new GameObject("Other Walkers").transform;
-        Walker(walkers, matFigure, new Vector3(-5f, 0f, 14f), 0f, 0.7f);    // ahead, walking away into the haze
+        Walker(walkers, matFigure, new Vector3(-5f, 0f, 30f), 180f, 0.5f);  // coming toward us on the left; passes ~20s in
+        Walker(walkers, matFigure, new Vector3(5.2f, 0f, 8f), 0f, 0.6f);    // slower walker ahead on the right; Kate overtakes
         Walker(walkers, matFigure, new Vector3(5.5f, 0f, 70f), 180f, 0.5f); // emerges from the fog toward us
-        Walker(walkers, matFigure, new Vector3(-20f, 0f, 58f), 90f, 0.45f); // crossing far down the street
-        Walker(walkers, matFigure, new Vector3(-4.5f, 0f, 34f), 0f, 0.5f);
+        Walker(walkers, matFigure, new Vector3(-20f, 0f, 52f), 90f, 0.45f); // crossing far down the street
+        Walker(walkers, matFigure, new Vector3(-4.5f, 0f, 48f), 0f, 0.4f);  // far ahead, walking away into the haze
+        Walker(walkers, matFigure, new Vector3(-12f, 0f, 90f), 180f, 0.5f);
 
         // ---------- Kate's path ----------
         var path = new GameObject("Kate Path").transform;
@@ -133,7 +135,11 @@ public static class GreyboxBuilder
         cam.backgroundColor = FogColor;
         cam.nearClipPlane = 0.05f;
         cam.farClipPlane = FogEnd + 10f; // nothing past the fog needs drawing
+        cam.fieldOfView = 90f;           // only affects the flat Game-view preview; the headset sets its own
         camGO.AddComponent<AudioListener>();
+
+        // Hazmat visor: head-locked, so the rim stays put at the edge of vision wherever you look.
+        BuildVisor(camGO.transform);
 
         var tracker = camGO.AddComponent<TrackedPoseDriver>();
         tracker.trackingType = TrackedPoseDriver.TrackingType.RotationAndPosition;
@@ -146,6 +152,107 @@ public static class GreyboxBuilder
         AddToBuild(ScenePath);
         Selection.activeGameObject = rig;
         Debug.Log("KateVR: Greybox street built and saved to " + ScenePath);
+    }
+
+    // ---------- Visor ----------
+
+    // Visor shape, in degrees from the centre of view. Smaller = more enclosed.
+    const float VisorHalfWidth = 46f;
+    const float VisorHalfHeightTop = 34f;
+    const float VisorHalfHeightBottom = 42f;
+    const float VisorDistance = 0.35f; // metres in front of the eyes
+
+    static void BuildVisor(Transform camera)
+    {
+        const float quadW = 1.6f, quadH = 1.4f;
+        var tex = MakeVisorTexture(quadW, quadH);
+
+        var mat = MakeMaterial("Visor", Color.white, "Universal Render Pipeline/Unlit");
+        mat.SetTexture("_BaseMap", tex);
+        mat.SetColor("_BaseColor", Color.white);
+        // Transparent, drawn on top of the world.
+        mat.SetFloat("_Surface", 1f);
+        mat.SetFloat("_Blend", 0f);
+        mat.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);
+        mat.SetFloat("_DstBlend", (float)BlendMode.OneMinusSrcAlpha);
+        mat.SetFloat("_SrcBlendAlpha", (float)BlendMode.One);
+        mat.SetFloat("_DstBlendAlpha", (float)BlendMode.OneMinusSrcAlpha);
+        mat.SetFloat("_ZWrite", 0f);
+        mat.SetOverrideTag("RenderType", "Transparent");
+        mat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        mat.renderQueue = (int)RenderQueue.Transparent + 100;
+        EditorUtility.SetDirty(mat);
+
+        var visor = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        visor.name = "Hazmat Visor";
+        Object.DestroyImmediate(visor.GetComponent<Collider>());
+        visor.transform.SetParent(camera, false);
+        visor.transform.localPosition = new Vector3(0, 0, VisorDistance);
+        visor.transform.localScale = new Vector3(quadW, quadH, 1f);
+        var r = visor.GetComponent<Renderer>();
+        r.sharedMaterial = mat;
+        r.shadowCastingMode = ShadowCastingMode.Off;
+        r.receiveShadows = false;
+    }
+
+    static Texture2D MakeVisorTexture(float quadW, float quadH)
+    {
+        const int w = 1024, h = 896;
+        var px = new Color[w * h];
+        var rim = new Color(0.06f, 0.06f, 0.055f);       // rubber seal / hood
+        var tint = new Color(0.82f, 0.90f, 0.84f);       // faint greenish plastic
+        const float tintAlpha = 0.06f;
+
+        for (int y = 0; y < h; y++)
+        for (int x = 0; x < w; x++)
+        {
+            // pixel -> metres on the quad -> angle from the eye
+            float mx = ((x + 0.5f) / w - 0.5f) * quadW;
+            float my = ((y + 0.5f) / h - 0.5f) * quadH;
+            float ax = Mathf.Atan2(mx, VisorDistance) * Mathf.Rad2Deg;
+            float ay = Mathf.Atan2(my, VisorDistance) * Mathf.Rad2Deg;
+            float halfH = ay >= 0 ? VisorHalfHeightTop : VisorHalfHeightBottom;
+            float e = Mathf.Sqrt((ax / VisorHalfWidth) * (ax / VisorHalfWidth) + (ay / halfH) * (ay / halfH));
+
+            float rimA = Mathf.SmoothStep(0f, 0.97f, Mathf.InverseLerp(0.80f, 1.02f, e));
+            float a = 1f - (1f - tintAlpha) * (1f - rimA);
+            Color c = Color.Lerp(tint, rim, rimA / Mathf.Max(a, 0.0001f));
+            c.a = a;
+            px[y * w + x] = c;
+        }
+
+        // A few faint scratches on the plastic.
+        var rng = new System.Random(11);
+        for (int s = 0; s < 22; s++)
+        {
+            float x0 = (float)rng.NextDouble() * w, y0 = (float)rng.NextDouble() * h;
+            float ang = (float)rng.NextDouble() * Mathf.PI;
+            float len = 30f + (float)rng.NextDouble() * 120f;
+            for (int i = 0; i < len; i++)
+            {
+                int xi = (int)(x0 + Mathf.Cos(ang) * i), yi = (int)(y0 + Mathf.Sin(ang) * i);
+                if (xi < 0 || yi < 0 || xi >= w || yi >= h) continue;
+                var p = px[yi * w + xi];
+                px[yi * w + xi] = new Color(Mathf.Lerp(p.r, 0.9f, 0.5f), Mathf.Lerp(p.g, 0.9f, 0.5f), Mathf.Lerp(p.b, 0.9f, 0.5f), Mathf.Max(p.a, 0.12f));
+            }
+        }
+
+        var tex = new Texture2D(w, h, TextureFormat.RGBA32, false);
+        tex.SetPixels(px);
+        tex.Apply();
+        System.IO.Directory.CreateDirectory(MaterialFolder);
+        string path = $"{MaterialFolder}/Visor.png";
+        System.IO.File.WriteAllBytes(path, tex.EncodeToPNG());
+        Object.DestroyImmediate(tex);
+
+        AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
+        var importer = (TextureImporter)AssetImporter.GetAtPath(path);
+        importer.alphaIsTransparency = true;
+        importer.wrapMode = TextureWrapMode.Clamp;
+        importer.mipmapEnabled = true;
+        importer.textureCompression = TextureImporterCompression.CompressedHQ;
+        importer.SaveAndReimport();
+        return AssetDatabase.LoadAssetAtPath<Texture2D>(path);
     }
 
     // ---------- helpers ----------
@@ -184,14 +291,14 @@ public static class GreyboxBuilder
         return t;
     }
 
-    static Material MakeMaterial(string name, Color color)
+    static Material MakeMaterial(string name, Color color, string shaderName = "Universal Render Pipeline/Lit")
     {
         System.IO.Directory.CreateDirectory(MaterialFolder);
         string path = $"{MaterialFolder}/{name}.mat";
         var mat = AssetDatabase.LoadAssetAtPath<Material>(path);
         if (mat == null)
         {
-            var shader = Shader.Find("Universal Render Pipeline/Lit") ?? Shader.Find("Standard");
+            var shader = Shader.Find(shaderName) ?? Shader.Find("Standard");
             mat = new Material(shader);
             AssetDatabase.CreateAsset(mat, path);
         }
