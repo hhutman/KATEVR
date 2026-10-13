@@ -97,12 +97,12 @@ public static class GreyboxBuilder
 
         // ---------- Other walkers ----------
         var walkers = new GameObject("Other Walkers").transform;
-        Walker(walkers, matFigure, new Vector3(-5f, 0f, 30f), 180f, 0.5f);  // coming toward us on the left; passes ~20s in
-        Walker(walkers, matFigure, new Vector3(5.2f, 0f, 8f), 0f, 0.6f);    // slower walker ahead on the right; Kate overtakes
-        Walker(walkers, matFigure, new Vector3(5.5f, 0f, 70f), 180f, 0.5f); // emerges from the fog toward us
-        Walker(walkers, matFigure, new Vector3(-20f, 0f, 52f), 90f, 0.45f); // crossing far down the street
-        Walker(walkers, matFigure, new Vector3(-4.5f, 0f, 48f), 0f, 0.4f);  // far ahead, walking away into the haze
-        Walker(walkers, matFigure, new Vector3(-12f, 0f, 90f), 180f, 0.5f);
+        Walker(walkers, matFigure, new Vector3(-5f, 0f, 45f), 180f, 1.8f);  // hurrying toward us on the left
+        Walker(walkers, matFigure, new Vector3(5.2f, 0f, -12f), 0f, 1.9f);  // rushes past Kate on the right from behind
+        Walker(walkers, matFigure, new Vector3(5.5f, 0f, 75f), 180f, 1.6f); // emerges from the fog toward us
+        Walker(walkers, matFigure, new Vector3(-30f, 0f, 52f), 90f, 1.7f);  // crossing far down the street
+        Walker(walkers, matFigure, new Vector3(-4.5f, 0f, 30f), 0f, 1.7f);  // ahead, hurrying away into the haze
+        Walker(walkers, matFigure, new Vector3(-12f, 0f, 95f), 180f, 1.8f);
 
         // ---------- Kate's path ----------
         var path = new GameObject("Kate Path").transform;
