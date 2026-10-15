@@ -30,8 +30,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
 ## Voice-over
-- Scratch VO: ElevenLabs free plan (no commercial use; must credit ElevenLabs) → replace with a real performer or paid licence before ticketed showings. File: `Assets/Audio/Kate_VO_Scratch.wav` (22.8 s, 16 kHz mono).
-- Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 6 s; last line ends ~28.5 s as Kate is in the turn.
+- Scratch VO: ElevenLabs free plan (no commercial use; must credit ElevenLabs) → replace with a real performer or paid licence before ticketed showings. File: `Assets/Audio/Kate_VO_Scratch.wav` — Hope's chosen ElevenLabs v3 take (voice 'Regina', bracketed cues), 44.1 kHz mono.
+- Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 6 s; last line ends ~33–34 s, a few seconds before Kate reaches the door (~40 s).
 - **Tightened walk (Hope's choice):** Kate starts at z=12, walks 1.1 m/s; ~33 m. Turn ~19–30 s, at the door ~40 s, touch ~41 s, fade out ~50 s.
 - Memories retimed to fit: 9 s, 18 s, 28 s (12 s each). Gas-mask walker kept; now passes Kate ~16 s.
 
