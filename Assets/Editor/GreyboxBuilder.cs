@@ -103,10 +103,17 @@ public static class GreyboxBuilder
         var hinge = new GameObject("Door Hinge").transform;
         hinge.SetParent(house, false);
         hinge.position = new Vector3(11.54f, 0f, 41.6f);
-        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.18f, 1.18f), matDoor);
+        // The door is the same stuff as the wall and sits flush with it: invisible until it's touched.
+        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.18f, 1.18f), matHouse);
         door.isStatic = false;
         door.transform.SetParent(hinge, false);
-        door.transform.localPosition = new Vector3(0f, 1.1f, -0.6f);
+        door.transform.localPosition = new Vector3(-0.01f, 1.1f, -0.6f);
+
+        // Its outline, drawn in when Kate's palm meets the wall (sides grow up, then the top closes).
+        var matSeam = MakeMaterial("Greybox_DoorSeam", new Color(0.07f, 0.065f, 0.06f));
+        var outlineL = SeamPiece(house, "Door Outline Left", new Vector3(11.495f, 0f, 40.4f), new Vector3(0f, 0.5f, 0f), matSeam);
+        var outlineR = SeamPiece(house, "Door Outline Right", new Vector3(11.495f, 0f, 41.6f), new Vector3(0f, 0.5f, 0f), matSeam);
+        var outlineTop = SeamPiece(house, "Door Outline Top", new Vector3(11.495f, 2.2f, 41f), Vector3.zero, matSeam);
 
         // ---------- One other person, hurrying toward us ----------
         WorldKit.LoadMaterials();
@@ -163,7 +170,9 @@ public static class GreyboxBuilder
         MemoryBuilder.BuildAll(world);
 
         // ---------- Ending: palm flat on the door, the door begins to open, fade to black ----------
-        BuildEnding(glide, camGO.transform, hinge);
+        var ending = BuildEnding(glide, camGO.transform, hinge);
+        ending.outlineSides = new[] { outlineL, outlineR };
+        ending.outlineTop = outlineTop;
 
         // ---------- Save & add to build ----------
         System.IO.Directory.CreateDirectory("Assets/Scenes");
@@ -175,7 +184,17 @@ public static class GreyboxBuilder
 
     // ---------- Ending ----------
 
-    static void BuildEnding(GlidePath glide, Transform camera, Transform hinge)
+    static Transform SeamPiece(Transform parent, string name, Vector3 pivotPos, Vector3 childOffset, Material mat)
+    {
+        var pivot = new GameObject(name).transform;
+        pivot.SetParent(parent, false);
+        pivot.position = pivotPos;
+        var piece = Part(pivot, PrimitiveType.Cube, "Seam", childOffset, Vector3.one, mat, Vector3.zero);
+        pivot.localScale = Vector3.zero; // hidden until the touch
+        return pivot;
+    }
+
+    static EndingSequence BuildEnding(GlidePath glide, Transform camera, Transform hinge)
     {
         var glove = MakeMaterial("Suit_Glove", new Color(0.42f, 0.42f, 0.39f));
         var suit = MakeMaterial("Suit_Sleeve", new Color(0.66f, 0.66f, 0.62f));
@@ -218,6 +237,7 @@ public static class GreyboxBuilder
         ending.fade = fr;
         ending.palmPoint = new Vector3(11.5f, 1.3f, 40.85f);
         ending.palmFacing = Vector3.right;
+        return ending;
     }
 
     static GameObject Part(Transform parent, PrimitiveType type, string name, Vector3 lpos, Vector3 lscale, Material mat, Vector3 leuler)

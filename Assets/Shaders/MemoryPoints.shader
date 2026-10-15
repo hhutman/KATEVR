@@ -100,7 +100,9 @@ Shader "KateVR/MemoryPoints"
                 posVS.xy += (v.uv - 0.5) * size;
                 o.positionCS = TransformWViewToHClip(posVS);
 
-                float alpha = _Opacity * v.color.a * form * (1.0 - d) * (1.0 - edge * 0.75);
+                // Points that drift near the viewer's head fade out, so nothing appears "inside" the visor.
+                float nearFade = smoothstep(1.5, 3.5, length(posVS));
+                float alpha = _Opacity * v.color.a * form * (1.0 - d) * (1.0 - edge * 0.75) * nearFade;
                 o.color = float4(v.color.rgb, alpha);
                 o.uv = v.uv;
                 o.fog = ComputeFogFactor(o.positionCS.z);

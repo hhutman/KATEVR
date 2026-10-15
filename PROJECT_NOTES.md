@@ -24,7 +24,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Atmosphere: ground-hugging fog, wet cracked pavement, puddles, weeds, utility poles (Silent Hill 2-style fog as reference). Light: keep current overcast grey for now.
 - People: just one for now — the figure in a long coat, hood and gas mask, hurrying toward Kate.
 - Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 10 s, 25 s, 40 s; cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
-- Ending (`EndingSequence.cs`): no walkway, no knob. Kate's gloved hand rises and presses flat on the door, the door begins to swing inward into darkness, fade to black.
+- Ending (`EndingSequence.cs`): no walkway, no knob. The door is plain wall until Kate's palm touches it; its outline draws itself in (sides grow up, top closes), then it swings inward into darkness, fade to black.
+- Memories feedback (editor, 2026-10-15): not readable — look like clusters of metal sequins; Hope likes them atmospherically and wants to keep them. Judge readability in the headset before changing. Fixed: points that drifted near the head now fade out (they looked 'inside the headset').
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
 ## Decisions

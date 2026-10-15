@@ -14,6 +14,12 @@ namespace KateVR
         public Transform doorHinge;     // rotates about Y to open the door
         public Renderer fade;           // black quad in front of the eyes
 
+        [Header("Door outline (appears when the palm touches the wall)")]
+        public Transform[] outlineSides;  // pivots at floor level; grow upward
+        public Transform outlineTop;      // pivot at centre of the lintel; grows outward
+        public float outlineTime = 1.4f;
+        public float doorHeight = 2.2f, doorWidth = 1.2f, seamWidth = 0.025f;
+
         [Header("Where the palm lands")]
         public Vector3 palmPoint;       // on the door's outside face
         public Vector3 palmFacing = Vector3.right; // direction the palm pushes (into the door)
@@ -21,7 +27,7 @@ namespace KateVR
         [Header("Timing (seconds)")]
         public float pauseBeforeReach = 0.8f;
         public float reachTime = 1.9f;
-        public float holdTime = 1.3f;
+        public float holdTime = 2.0f;
         public float doorTime = 5f;
         public float fadeDelay = 1.5f;
         public float fadeTime = 3f;
@@ -80,6 +86,15 @@ namespace KateVR
             Quaternion restRot = Quaternion.LookRotation(Vector3.down + rig.forward * 0.4f, rig.forward);
             Quaternion pressRot = Quaternion.LookRotation(palmFacing.normalized, Vector3.up);
             Quaternion rot = Quaternion.Slerp(restRot, pressRot, k);
+
+            // On contact, the outline of a door draws itself into the wall.
+            float ok = Mathf.Clamp01((a - reachTime + 0.15f) / outlineTime);
+            float sides = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(ok * 1.5f));
+            float top = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((ok - 0.6f) / 0.4f));
+            if (outlineSides != null)
+                foreach (var side in outlineSides)
+                    if (side) side.localScale = new Vector3(0.02f, doorHeight * sides, seamWidth);
+            if (outlineTop) outlineTop.localScale = new Vector3(0.02f, seamWidth, doorWidth * top);
 
             // The door begins to open; the hand follows it a little, then lets go.
             float doorStart = reachTime + holdTime;

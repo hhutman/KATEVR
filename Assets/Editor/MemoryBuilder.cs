@@ -43,6 +43,8 @@ public static class MemoryBuilder
         if (mat == null) { mat = new Material(shader); AssetDatabase.CreateAsset(mat, matPath); }
         mat.shader = shader;
         mat.renderQueue = (int)RenderQueue.Transparent + 50;
+        mat.SetFloat("_Scatter", 3f); // a tighter cloud before forming, so it doesn't spill around Kate
+        EditorUtility.SetDirty(mat);
 
         var root = new GameObject("Memories").transform;
         root.SetParent(parent, false);
