@@ -102,12 +102,12 @@ public static class GreyboxBuilder
         Box("Darkness Floor", house, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
         var hinge = new GameObject("Door Hinge").transform;
         hinge.SetParent(house, false);
-        hinge.position = new Vector3(11.54f, 0f, 41.6f);
+        hinge.position = new Vector3(11.54f, 0f, 40.4f);
         // The door is the same stuff as the wall and sits flush with it: invisible until it's touched.
         var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.18f, 1.18f), matHouse);
         door.isStatic = false;
         door.transform.SetParent(hinge, false);
-        door.transform.localPosition = new Vector3(-0.01f, 1.1f, -0.6f);
+        door.transform.localPosition = new Vector3(-0.01f, 1.1f, 0.6f);
 
         // Its outline, drawn in when Kate's palm meets the wall (sides grow up, then the top closes).
         var matSeam = MakeMaterial("Greybox_DoorSeam", new Color(0.07f, 0.065f, 0.06f));
@@ -210,10 +210,6 @@ public static class GreyboxBuilder
         Part(hand, PrimitiveType.Cube, "Thumb", new Vector3(-0.062f, 0.012f, -0.008f), new Vector3(0.026f, 0.07f, 0.028f), glove, new Vector3(0, 0, 35));
         Part(hand, PrimitiveType.Cylinder, "Cuff", new Vector3(0, -0.075f, 0), new Vector3(0.12f, 0.035f, 0.12f), suit, Vector3.zero);
 
-        var sleeve = new GameObject("Kate's Sleeve").transform;
-        Part(sleeve, PrimitiveType.Cube, "Sleeve", Vector3.zero, Vector3.one, suit, Vector3.zero);
-        sleeve.localScale = new Vector3(0.14f, 0.14f, 0.5f);
-
         // Black veil just in front of the eyes, for the fade-out.
         var fadeMat = MakeMaterial("Fade", Color.black, "Universal Render Pipeline/Unlit");
         MakeTransparent(fadeMat, (int)RenderQueue.Overlay);
@@ -232,10 +228,9 @@ public static class GreyboxBuilder
         var ending = new GameObject("Ending").AddComponent<EndingSequence>();
         ending.glide = glide;
         ending.hand = hand;
-        ending.sleeve = sleeve;
         ending.doorHinge = hinge;
         ending.fade = fr;
-        ending.palmPoint = new Vector3(11.5f, 1.3f, 40.85f);
+        ending.palmPoint = new Vector3(11.5f, 1.35f, 41.2f);
         ending.palmFacing = Vector3.right;
         return ending;
     }
