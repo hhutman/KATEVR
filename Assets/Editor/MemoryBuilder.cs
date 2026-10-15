@@ -26,12 +26,12 @@ public static class MemoryBuilder
 
     public static readonly Spec[] Memories =
     {
-        // 10 s: the candlelight march, ahead and up to the left, like a low cloud.
-        new Spec { image = "Memory1_Candles.png",    startTime = 10f, duration = 13f, center = new Vector3(-4f, 6.5f, 24f), width = 10f, lookFrom = new Vector3(1.5f, 1.65f, 8f),  columns = 120, colourTrace = 0.15f },
-        // 25 s: the fist, off to the right at the edge of view, closer and smaller.
-        new Spec { image = "Memory2_Fist.png",       startTime = 25f, duration = 12f, center = new Vector3(7.5f, 3.4f, 26f), width = 4.5f, lookFrom = new Vector3(1.5f, 1.65f, 22f), columns = 80,  colourTrace = 0.12f },
-        // 40 s: Sproul Hall, large and overhead as Kate turns toward the door.
-        new Spec { image = "Memory3_SproulHall.png", startTime = 40f, duration = 13f, center = new Vector3(6f, 9.5f, 52f),   width = 14f, lookFrom = new Vector3(3f, 1.65f, 36f),  columns = 130, colourTrace = 0.1f },
+        // 9 s: the candlelight march, ahead and up to the left, like a low cloud.
+        new Spec { image = "Memory1_Candles.png",    startTime = 9f,  duration = 12f, center = new Vector3(-3.5f, 6.5f, 33f), width = 10f, lookFrom = new Vector3(1.5f, 1.65f, 18f), columns = 120, colourTrace = 0.15f },
+        // 18 s: the fist, off to the right at the edge of view, closer and smaller.
+        new Spec { image = "Memory2_Fist.png",       startTime = 18f, duration = 12f, center = new Vector3(7.5f, 3.4f, 31f),  width = 4.5f, lookFrom = new Vector3(1.7f, 1.65f, 28f), columns = 80,  colourTrace = 0.12f },
+        // 28 s: Sproul Hall, large and overhead as Kate turns toward the door.
+        new Spec { image = "Memory3_SproulHall.png", startTime = 28f, duration = 12f, center = new Vector3(14f, 9.5f, 47f),  width = 14f, lookFrom = new Vector3(4.3f, 1.65f, 36.8f), columns = 130, colourTrace = 0.1f },
     };
 
     public static void BuildAll(Transform parent)

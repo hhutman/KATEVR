@@ -118,13 +118,13 @@ public static class GreyboxBuilder
         // ---------- One other person, hurrying toward us ----------
         WorldKit.LoadMaterials();
         var walkers = new GameObject("Other Walkers").transform;
-        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.16f, 45f), 180f, 1.9f); // long coat, hood, gas mask
+        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.16f, 55f), 180f, 1.9f); // long coat, hood, gas mask
 
         // ---------- Kate's path ----------
         var path = new GameObject("Kate Path").transform;
         var points = new List<Transform>
         {
-            Waypoint(path, "P0 Start",       new Vector3(1.5f, 0, 0f)),
+            Waypoint(path, "P0 Start",       new Vector3(1.5f, 0, 12f)),
             Waypoint(path, "P1 Street",      new Vector3(1.5f, 0, 22f)),
             Waypoint(path, "P2 Drift right", new Vector3(2.0f, 0, 30f)),
             Waypoint(path, "P3 Turning",     new Vector3(3.6f, 0, 35.5f)),
@@ -138,6 +138,7 @@ public static class GreyboxBuilder
         rig.transform.position = points[0].position;
         var glide = rig.AddComponent<GlidePath>();
         glide.waypoints = points;
+        glide.speed = 1.1f;
         rig.AddComponent<SeatedOrigin>();
 
         var eyes = new GameObject("Eye Height").transform;
@@ -188,7 +189,7 @@ public static class GreyboxBuilder
     // ---------- Voice ----------
 
     const string VoicePath = "Assets/Audio/Kate_VO_Scratch.wav"; // ElevenLabs scratch take; replace with the final read (same name)
-    const float VoiceStart = 8f;
+    const float VoiceStart = 6f;
 
     static void BuildVoice(Transform camera)
     {

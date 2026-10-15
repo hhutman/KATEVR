@@ -23,7 +23,7 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - **Revised after headset test:** the detailed Berkeley world felt too specific. Back to the original abstract block world — 'everywhere and nowhere', even sparser. No poles/cracks/puddles. Kate's bungalow dropped: plain block house with a door. (WorldKit.cs keeps the detailed pieces if ever wanted.)
 - Atmosphere: ground-hugging fog, wet cracked pavement, puddles, weeds, utility poles (Silent Hill 2-style fog as reference). Light: keep current overcast grey for now.
 - People: just one for now — the figure in a long coat, hood and gas mask, hurrying toward Kate.
-- Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 10 s, 25 s, 40 s; cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
+- Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 9 s, 18 s, 28 s (retimed when the walk was tightened; originally 10/25/40); cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
 - Ending (`EndingSequence.cs`): door is plain wall until touched. Only Kate's glove is seen — it rises from below, briefly but confidently presses flat, the outline draws in, the glove drops away, and the door swings inward (hinged on the right, opening on the left) into darkness; fade to black. No arm/sleeve.
 - Headset notes 2026-10-15: fist memory more readable (maybe only because Hope knows it).
 - Memories feedback (editor, 2026-10-15): not readable — look like clusters of metal sequins; Hope likes them atmospherically and wants to keep them. Judge readability in the headset before changing. Fixed: points that drifted near the head now fade out (they looked 'inside the headset').
@@ -31,8 +31,9 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 
 ## Voice-over
 - Scratch VO: ElevenLabs free plan (no commercial use; must credit ElevenLabs) → replace with a real performer or paid licence before ticketed showings. File: `Assets/Audio/Kate_VO_Scratch.wav` (22.8 s, 16 kHz mono).
-- Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 8 s; last line 'who fucking knows?' ends ~30.5 s as Kate starts drifting right.
-- Walk timing (simulated): turn starts ~26 s, drifting right ~34 s, approach ~46 s, at door ~58 s → ~27 s without words after the VO.
+- Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 6 s; last line ends ~28.5 s as Kate is in the turn.
+- **Tightened walk (Hope's choice):** Kate starts at z=12, walks 1.1 m/s; ~33 m. Turn ~19–30 s, at the door ~40 s, touch ~41 s, fade out ~50 s.
+- Memories retimed to fit: 9 s, 18 s, 28 s (12 s each). Gas-mask walker kept; now passes Kate ~16 s.
 
 ## Decisions
 - Hold aesthetic changes until the scene has been seen in the headset.
