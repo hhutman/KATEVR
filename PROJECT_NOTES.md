@@ -11,8 +11,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 
 ## The grey box (done)
 - Menu **KateVR → Build Greybox Street** rebuilds `Assets/Scenes/Street_Greybox.unity` from scratch (`Assets/Editor/GreyboxBuilder.cs`).
-- Fog: linear, start 3 m, end 45 m, colour (0.50, 0.48, 0.44).
-- Kate Rig (`GlidePath.cs`): 3 s pause, then ~1 m/s glide with ease-in/out, gentle right turn up the walkway, stops at the door. ~50 s total.
+- Fog: linear, start 1.5 m, end 30 m, colour (0.47, 0.445, 0.40) — smoggier per Hope. Plus drifting ash specks around Kate (WorldKit.Ash).
+- Kate Rig (`GlidePath.cs`): 3 s pause, ~1 m/s walk; the right turn is a wide arc where she slows to ~55%, body turns lazily, slight pace drift and tiny sway (set `sway` to 0 if needed). Stops ~0.65 m from the door. Walk ≈ 55 s, ending ≈ 8 s.
 - `SeatedOrigin.cs`: seated tracking, recentres at start.
 - Hazmat visor: head-locked quad with a dark rim, faint green tint and scratches (`Assets/Materials/Visor.png`).
 - Other walkers (`Wanderer.cs`): capsules hurrying at ~1.6–1.9 m/s.
@@ -24,7 +24,7 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Atmosphere: ground-hugging fog, wet cracked pavement, puddles, weeds, utility poles (Silent Hill 2-style fog as reference). Light: keep current overcast grey for now.
 - People: just one for now — the figure in a long coat, hood and gas mask, hurrying toward Kate.
 - Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 10 s, 25 s, 40 s; cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
-- Ending: Kate reaches a door, her gloved hand turns the knob, the door begins to open, end scene.
+- Ending (`EndingSequence.cs`): no walkway, no knob. Kate's gloved hand rises and presses flat on the door, the door begins to swing inward into darkness, fade to black.
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
 ## Decisions
@@ -39,8 +39,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 
 ## Build order (agreed)
 1. World pass — done (reverted to sparse block world + one figure).
-2. Memories (point clouds at 10/25/40 s).
-3. Hand + door knob.
+2. Memories — first version done: `Shaders/MemoryPoints.shader`, `MemoryCloud.cs`, `Editor/MemoryBuilder.cs`. Placeholder images cropped from Hope's storyboard into `Assets/Memories/` (swap a PNG with the same name and rebuild).
+3. Hand + door — first version done (palm on door, door opens, fade).
 4. Visor.
 
 ## Later

@@ -460,7 +460,7 @@ public static class WorldKit
         r.receiveShadows = false;
     }
 
-    static Texture2D FogPuffTexture()
+    public static Texture2D FogPuffTexture()
     {
         System.IO.Directory.CreateDirectory(MaterialFolder);
         string path = $"{MaterialFolder}/FogPuff.png";
@@ -490,6 +490,77 @@ public static class WorldKit
         imp.wrapMode = TextureWrapMode.Clamp;
         imp.SaveAndReimport();
         return AssetDatabase.LoadAssetAtPath<Texture2D>(path);
+    }
+
+    // ---------------- Ash ----------------
+
+    /// <summary>Fine ash drifting in the air around Kate. Emitted around the rig, but left behind in the world as she walks.</summary>
+    public static void Ash(Transform rig)
+    {
+        var mat = MakeMaterial("World_Ash", Color.white, 0f, "Universal Render Pipeline/Particles/Unlit");
+        mat.SetTexture("_BaseMap", FogPuffTexture());
+        mat.SetColor("_BaseColor", new Color(0.78f, 0.76f, 0.72f, 0.7f));
+        mat.SetFloat("_Surface", 1f);
+        mat.SetFloat("_Blend", 0f);
+        mat.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);
+        mat.SetFloat("_DstBlend", (float)BlendMode.OneMinusSrcAlpha);
+        mat.SetFloat("_ZWrite", 0f);
+        mat.SetOverrideTag("RenderType", "Transparent");
+        mat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        mat.renderQueue = (int)RenderQueue.Transparent;
+        EditorUtility.SetDirty(mat);
+
+        var go = new GameObject("Ash");
+        go.transform.SetParent(rig, false);
+        go.transform.localPosition = new Vector3(0f, 1.8f, 3f);
+        var ps = go.AddComponent<ParticleSystem>();
+        ps.Stop(true, ParticleSystemStopBehavior.StopEmittingAndClear);
+
+        var main = ps.main;
+        main.loop = true;
+        main.prewarm = true;
+        main.duration = 10f;
+        main.startLifetime = new ParticleSystem.MinMaxCurve(7f, 11f);
+        main.startSpeed = 0f;
+        main.startSize = new ParticleSystem.MinMaxCurve(0.012f, 0.035f);
+        main.startColor = Color.white;
+        main.maxParticles = 700;
+        main.simulationSpace = ParticleSystemSimulationSpace.World;
+
+        var emission = ps.emission;
+        emission.rateOverTime = 70f;
+
+        var shape = ps.shape;
+        shape.shapeType = ParticleSystemShapeType.Box;
+        shape.scale = new Vector3(10f, 4f, 12f);
+
+        var vel = ps.velocityOverLifetime;
+        vel.enabled = true;
+        vel.space = ParticleSystemSimulationSpace.World;
+        vel.x = new ParticleSystem.MinMaxCurve(0.08f, 0.3f);
+        vel.y = new ParticleSystem.MinMaxCurve(-0.1f, -0.02f);
+        vel.z = new ParticleSystem.MinMaxCurve(-0.06f, 0.06f);
+
+        var noise = ps.noise;
+        noise.enabled = true;
+        noise.strength = 0.12f;
+        noise.frequency = 0.35f;
+        noise.scrollSpeed = 0.1f;
+
+        var col = ps.colorOverLifetime;
+        col.enabled = true;
+        var g = new Gradient();
+        g.SetKeys(new[] { new GradientColorKey(Color.white, 0), new GradientColorKey(Color.white, 1) },
+                  new[] { new GradientAlphaKey(0, 0), new GradientAlphaKey(1, 0.15f), new GradientAlphaKey(1, 0.8f), new GradientAlphaKey(0, 1) });
+        col.color = g;
+
+        var r = go.GetComponent<ParticleSystemRenderer>();
+        r.renderMode = ParticleSystemRenderMode.Billboard;
+        r.alignment = ParticleSystemRenderSpace.Facing;
+        r.sharedMaterial = mat;
+        r.shadowCastingMode = ShadowCastingMode.Off;
+        r.receiveShadows = false;
+        r.minParticleSize = 0.0015f; // keep distant specks from vanishing to nothing
     }
 
     // ---------------- People ----------------

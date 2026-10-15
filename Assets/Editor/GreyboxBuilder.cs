@@ -20,9 +20,9 @@ public static class GreyboxBuilder
     const string MaterialFolder = "Assets/Materials";
 
     // Look of the air. Tweak these, then re-run the menu item.
-    static readonly Color FogColor = new Color(0.50f, 0.48f, 0.44f);
-    const float FogStart = 3f;
-    const float FogEnd = 45f;
+    static readonly Color FogColor = new Color(0.47f, 0.445f, 0.40f);
+    const float FogStart = 1.5f;
+    const float FogEnd = 30f;
     const float EyeHeight = 1.65f;
 
     [MenuItem("KateVR/Build Greybox Street")]
@@ -86,14 +86,27 @@ public static class GreyboxBuilder
             }
         }
 
-        // ---------- Kate's house ----------
+        // ---------- Kate's house: a plain block with a real doorway ----------
+        // Front face at x = 11.5. Doorway: z 40.4–41.6, 2.2 m tall. Behind it, darkness.
         var house = new GameObject("Kate's House").transform;
-        Box("House", house, new Vector3(16f, 3f, 41f), new Vector3(9f, 6f, 9f), matHouse);
+        var matDark = MakeMaterial("Greybox_Darkness", Color.black, "Universal Render Pipeline/Unlit");
+        Box("House Body", house, new Vector3(16.85f, 3f, 41f), new Vector3(7.3f, 6f, 9f), matHouse);
+        Box("Front Left", house, new Vector3(12.35f, 3f, 38.45f), new Vector3(1.7f, 6f, 3.9f), matHouse);
+        Box("Front Right", house, new Vector3(12.35f, 3f, 43.55f), new Vector3(1.7f, 6f, 3.9f), matHouse);
+        Box("Lintel", house, new Vector3(12.35f, 4.1f, 41f), new Vector3(1.7f, 3.8f, 1.2f), matHouse);
         Box("Roof", house, new Vector3(16f, 6.6f, 41f), new Vector3(9.6f, 1.2f, 9.6f), matHouse);
-        Box("Walkway", house, new Vector3(8.5f, 0.05f, 41f), new Vector3(7f, 0.1f, 1.4f), matStreet);
-        Box("Step", house, new Vector3(11.2f, 0.12f, 41f), new Vector3(0.6f, 0.24f, 1.6f), matHouse);
-        Box("Door", house, new Vector3(11.47f, 1.05f, 41f), new Vector3(0.08f, 2.1f, 1.0f), matDoor);
-        Box("Door Knob", house, new Vector3(11.40f, 1.0f, 40.65f), new Vector3(0.06f, 0.06f, 0.06f), matFigure);
+        Box("Darkness Back", house, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
+        Box("Darkness Side", house, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Darkness Side", house, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Darkness Top", house, new Vector3(12.35f, 2.18f, 41f), new Vector3(1.7f, 0.04f, 1.2f), matDark);
+        Box("Darkness Floor", house, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
+        var hinge = new GameObject("Door Hinge").transform;
+        hinge.SetParent(house, false);
+        hinge.position = new Vector3(11.54f, 0f, 41.6f);
+        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.18f, 1.18f), matDoor);
+        door.isStatic = false;
+        door.transform.SetParent(hinge, false);
+        door.transform.localPosition = new Vector3(0f, 1.1f, -0.6f);
 
         // ---------- One other person, hurrying toward us ----------
         WorldKit.LoadMaterials();
@@ -104,12 +117,13 @@ public static class GreyboxBuilder
         var path = new GameObject("Kate Path").transform;
         var points = new List<Transform>
         {
-            Waypoint(path, "P0 Start",      new Vector3(1.5f, 0, 0f)),
-            Waypoint(path, "P1 Street",     new Vector3(1.5f, 0, 25f)),
-            Waypoint(path, "P2 Begin turn", new Vector3(2.2f, 0, 34f)),
-            Waypoint(path, "P3 Corner",     new Vector3(4.8f, 0, 39.2f)),
-            Waypoint(path, "P4 Walkway",    new Vector3(8.0f, 0, 41f)),
-            Waypoint(path, "P5 At door",    new Vector3(10.4f, 0, 41f)),
+            Waypoint(path, "P0 Start",       new Vector3(1.5f, 0, 0f)),
+            Waypoint(path, "P1 Street",      new Vector3(1.5f, 0, 22f)),
+            Waypoint(path, "P2 Drift right", new Vector3(2.0f, 0, 30f)),
+            Waypoint(path, "P3 Turning",     new Vector3(3.6f, 0, 35.5f)),
+            Waypoint(path, "P4 Turning",     new Vector3(6.2f, 0, 39.2f)),
+            Waypoint(path, "P5 Approach",    new Vector3(8.8f, 0, 40.7f)),
+            Waypoint(path, "P6 At the door", new Vector3(10.85f, 0, 41f)),
         };
 
         // ---------- Kate's rig (the viewer's head) ----------
@@ -142,12 +156,99 @@ public static class GreyboxBuilder
         tracker.positionInput = new InputActionProperty(new InputAction("Head Position", InputActionType.Value, "<XRHMD>/centerEyePosition", expectedControlType: "Vector3"));
         tracker.rotationInput = new InputActionProperty(new InputAction("Head Rotation", InputActionType.Value, "<XRHMD>/centerEyeRotation", expectedControlType: "Quaternion"));
 
+        // ---------- Smog: drifting ash around Kate ----------
+        WorldKit.Ash(rig.transform);
+
+        // ---------- Memories: point clouds at 10, 25 and 40 seconds ----------
+        MemoryBuilder.BuildAll(world);
+
+        // ---------- Ending: palm flat on the door, the door begins to open, fade to black ----------
+        BuildEnding(glide, camGO.transform, hinge);
+
         // ---------- Save & add to build ----------
         System.IO.Directory.CreateDirectory("Assets/Scenes");
         EditorSceneManager.SaveScene(scene, ScenePath);
         AddToBuild(ScenePath);
         Selection.activeGameObject = rig;
         Debug.Log("KateVR: Greybox street built and saved to " + ScenePath);
+    }
+
+    // ---------- Ending ----------
+
+    static void BuildEnding(GlidePath glide, Transform camera, Transform hinge)
+    {
+        var glove = MakeMaterial("Suit_Glove", new Color(0.42f, 0.42f, 0.39f));
+        var suit = MakeMaterial("Suit_Sleeve", new Color(0.66f, 0.66f, 0.62f));
+
+        // A bulky hazmat glove. Local +Z = the way the palm faces, +Y = the fingers.
+        var hand = new GameObject("Kate's Hand").transform;
+        hand.localScale = Vector3.one * 1.2f;
+        Part(hand, PrimitiveType.Cube, "Palm", new Vector3(0, 0, 0), new Vector3(0.1f, 0.11f, 0.035f), glove, Vector3.zero);
+        float[] fx = { -0.036f, -0.012f, 0.012f, 0.036f };
+        float[] fl = { 0.075f, 0.088f, 0.084f, 0.068f };
+        for (int i = 0; i < 4; i++)
+            Part(hand, PrimitiveType.Cube, "Finger", new Vector3(fx[i], 0.055f + fl[i] * 0.5f, 0), new Vector3(0.021f, fl[i], 0.026f), glove, Vector3.zero);
+        Part(hand, PrimitiveType.Cube, "Thumb", new Vector3(-0.062f, 0.012f, -0.008f), new Vector3(0.026f, 0.07f, 0.028f), glove, new Vector3(0, 0, 35));
+        Part(hand, PrimitiveType.Cylinder, "Cuff", new Vector3(0, -0.075f, 0), new Vector3(0.12f, 0.035f, 0.12f), suit, Vector3.zero);
+
+        var sleeve = new GameObject("Kate's Sleeve").transform;
+        Part(sleeve, PrimitiveType.Cube, "Sleeve", Vector3.zero, Vector3.one, suit, Vector3.zero);
+        sleeve.localScale = new Vector3(0.14f, 0.14f, 0.5f);
+
+        // Black veil just in front of the eyes, for the fade-out.
+        var fadeMat = MakeMaterial("Fade", Color.black, "Universal Render Pipeline/Unlit");
+        MakeTransparent(fadeMat, (int)RenderQueue.Overlay);
+        fadeMat.SetColor("_BaseColor", new Color(0f, 0f, 0f, 0f)); // invisible until the ending
+        var fade = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        fade.name = "Fade To Black";
+        Object.DestroyImmediate(fade.GetComponent<Collider>());
+        fade.transform.SetParent(camera, false);
+        fade.transform.localPosition = new Vector3(0, 0, 0.12f);
+        fade.transform.localScale = new Vector3(0.8f, 0.8f, 1f);
+        var fr = fade.GetComponent<Renderer>();
+        fr.sharedMaterial = fadeMat;
+        fr.shadowCastingMode = ShadowCastingMode.Off;
+        fr.enabled = false;
+
+        var ending = new GameObject("Ending").AddComponent<EndingSequence>();
+        ending.glide = glide;
+        ending.hand = hand;
+        ending.sleeve = sleeve;
+        ending.doorHinge = hinge;
+        ending.fade = fr;
+        ending.palmPoint = new Vector3(11.5f, 1.3f, 40.85f);
+        ending.palmFacing = Vector3.right;
+    }
+
+    static GameObject Part(Transform parent, PrimitiveType type, string name, Vector3 lpos, Vector3 lscale, Material mat, Vector3 leuler)
+    {
+        var go = GameObject.CreatePrimitive(type);
+        go.name = name;
+        Object.DestroyImmediate(go.GetComponent<Collider>());
+        go.transform.SetParent(parent, false);
+        go.transform.localPosition = lpos;
+        go.transform.localRotation = Quaternion.Euler(leuler);
+        go.transform.localScale = lscale;
+        var r = go.GetComponent<Renderer>();
+        r.sharedMaterial = mat;
+        r.shadowCastingMode = ShadowCastingMode.Off;
+        r.receiveShadows = false;
+        return go;
+    }
+
+    static void MakeTransparent(Material mat, int queue)
+    {
+        mat.SetFloat("_Surface", 1f);
+        mat.SetFloat("_Blend", 0f);
+        mat.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);
+        mat.SetFloat("_DstBlend", (float)BlendMode.OneMinusSrcAlpha);
+        mat.SetFloat("_SrcBlendAlpha", (float)BlendMode.One);
+        mat.SetFloat("_DstBlendAlpha", (float)BlendMode.OneMinusSrcAlpha);
+        mat.SetFloat("_ZWrite", 0f);
+        mat.SetOverrideTag("RenderType", "Transparent");
+        mat.EnableKeyword("_SURFACE_TYPE_TRANSPARENT");
+        mat.renderQueue = queue;
+        EditorUtility.SetDirty(mat);
     }
 
     // ---------- Visor ----------

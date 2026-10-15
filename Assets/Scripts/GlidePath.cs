@@ -4,37 +4,46 @@ using UnityEngine;
 namespace KateVR
 {
     /// <summary>
-    /// Moves this object (Kate's rig) smoothly along a path of waypoints at a steady,
-    /// comfortable speed, easing in at the start and out at the end.
-    /// The rig turns gently to face the direction of travel; the viewer's head is free to look around.
+    /// Moves Kate's rig along a path of waypoints like a person walking, not a camera on a rail:
+    /// it eases in and out, slows down through turns, turns its body a little lazily,
+    /// drifts in pace, and carries a very small sway. The viewer's head stays free to look around.
     /// </summary>
     public class GlidePath : MonoBehaviour
     {
-        [Tooltip("Waypoints, in order. Uses this object's children of 'Path' if left empty.")]
+        [Tooltip("Waypoints, in order.")]
         public List<Transform> waypoints = new List<Transform>();
 
-        [Tooltip("Walking speed in metres per second. ~1.0 is a slow, comfortable walk.")]
+        [Tooltip("Walking speed on the straight, metres per second.")]
         [Range(0.3f, 2f)] public float speed = 1.0f;
+
+        [Tooltip("Speed through the tightest part of a turn, as a fraction of walking speed.")]
+        [Range(0.3f, 1f)] public float turnSpeed = 0.55f;
 
         [Tooltip("Seconds to wait before Kate starts walking.")]
         public float startDelay = 3f;
 
-        [Tooltip("Seconds to ease in from standing still to full speed (and to ease out at the end).")]
+        [Tooltip("Seconds to ease in from standing still (and out at the end).")]
         public float easeSeconds = 2.5f;
 
-        [Tooltip("How quickly the rig turns to follow the path. Lower = gentler turns.")]
-        [Range(0.5f, 5f)] public float turnSmoothing = 1.5f;
+        [Tooltip("How quickly the body turns to follow the path. Lower = lazier, more human.")]
+        [Range(0.3f, 5f)] public float turnSmoothing = 0.8f;
+
+        [Tooltip("How far ahead (metres) Kate looks along the path when deciding where to face.")]
+        [Range(1f, 8f)] public float lookAhead = 4f;
+
+        [Tooltip("Gentle drift in walking pace (0 = metronome).")]
+        [Range(0f, 0.2f)] public float paceVariation = 0.07f;
+
+        [Tooltip("Tiny step sway, in metres. Set to 0 if anyone feels queasy.")]
+        [Range(0f, 0.03f)] public float sway = 0.008f;
 
         public bool playOnStart = true;
 
         public bool IsFinished { get; private set; }
 
-        // Pre-sampled smooth curve, so speed stays constant through corners.
         readonly List<Vector3> _samples = new List<Vector3>();
         readonly List<float> _distances = new List<float>();
-        float _totalLength;
-        float _travelled;
-        float _time;
+        float _totalLength, _travelled, _time, _turnFactor = 1f;
         bool _playing;
 
         void Start()
@@ -64,17 +73,23 @@ namespace KateVR
             _time += Time.deltaTime;
             if (_time < startDelay) return;
 
-            // Speed profile: ease in at the start, ease out near the end.
+            // Ease in at the start and out at the end.
             float easeDistance = speed * easeSeconds * 0.5f;
             float remaining = _totalLength - _travelled;
             float k = 1f;
             float sinceStart = _time - startDelay;
             if (sinceStart < easeSeconds) k = Mathf.SmoothStep(0.05f, 1f, sinceStart / easeSeconds);
-            if (remaining < easeDistance) k = Mathf.Min(k, Mathf.SmoothStep(0.05f, 1f, remaining / easeDistance));
+            if (remaining < easeDistance) k = Mathf.Min(k, Mathf.SmoothStep(0.03f, 1f, remaining / easeDistance));
 
-            _travelled = Mathf.Min(_totalLength, _travelled + speed * k * Time.deltaTime);
-            transform.position = SamplePosition(_travelled);
+            // Slow down where the path bends (measured a little ahead, so she slows before the corner).
+            float bend = Vector3.Angle(SampleDirection(_travelled), SampleDirection(_travelled + 3f)) / 45f;
+            float targetTurn = Mathf.Lerp(1f, turnSpeed, Mathf.SmoothStep(0f, 1f, bend));
+            _turnFactor = Mathf.Lerp(_turnFactor, targetTurn, 1f - Mathf.Exp(-1.5f * Time.deltaTime));
 
+            float pace = 1f + paceVariation * (Mathf.PerlinNoise(_time * 0.17f, 3.7f) * 2f - 1f);
+            _travelled = Mathf.Min(_totalLength, _travelled + speed * k * _turnFactor * pace * Time.deltaTime);
+
+            // Body turns lazily toward where the path is heading.
             Vector3 ahead = SampleDirection(_travelled);
             if (ahead.sqrMagnitude > 0.0001f)
             {
@@ -82,8 +97,15 @@ namespace KateVR
                 transform.rotation = Quaternion.Slerp(transform.rotation, target, 1f - Mathf.Exp(-turnSmoothing * Time.deltaTime));
             }
 
+            // A very small sway with each step, fading out as she stops.
+            float step = _travelled / 0.75f * Mathf.PI;
+            Vector3 swayOffset = transform.right * Mathf.Sin(step) * sway * k
+                               + Vector3.up * (Mathf.Abs(Mathf.Cos(step)) - 0.5f) * sway * k;
+            transform.position = SamplePosition(_travelled) + swayOffset;
+
             if (_travelled >= _totalLength - 0.001f)
             {
+                transform.position = SamplePosition(_totalLength);
                 _playing = false;
                 IsFinished = true;
             }
@@ -99,7 +121,6 @@ namespace KateVR
             foreach (var w in waypoints) if (w) pts.Add(w.position);
             if (pts.Count < 2) return;
 
-            // Catmull-Rom spline through the waypoints, sampled densely.
             const int stepsPerSegment = 40;
             for (int i = 0; i < pts.Count - 1; i++)
             {
@@ -136,13 +157,17 @@ namespace KateVR
 
         Vector3 SampleDirection(float distance)
         {
-            // Look a little ahead so turns begin smoothly before the corner.
             Vector3 a = SamplePosition(distance);
-            Vector3 b = SamplePosition(Mathf.Min(distance + 2.5f, _totalLength));
-            if ((b - a).sqrMagnitude < 0.0001f) b = a + transform.forward;
+            Vector3 b = SamplePosition(Mathf.Min(distance + lookAhead, _totalLength));
+            if ((b - a).sqrMagnitude < 0.01f)
+            {
+                // Near the end: keep facing the last stretch of the path.
+                a = SamplePosition(Mathf.Max(0f, _totalLength - lookAhead));
+                b = SamplePosition(_totalLength);
+            }
             Vector3 d = b - a;
             d.y = 0f;
-            return d.normalized;
+            return d.sqrMagnitude < 0.0001f ? transform.forward : d.normalized;
         }
 
         static Vector3 CatmullRom(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
