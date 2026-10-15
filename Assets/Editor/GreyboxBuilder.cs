@@ -89,28 +89,28 @@ public static class GreyboxBuilder
         // ---------- Kate's house: a plain block with a real doorway ----------
         // Front face at x = 11.5. Doorway: z 40.4–41.6, 2.2 m tall. Behind it, darkness.
         var house = new GameObject("Kate's House").transform;
-        var matDark = MakeMaterial("Greybox_Darkness", Color.black, "Universal Render Pipeline/Unlit");
+        var matDark = MakeMaterial("Greybox_InsideLight", Color.white, "Universal Render Pipeline/Unlit"); // what waits inside: blinding light
         Box("House Body", house, new Vector3(16.85f, 3f, 41f), new Vector3(7.3f, 6f, 9f), matHouse);
         Box("Front Left", house, new Vector3(12.35f, 3f, 38.45f), new Vector3(1.7f, 6f, 3.9f), matHouse);
         Box("Front Right", house, new Vector3(12.35f, 3f, 43.55f), new Vector3(1.7f, 6f, 3.9f), matHouse);
         Box("Lintel", house, new Vector3(12.35f, 4.1f, 41f), new Vector3(1.7f, 3.8f, 1.2f), matHouse);
         Box("Roof", house, new Vector3(16f, 6.6f, 41f), new Vector3(9.6f, 1.2f, 9.6f), matHouse);
-        Box("Darkness Back", house, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
-        Box("Darkness Side", house, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
-        Box("Darkness Side", house, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
-        Box("Darkness Top", house, new Vector3(12.35f, 2.18f, 41f), new Vector3(1.7f, 0.04f, 1.2f), matDark);
-        Box("Darkness Floor", house, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
+        Box("Inside Light Back", house, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
+        Box("Inside Light Side", house, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Inside Light Side", house, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Inside Light Top", house, new Vector3(12.35f, 2.18f, 41f), new Vector3(1.7f, 0.04f, 1.2f), matDark);
+        Box("Inside Light Floor", house, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
         var hinge = new GameObject("Door Hinge").transform;
         hinge.SetParent(house, false);
         hinge.position = new Vector3(11.54f, 0f, 40.4f);
         // The door is the same stuff as the wall and sits flush with it: invisible until it's touched.
-        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.18f, 1.18f), matHouse);
+        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.2f, 1.2f), matHouse);
         door.isStatic = false;
         door.transform.SetParent(hinge, false);
         door.transform.localPosition = new Vector3(-0.01f, 1.1f, 0.6f);
 
         // Its outline, drawn in when Kate's palm meets the wall (sides grow up, then the top closes).
-        var matSeam = MakeMaterial("Greybox_DoorSeam", new Color(0.07f, 0.065f, 0.06f));
+        var matSeam = MakeMaterial("Greybox_DoorLightLeak", Color.white, "Universal Render Pipeline/Unlit");
         var outlineL = SeamPiece(house, "Door Outline Left", new Vector3(11.495f, 0f, 40.4f), new Vector3(0f, 0.5f, 0f), matSeam);
         var outlineR = SeamPiece(house, "Door Outline Right", new Vector3(11.495f, 0f, 41.6f), new Vector3(0f, 0.5f, 0f), matSeam);
         var outlineTop = SeamPiece(house, "Door Outline Top", new Vector3(11.495f, 2.2f, 41f), Vector3.zero, matSeam);
@@ -174,7 +174,17 @@ public static class GreyboxBuilder
         MemoryBuilder.BuildAll(world);
 
         // ---------- Ending: palm flat on the door, the door begins to open, fade to black ----------
+        var doorLight = new GameObject("Doorway Light").AddComponent<Light>();
+        doorLight.transform.SetParent(house, false);
+        doorLight.transform.position = new Vector3(12.3f, 1.3f, 41f);
+        doorLight.type = LightType.Point;
+        doorLight.color = new Color(1f, 0.98f, 0.94f);
+        doorLight.range = 9f;
+        doorLight.intensity = 0f;
+        doorLight.shadows = LightShadows.None;
+
         var ending = BuildEnding(glide, camGO.transform, hinge);
+        ending.doorLight = doorLight;
         ending.outlineSides = new[] { outlineL, outlineR };
         ending.outlineTop = outlineTop;
 
@@ -237,9 +247,9 @@ public static class GreyboxBuilder
         Part(hand, PrimitiveType.Cylinder, "Cuff", new Vector3(0, -0.075f, 0), new Vector3(0.12f, 0.035f, 0.12f), suit, Vector3.zero);
 
         // Black veil just in front of the eyes, for the fade-out.
-        var fadeMat = MakeMaterial("Fade", Color.black, "Universal Render Pipeline/Unlit");
+        var fadeMat = MakeMaterial("Fade", Color.white, "Universal Render Pipeline/Unlit");
         MakeTransparent(fadeMat, (int)RenderQueue.Overlay);
-        fadeMat.SetColor("_BaseColor", new Color(0f, 0f, 0f, 0f)); // invisible until the ending
+        fadeMat.SetColor("_BaseColor", new Color(1f, 1f, 1f, 0f)); // invisible until the ending
         var fade = GameObject.CreatePrimitive(PrimitiveType.Quad);
         fade.name = "Fade To Black";
         Object.DestroyImmediate(fade.GetComponent<Collider>());

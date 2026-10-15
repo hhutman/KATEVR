@@ -16,7 +16,7 @@ namespace KateVR
         [Header("Door outline (appears when the palm touches the wall)")]
         public Transform[] outlineSides;  // pivots at floor level; grow upward
         public Transform outlineTop;      // pivot at centre of the lintel; grows outward
-        public float outlineTime = 1.0f;
+        public float outlineTime = 0.3f; // a quick flash of light around the edges
         public float doorHeight = 2.2f, doorWidth = 1.2f, seamWidth = 0.025f;
 
         [Header("Where the palm lands")]
@@ -29,8 +29,13 @@ namespace KateVR
         public float holdTime = 1.1f;
         public float withdrawTime = 0.8f;
         public float doorTime = 5f;
-        public float fadeDelay = 1.5f;
+        public float fadeDelay = 1.8f;
         public float fadeTime = 3f;
+
+        [Header("Light inside")]
+        public Light doorLight;
+        public float doorLightIntensity = 12f;
+        public Color fadeColor = Color.white; // the light floods everything at the end
 
         [Header("Door")]
         public float doorOpenAngle = 70f;
@@ -56,7 +61,7 @@ namespace KateVR
             if (!fade) return;
             fade.enabled = a > 0.001f;
             fade.GetPropertyBlock(_block);
-            _block.SetColor(ColorId, new Color(0f, 0f, 0f, a));
+            _block.SetColor(ColorId, new Color(fadeColor.r, fadeColor.g, fadeColor.b, a));
             fade.SetPropertyBlock(_block);
         }
 
@@ -108,6 +113,7 @@ namespace KateVR
             float open = dk * dk * (3f - 2f * dk);
             open = Mathf.Lerp(open * open, open, open); // slow to start, then gives way
             if (doorHinge) doorHinge.localRotation = Quaternion.Euler(0f, doorOpenAngle * open, 0f);
+            if (doorLight) doorLight.intensity = doorLightIntensity * Mathf.Clamp01(dk * 2.5f);
 
             float f = Mathf.Clamp01((a - doorStart - fadeDelay) / fadeTime);
             SetFade(Mathf.SmoothStep(0f, 1f, f));
