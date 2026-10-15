@@ -29,6 +29,11 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Memories feedback (editor, 2026-10-15): not readable — look like clusters of metal sequins; Hope likes them atmospherically and wants to keep them. Judge readability in the headset before changing. Fixed: points that drifted near the head now fade out (they looked 'inside the headset').
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
+## Voice-over
+- Scratch VO: ElevenLabs free plan (no commercial use; must credit ElevenLabs) → replace with a real performer or paid licence before ticketed showings. File: `Assets/Audio/Kate_VO_Scratch.wav` (22.8 s, 16 kHz mono).
+- Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 8 s; last line 'who fucking knows?' ends ~30.5 s as Kate starts drifting right.
+- Walk timing (simulated): turn starts ~26 s, drifting right ~34 s, approach ~46 s, at door ~58 s → ~27 s without words after the VO.
+
 ## Decisions
 - Hold aesthetic changes until the scene has been seen in the headset.
 - Walkers will become figures in full hazmat suits (art pass, later).

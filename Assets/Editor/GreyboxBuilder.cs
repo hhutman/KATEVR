@@ -163,6 +163,9 @@ public static class GreyboxBuilder
         tracker.positionInput = new InputActionProperty(new InputAction("Head Position", InputActionType.Value, "<XRHMD>/centerEyePosition", expectedControlType: "Vector3"));
         tracker.rotationInput = new InputActionProperty(new InputAction("Head Rotation", InputActionType.Value, "<XRHMD>/centerEyeRotation", expectedControlType: "Quaternion"));
 
+        // ---------- Kate's voice, inside the suit ----------
+        BuildVoice(camGO.transform);
+
         // ---------- Smog: drifting ash around Kate ----------
         WorldKit.Ash(rig.transform);
 
@@ -180,6 +183,28 @@ public static class GreyboxBuilder
         AddToBuild(ScenePath);
         Selection.activeGameObject = rig;
         Debug.Log("KateVR: Greybox street built and saved to " + ScenePath);
+    }
+
+    // ---------- Voice ----------
+
+    const string VoicePath = "Assets/Audio/Kate_VO_Scratch.wav"; // ElevenLabs scratch take; replace with the final read (same name)
+    const float VoiceStart = 8f;
+
+    static void BuildVoice(Transform camera)
+    {
+        var clip = AssetDatabase.LoadAssetAtPath<AudioClip>(VoicePath);
+        if (clip == null) { Debug.LogWarning("KateVR: no voice-over found at " + VoicePath); return; }
+        var go = new GameObject("Kate's Voice");
+        go.transform.SetParent(camera, false);
+        var src = go.AddComponent<AudioSource>();
+        src.clip = clip;
+        src.playOnAwake = false;
+        src.loop = false;
+        src.spatialBlend = 0f;   // inside the suit: moves with your head, not placed in the street
+        src.volume = 1f;
+        var muffle = go.AddComponent<AudioLowPassFilter>();
+        muffle.cutoffFrequency = 5000f; // a little closed-in, like hearing yourself inside a hood
+        go.AddComponent<KateVoice>().startTime = VoiceStart;
     }
 
     // ---------- Ending ----------
