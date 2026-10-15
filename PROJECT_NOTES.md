@@ -19,11 +19,12 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 
 ## Art direction (from Hope's storyboards, 2026-10-15)
 - Berkeley as it 'used' to be — now decayed, degraded, no colour. Sparse: a few buildings left, no cars, no trees.
-- Stylized (simple shapes), not photoreal. Kate's house: Craftsman bungalow.
+- Stylized (simple shapes), not photoreal.
+- **Revised after headset test:** the detailed Berkeley world felt too specific. Back to the original abstract block world — 'everywhere and nowhere', even sparser. No poles/cracks/puddles. Kate's bungalow dropped: plain block house with a door. (WorldKit.cs keeps the detailed pieces if ever wanted.)
 - Atmosphere: ground-hugging fog, wet cracked pavement, puddles, weeds, utility poles (Silent Hill 2-style fog as reference). Light: keep current overcast grey for now.
-- People: 2–3, all hurrying at different speeds, masks and makeshift protection.
+- People: just one for now — the figure in a long coat, hood and gas mask, hurrying toward Kate.
 - Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 10 s, 25 s, 40 s; cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
-- Ending: Kate's gloved hand takes and turns the door knob.
+- Ending: Kate reaches a door, her gloved hand turns the knob, the door begins to open, end scene.
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
 ## Decisions
@@ -37,7 +38,7 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Hardware notes: Developer Mode is per headset (justHope Meta account). "Allow USB debugging" may need a replug while wearing the headset. Controller issues were dead batteries + firmware update.
 
 ## Build order (agreed)
-1. World pass (WorldKit.cs) — in progress.
+1. World pass — done (reverted to sparse block world + one figure).
 2. Memories (point clouds at 10/25/40 s).
 3. Hand + door knob.
 4. Visor.

@@ -10,8 +10,8 @@ using KateVR;
 
 /// <summary>
 /// Menu: KateVR → Build Greybox Street.
-/// Builds Kate's street: a sparse, colourless, stylized Berkeley (WorldKit), ground fog,
-/// two or three hurrying figures, Kate's Craftsman bungalow, and her rig gliding to the door.
+/// Builds the comfort-test scene: a foggy street of block buildings, a few distant walkers,
+/// a house at the end, and Kate's rig gliding along a path to its door.
 /// Safe to run again: it rebuilds the scene from scratch.
 /// </summary>
 public static class GreyboxBuilder
@@ -32,7 +32,12 @@ public static class GreyboxBuilder
 
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-        WorldKit.LoadMaterials();
+        var matGround = MakeMaterial("Greybox_Ground", new Color(0.30f, 0.29f, 0.27f));
+        var matStreet = MakeMaterial("Greybox_Street", new Color(0.22f, 0.22f, 0.22f));
+        var matBuilding = MakeMaterial("Greybox_Building", new Color(0.42f, 0.41f, 0.39f));
+        var matHouse = MakeMaterial("Greybox_House", new Color(0.36f, 0.33f, 0.30f));
+        var matDoor = MakeMaterial("Greybox_Door", new Color(0.20f, 0.17f, 0.15f));
+        var matFigure = MakeMaterial("Greybox_Figure", new Color(0.62f, 0.60f, 0.52f));
 
         // ---------- Atmosphere ----------
         RenderSettings.skybox = null;
@@ -54,92 +59,57 @@ public static class GreyboxBuilder
 
         // ---------- Ground & street ----------
         var world = new GameObject("World").transform;
+        Box("Ground", world, new Vector3(0, -0.05f, 40), new Vector3(140, 0.1f, 160), matGround);
+        Box("Street", world, new Vector3(0, 0.0f, 40), new Vector3(8, 0.02f, 160), matStreet);
+        Box("Sidewalk L", world, new Vector3(-5, 0.08f, 40), new Vector3(2, 0.16f, 160), matGround);
+        Box("Sidewalk R", world, new Vector3(5, 0.08f, 40), new Vector3(2, 0.16f, 160), matGround);
+
+        // ---------- Buildings (fog turns them into silhouettes) ----------
+        var buildings = new GameObject("Buildings").transform;
         var rng = new System.Random(7); // fixed seed = same street every time
-        WorldKit.Cube("Ground", world, new Vector3(0, -0.05f, 40), new Vector3(140, 0.1f, 170), WorldKit.Dirt);
-        WorldKit.Cube("Street", world, new Vector3(0, 0.0f, 40), new Vector3(8, 0.02f, 170), WorldKit.Asphalt);
-        WorldKit.Cube("Sidewalk L", world, new Vector3(-5, 0.08f, 40), new Vector3(2, 0.16f, 170), WorldKit.Concrete);
-        WorldKit.Cube("Sidewalk R", world, new Vector3(5, 0.08f, 40), new Vector3(2, 0.16f, 170), WorldKit.Concrete);
-        for (float z = -40f; z < 120f; z += 4.5f)          // faded, broken centre line
-            if (rng.NextDouble() < 0.65)
-                WorldKit.Cube("Centre Line", world, new Vector3(0, 0.012f, z), new Vector3(0.12f, 0.004f, WorldKit.Range(rng, 0.8f, 2.2f)), WorldKit.Marking);
-        WorldKit.Cracks(world, rng, -3.8f, 3.8f, -15f, 80f, 0.012f, 55);
-        WorldKit.Cracks(world, rng, -5.9f, -4.1f, -15f, 80f, 0.162f, 18);
-        WorldKit.Cracks(world, rng, 4.1f, 5.9f, -15f, 80f, 0.162f, 18);
-        float[,] puddles = { { 2.4f, 6f }, { -1.5f, 12f }, { 0.8f, 19f }, { 2.8f, 27f }, { -2.6f, 31f }, { 3.2f, 36.5f }, { 0.2f, 44f }, { -1f, 52f }, { 2f, 60f } };
-        for (int i = 0; i < puddles.GetLength(0); i++)
-            WorldKit.PuddleAt(world, new Vector3(puddles[i, 0], 0.012f, puddles[i, 1]), WorldKit.Range(rng, 1.2f, 2.8f), WorldKit.Range(rng, 0.8f, 1.8f), WorldKit.Range(rng, 0, 180));
-        for (int i = 0; i < 45; i++)                       // weeds along curbs and building edges
+        for (int side = -1; side <= 1; side += 2)
         {
-            float side = rng.NextDouble() < 0.5 ? -1f : 1f;
-            float x = side * (rng.NextDouble() < 0.6 ? 4.05f : WorldKit.Range(rng, 5.6f, 6.2f));
-            WorldKit.WeedTuft(world, rng, new Vector3(x, x * side > 4.5f ? 0.16f : 0f, WorldKit.Range(rng, -12f, 75f)));
+            float z = -20f;
+            while (z < 110f)
+            {
+                float width = Range(rng, 6f, 12f);
+                float depth = Range(rng, 8f, 14f);
+                float height = Range(rng, 5f, 22f);
+                bool gap = rng.NextDouble() < 0.45;               // lots of empty space
+                bool houseLot = side > 0 && z + width > 32f && z < 50f; // keep space for Kate's house
+                if (!gap && !houseLot)
+                {
+                    float x = side * (7f + depth * 0.5f + Range(rng, 0f, 2f));
+                    Box("Building", buildings, new Vector3(x, height * 0.5f, z + width * 0.5f), new Vector3(depth, height, width), matBuilding);
+                }
+                z += width + Range(rng, 3f, 9f);
+            }
         }
 
-        // ---------- Buildings: sparse, a few left standing ----------
-        // Right side faces the street with rotY 90; left side with rotY -90.
-        var town = new GameObject("Buildings").transform;
-        WorldKit.Shop ("Shop",       town, new Vector3( 6.2f, 0, -9f),  90f, 10f, 14f, 2, 11, false, false);
-        WorldKit.Shop ("Shop",       town, new Vector3( 6.2f, 0,  7f),  90f,  9f, 12f, 1, 12, true,  false);
-        WorldKit.Lot  ("Empty Lot",  town, new Vector3( 6.2f, 0, 18f),  90f,  9f, 12f, 13, true);
-        WorldKit.House("Bungalow",   town, new Vector3( 9.5f, 0, 27f),  90f,  9f, 11f, 1, 14, true);
-        WorldKit.House("Shingle House", town, new Vector3( 9.5f, 0, 56f), 90f, 10f, 12f, 2, 15, true);
-        WorldKit.Shop ("Shop",       town, new Vector3( 6.2f, 0, 72f),  90f, 12f, 14f, 2, 16, true,  true);
-        WorldKit.Lot  ("Empty Lot",  town, new Vector3( 6.2f, 0, 86f),  90f, 10f, 12f, 17, false);
-        WorldKit.House("Bungalow",   town, new Vector3(-9.5f, 0, -6f), -90f,  9f, 11f, 1, 21, true);
-        WorldKit.Shop ("Shop",       town, new Vector3(-6.2f, 0, 10f), -90f, 13f, 14f, 1, 22, true,  false);
-        WorldKit.Lot  ("Empty Lot",  town, new Vector3(-6.2f, 0, 24f), -90f, 10f, 12f, 23, false);
-        WorldKit.House("Shingle House", town, new Vector3(-9.5f, 0, 38f), -90f, 10f, 12f, 2, 24, true);
-        WorldKit.Shop ("Shop",       town, new Vector3(-6.2f, 0, 55f), -90f, 10f, 12f, 2, 25, true,  true);
-        WorldKit.Lot  ("Empty Lot",  town, new Vector3(-6.2f, 0, 68f), -90f, 10f, 12f, 26, true);
-        WorldKit.Shop ("Shop",       town, new Vector3(-6.2f, 0, 82f), -90f, 12f, 14f, 1, 27, false, false);
+        // ---------- Kate's house ----------
+        var house = new GameObject("Kate's House").transform;
+        Box("House", house, new Vector3(16f, 3f, 41f), new Vector3(9f, 6f, 9f), matHouse);
+        Box("Roof", house, new Vector3(16f, 6.6f, 41f), new Vector3(9.6f, 1.2f, 9.6f), matHouse);
+        Box("Walkway", house, new Vector3(8.5f, 0.05f, 41f), new Vector3(7f, 0.1f, 1.4f), matStreet);
+        Box("Step", house, new Vector3(11.2f, 0.12f, 41f), new Vector3(0.6f, 0.24f, 1.6f), matHouse);
+        Box("Door", house, new Vector3(11.47f, 1.05f, 41f), new Vector3(0.08f, 2.1f, 1.0f), matDoor);
+        Box("Door Knob", house, new Vector3(11.40f, 1.0f, 40.65f), new Vector3(0.06f, 0.06f, 0.06f), matFigure);
 
-        // ---------- Kate's house: a Craftsman bungalow, door facing the street ----------
-        var kate = WorldKit.House("Kate's House", town, new Vector3(13f, 0, 41f), 90f, 10f, 12f, 1, 31, false);
-        WorldKit.Cube("Front Yard", kate, new Vector3(0, 0.015f, -3.6f), new Vector3(10f, 0.03f, 7f), WorldKit.Dirt);
-        WorldKit.Cube("Walkway", town, new Vector3(7.85f, 0.04f, 41f), new Vector3(3.7f, 0.08f, 1.3f), WorldKit.Concrete);
-        for (int i = 0; i < 6; i++)                          // what's left of a picket fence
-            if (i != 2 && i != 3)
-                WorldKit.Cube("Fence Post", town, new Vector3(6.4f, 0.45f, 37f + i * 1.6f), new Vector3(0.08f, 0.9f, 0.08f), WorldKit.Board,
-                              new Vector3(WorldKit.Range(rng, -12, 12), 0, WorldKit.Range(rng, -12, 12)));
-
-        // ---------- Utility poles & wires ----------
-        var props = new GameObject("Street Furniture").transform;
-        float[] rightPoles = { -14f, 8f, 30f, 52f, 74f };
-        float[] leftPoles = { -4f, 18f, 40f, 62f, 84f };
-        for (int i = 0; i < rightPoles.Length; i++)
-        {
-            var a = WorldKit.Pole(props, new Vector3(5.8f, 0, rightPoles[i]), i == 2);
-            if (i > 0) WorldKit.Wires(props, new Vector3(5.8f, 0, rightPoles[i - 1]), a, i == 2);
-        }
-        for (int i = 0; i < leftPoles.Length; i++)
-        {
-            var a = WorldKit.Pole(props, new Vector3(-5.8f, 0, leftPoles[i]), i == 3);
-            if (i > 0) WorldKit.Wires(props, new Vector3(-5.8f, 0, leftPoles[i - 1]), a, false);
-        }
-        WorldKit.SignPost(props, new Vector3(5.35f, 0.16f, 33.5f), 9f);
-        WorldKit.SignPost(props, new Vector3(-5.35f, 0.16f, 15f), -4f);
-
-        // ---------- Ground fog: slow puffs hugging the street ----------
-        WorldKit.GroundFog(world, new Vector3(3f, 0.7f, 32f), new Vector3(30f, 1.2f, 90f));
-
-        // ---------- Other people: two or three, all in a hurry, at different speeds ----------
+        // ---------- One other person, hurrying toward us ----------
+        WorldKit.LoadMaterials();
         var walkers = new GameObject("Other Walkers").transform;
-        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.16f, 45f), 180f, 1.9f); // toward us on the left, passes ~16 s in
-        WorldKit.Figure(walkers, 1, new Vector3(4.8f, 0.16f, -14f), 0f, 1.8f);   // overtakes Kate on the right ~14 s in
-        WorldKit.Figure(walkers, 2, new Vector3(-24f, 0f, 49f), 90f, 1.4f);      // crosses the street far ahead in the haze
+        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.16f, 45f), 180f, 1.9f); // long coat, hood, gas mask
 
-        // ---------- Kate's path: down the street, up the walkway, up the porch steps ----------
+        // ---------- Kate's path ----------
         var path = new GameObject("Kate Path").transform;
         var points = new List<Transform>
         {
-            Waypoint(path, "P0 Start",        new Vector3(1.5f, 0, 0f)),
-            Waypoint(path, "P1 Street",       new Vector3(1.5f, 0, 25f)),
-            Waypoint(path, "P2 Begin turn",   new Vector3(2.2f, 0, 34f)),
-            Waypoint(path, "P3 Corner",       new Vector3(4.8f, 0, 39.2f)),
-            Waypoint(path, "P4 Walkway",      new Vector3(8.0f, 0.08f, 41f)),
-            Waypoint(path, "P5 Foot of steps",new Vector3(9.3f, 0.08f, 41f)),
-            Waypoint(path, "P6 Porch",        new Vector3(10.8f, 0.6f, 41f)),
-            Waypoint(path, "P7 At door",      new Vector3(12.0f, 0.6f, 41f)),
+            Waypoint(path, "P0 Start",      new Vector3(1.5f, 0, 0f)),
+            Waypoint(path, "P1 Street",     new Vector3(1.5f, 0, 25f)),
+            Waypoint(path, "P2 Begin turn", new Vector3(2.2f, 0, 34f)),
+            Waypoint(path, "P3 Corner",     new Vector3(4.8f, 0, 39.2f)),
+            Waypoint(path, "P4 Walkway",    new Vector3(8.0f, 0, 41f)),
+            Waypoint(path, "P5 At door",    new Vector3(10.4f, 0, 41f)),
         };
 
         // ---------- Kate's rig (the viewer's head) ----------
@@ -177,7 +147,7 @@ public static class GreyboxBuilder
         EditorSceneManager.SaveScene(scene, ScenePath);
         AddToBuild(ScenePath);
         Selection.activeGameObject = rig;
-        Debug.Log("KateVR: Street built and saved to " + ScenePath);
+        Debug.Log("KateVR: Greybox street built and saved to " + ScenePath);
     }
 
     // ---------- Visor ----------
@@ -193,7 +163,7 @@ public static class GreyboxBuilder
         const float quadW = 1.6f, quadH = 1.4f;
         var tex = MakeVisorTexture(quadW, quadH);
 
-        var mat = WorldKit.MakeMaterial("Visor", Color.white, 0f, "Universal Render Pipeline/Unlit");
+        var mat = MakeMaterial("Visor", Color.white, "Universal Render Pipeline/Unlit");
         mat.SetTexture("_BaseMap", tex);
         mat.SetColor("_BaseColor", Color.white);
         // Transparent, drawn on top of the world.
@@ -283,12 +253,43 @@ public static class GreyboxBuilder
 
     // ---------- helpers ----------
 
+    static GameObject Box(string name, Transform parent, Vector3 pos, Vector3 size, Material mat)
+    {
+        var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        go.name = name;
+        Object.DestroyImmediate(go.GetComponent<Collider>());
+        go.transform.SetParent(parent, true);
+        go.transform.position = pos;
+        go.transform.localScale = size;
+        go.GetComponent<Renderer>().sharedMaterial = mat;
+        go.isStatic = true;
+        return go;
+    }
+
     static Transform Waypoint(Transform parent, string name, Vector3 pos)
     {
         var t = new GameObject(name).transform;
         t.SetParent(parent, false);
         t.position = pos;
         return t;
+    }
+
+    static Material MakeMaterial(string name, Color color, string shaderName = "Universal Render Pipeline/Lit")
+    {
+        System.IO.Directory.CreateDirectory(MaterialFolder);
+        string path = $"{MaterialFolder}/{name}.mat";
+        var mat = AssetDatabase.LoadAssetAtPath<Material>(path);
+        if (mat == null)
+        {
+            var shader = Shader.Find(shaderName) ?? Shader.Find("Standard");
+            mat = new Material(shader);
+            AssetDatabase.CreateAsset(mat, path);
+        }
+        mat.SetColor("_BaseColor", color);
+        mat.color = color;
+        if (mat.HasProperty("_Smoothness")) mat.SetFloat("_Smoothness", 0.05f);
+        EditorUtility.SetDirty(mat);
+        return mat;
     }
 
     static void AddToBuild(string path)
