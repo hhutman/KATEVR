@@ -21,7 +21,12 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Hold aesthetic changes until the scene has been seen in the headset.
 - Walkers will become figures in full hazmat suits (art pass, later).
 
+## Headset pipeline (done, 2026-10-15)
+- Package name `com.hopehutman.katevr`, company "Hope Hutman".
+- First Build And Run to Quest 3 succeeded. APK saved to `Builds/KateVR.apk` (git-ignored).
+- To rebuild: plug in headset → File → Build Profiles → Run Device: Refresh, pick Quest → Build And Run.
+- Hardware notes: Developer Mode is per headset (justHope Meta account). "Allow USB debugging" may need a replug while wearing the headset. Controller issues were dead batteries + firmware update.
+
 ## Next steps
-1. Quest 3: charge, confirm paired to Meta Horizon app, enable Developer Mode, USB-C data cable.
-2. First Build And Run to the headset; check comfort of the glide and turn, visor, walker pace.
-3. Then: VO + audio bed (breathing, suit squeaks, wind, footsteps), Timeline, hand + door, fade, festival loop/reset.
+1. Headset review: comfort of glide/turn, visor, walker pace, scale/height, fog.
+2. Then: VO + audio bed (breathing, suit squeaks, wind, footsteps), Timeline, hand + door, fade, festival loop/reset.
