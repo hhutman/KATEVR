@@ -17,6 +17,15 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Hazmat visor: head-locked quad with a dark rim, faint green tint and scratches (`Assets/Materials/Visor.png`).
 - Other walkers (`Wanderer.cs`): capsules hurrying at ~1.6–1.9 m/s.
 
+## Art direction (from Hope's storyboards, 2026-10-15)
+- Berkeley as it 'used' to be — now decayed, degraded, no colour. Sparse: a few buildings left, no cars, no trees.
+- Stylized (simple shapes), not photoreal. Kate's house: Craftsman bungalow.
+- Atmosphere: ground-hugging fog, wet cracked pavement, puddles, weeds, utility poles (Silent Hill 2-style fog as reference). Light: keep current overcast grey for now.
+- People: 2–3, all hurrying at different speeds, masks and makeshift protection.
+- Memories: point-cloud images that form, hold, then break apart like skywriting. ~No colour (faint traces at most). Appear at 10 s, 25 s, 40 s; cloud-like, varied sizes; ahead, sides, edge of view, overhead. Not tied to VO lines (yet). Placeholders: candlelight march, Power to the People fist, Free Speech Movement at Sproul Hall — need licensing before festivals.
+- Ending: Kate's gloved hand takes and turns the door knob.
+- Visor: currently unclear what you're looking through — Hope is thinking about direction.
+
 ## Decisions
 - Hold aesthetic changes until the scene has been seen in the headset.
 - Walkers will become figures in full hazmat suits (art pass, later).
@@ -27,6 +36,11 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - To rebuild: plug in headset → File → Build Profiles → Run Device: Refresh, pick Quest → Build And Run.
 - Hardware notes: Developer Mode is per headset (justHope Meta account). "Allow USB debugging" may need a replug while wearing the headset. Controller issues were dead batteries + firmware update.
 
-## Next steps
-1. Headset review: comfort of glide/turn, visor, walker pace, scale/height, fog.
-2. Then: VO + audio bed (breathing, suit squeaks, wind, footsteps), Timeline, hand + door, fade, festival loop/reset.
+## Build order (agreed)
+1. World pass (WorldKit.cs) — in progress.
+2. Memories (point clouds at 10/25/40 s).
+3. Hand + door knob.
+4. Visor.
+
+## Later
+- VO + audio bed (breathing, suit squeaks, wind, footsteps), Timeline, hand + door, fade, festival loop/reset.
