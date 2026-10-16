@@ -30,7 +30,9 @@ namespace KateVR
         public Vector3 palmFacing = Vector3.right; // direction the palm pushes (into the door)
 
         [Header("Timing (seconds)")]
-        public float pauseBeforeReach = 0.8f;
+        public float pauseBeforeReach = 0f;
+        [Tooltip("Seconds into the scene when the hand starts to rise (three beats after her last word). It also waits until Kate has reached the door.")]
+        public float handStartTime = 37.2f;
         public float reachTime = 1.0f;
         public float holdTime = 1.1f;
         public float withdrawTime = 0.8f;
@@ -75,7 +77,9 @@ namespace KateVR
         {
             if (_t < 0f)
             {
-                if (glide == null || !glide.IsFinished) return;
+                if (glide == null) return;
+                bool arrived = glide.IsFinished || glide.RemainingDistance < 0.15f;
+                if (!arrived || Time.timeSinceLevelLoad < handStartTime) return;
                 _t = 0f;
             }
             _t += Time.deltaTime;

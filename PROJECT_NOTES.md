@@ -36,6 +36,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - **Tightened walk (Hope's choice):** Kate starts at z=12, walks 1.1 m/s; ~33 m. Turn ~19–30 s, at the door ~40 s, touch ~41 s, fade out ~50 s.
 - Memories retimed to fit: 9 s, 18 s, 28 s (12 s each). Gas-mask walker kept; now passes Kate ~16 s.
 
+- Ending timing: last word ends ~34.2 s; three beats later (~37.2 s) the hand rises. Kate's arrival ease shortened (`endEaseSeconds` 1.2 s) so she's at the door ~37 s; nothing else changed.
+
 ## Decisions
 - Hold aesthetic changes until the scene has been seen in the headset.
 - Walkers will become figures in full hazmat suits (art pass, later).

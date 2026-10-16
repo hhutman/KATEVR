@@ -191,6 +191,7 @@ public static class GreyboxBuilder
         var ending = BuildEnding(glide, camGO.transform, hinge);
         ending.doorLight = doorLight;
         ending.solidWall = solidFront;
+        ending.handStartTime = VoiceStart + VoiceLastWordEnds + BeatsAfterLastWord;
         ending.doorway = doorway.gameObject;
         doorway.gameObject.SetActive(false);
         ending.outlineSides = new[] { outlineL, outlineR };
@@ -208,6 +209,8 @@ public static class GreyboxBuilder
 
     const string VoicePath = "Assets/Audio/Kate_VO_Scratch.wav"; // ElevenLabs scratch take; replace with the final read (same name)
     const float VoiceStart = 6f;
+    const float VoiceLastWordEnds = 28.2f; // "…who fucking knows?" ends this far into the take
+    const float BeatsAfterLastWord = 3f;    // three beats, then her hand goes up
 
     static void BuildVoice(Transform camera)
     {

@@ -25,6 +25,9 @@ namespace KateVR
         [Tooltip("Seconds to ease in from standing still (and out at the end).")]
         public float easeSeconds = 2.5f;
 
+        [Tooltip("Seconds to slow down when arriving (shorter = she arrives more decisively).")]
+        public float endEaseSeconds = 1.2f;
+
         [Tooltip("How quickly the body turns to follow the path. Lower = lazier, more human.")]
         [Range(0.3f, 5f)] public float turnSmoothing = 0.8f;
 
@@ -40,6 +43,7 @@ namespace KateVR
         public bool playOnStart = true;
 
         public bool IsFinished { get; private set; }
+        public float RemainingDistance => Mathf.Max(0f, _totalLength - _travelled);
 
         readonly List<Vector3> _samples = new List<Vector3>();
         readonly List<float> _distances = new List<float>();
@@ -74,12 +78,12 @@ namespace KateVR
             if (_time < startDelay) return;
 
             // Ease in at the start and out at the end.
-            float easeDistance = speed * easeSeconds * 0.5f;
+            float easeDistance = speed * endEaseSeconds * 0.5f;
             float remaining = _totalLength - _travelled;
             float k = 1f;
             float sinceStart = _time - startDelay;
             if (sinceStart < easeSeconds) k = Mathf.SmoothStep(0.05f, 1f, sinceStart / easeSeconds);
-            if (remaining < easeDistance) k = Mathf.Min(k, Mathf.SmoothStep(0.03f, 1f, remaining / easeDistance));
+            if (remaining < easeDistance) k = Mathf.Min(k, Mathf.SmoothStep(0.15f, 1f, remaining / easeDistance));
 
             // Slow down where the path bends (measured a little ahead, so she slows before the corner).
             float bend = Vector3.Angle(SampleDirection(_travelled), SampleDirection(_travelled + 3f)) / 45f;
