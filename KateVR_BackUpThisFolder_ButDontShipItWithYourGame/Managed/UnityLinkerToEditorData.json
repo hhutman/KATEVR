@@ -76,12 +76,28 @@
           },
           {
             "name": "AudioClip",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
+            "name": "AudioFilter",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
             "name": "AudioListener",
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioLowPassFilter",
             "scenes": [
               "Assets/Scenes/Street_Greybox.unity"
             ],
@@ -96,8 +112,26 @@
           },
           {
             "name": "AudioResource",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioSource",
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Behaviour",
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -618,6 +652,12 @@
             "icon": "package/com.unity.modules.jsonserialize"
           },
           {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
+          },
+          {
             "name": "Required by Physics Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1011,6 +1051,12 @@
             "icon": "package/com.unity.modules.managedkernel"
           },
           {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
+          },
+          {
             "name": "Required by U2DRuntime Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1027,6 +1073,27 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.vfx"
+          }
+        ]
+      },
+      {
+        "name": "ParticleSystem",
+        "dependencies": [
+          {
+            "name": "ParticleSystem",
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "ParticleSystemRenderer",
+            "scenes": [
+              "Assets/Scenes/Street_Greybox.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
           }
         ]
       },
@@ -1260,6 +1327,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.mathematics"
+          },
+          {
+            "name": "Required by ParticleSystem Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.particlesystem"
           },
           {
             "name": "Required by Physics Module",
