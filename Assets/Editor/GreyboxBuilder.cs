@@ -91,29 +91,34 @@ public static class GreyboxBuilder
         var house = new GameObject("Kate's House").transform;
         var matDark = MakeMaterial("Greybox_InsideLight", Color.white, "Universal Render Pipeline/Unlit"); // what waits inside: blinding light
         Box("House Body", house, new Vector3(16.85f, 3f, 41f), new Vector3(7.3f, 6f, 9f), matHouse);
-        Box("Front Left", house, new Vector3(12.35f, 3f, 38.45f), new Vector3(1.7f, 6f, 3.9f), matHouse);
-        Box("Front Right", house, new Vector3(12.35f, 3f, 43.55f), new Vector3(1.7f, 6f, 3.9f), matHouse);
-        Box("Lintel", house, new Vector3(12.35f, 4.1f, 41f), new Vector3(1.7f, 3.8f, 1.2f), matHouse);
+        // Until the touch, the front is one solid wall: no hole, no door, nothing to give it away.
+        var solidFront = Box("Front Wall (solid until touched)", house, new Vector3(12.35f, 3f, 41f), new Vector3(1.7f, 6f, 9f), matHouse);
+        // At the touch, it swaps (invisibly) for this: the same wall, but with a doorway, a door and the light behind it.
+        var doorway = new GameObject("Doorway (appears on touch)").transform;
+        doorway.SetParent(house, false);
+        Box("Front Left", doorway, new Vector3(12.35f, 3f, 38.45f), new Vector3(1.7f, 6f, 3.9f), matHouse);
+        Box("Front Right", doorway, new Vector3(12.35f, 3f, 43.55f), new Vector3(1.7f, 6f, 3.9f), matHouse);
+        Box("Lintel", doorway, new Vector3(12.35f, 4.1f, 41f), new Vector3(1.7f, 3.8f, 1.2f), matHouse);
         Box("Roof", house, new Vector3(16f, 6.6f, 41f), new Vector3(9.6f, 1.2f, 9.6f), matHouse);
-        Box("Inside Light Back", house, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
-        Box("Inside Light Side", house, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
-        Box("Inside Light Side", house, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
-        Box("Inside Light Top", house, new Vector3(12.35f, 2.18f, 41f), new Vector3(1.7f, 0.04f, 1.2f), matDark);
-        Box("Inside Light Floor", house, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
+        Box("Inside Light Back", doorway, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
+        Box("Inside Light Side", doorway, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Inside Light Side", doorway, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
+        Box("Inside Light Top", doorway, new Vector3(12.35f, 2.18f, 41f), new Vector3(1.7f, 0.04f, 1.2f), matDark);
+        Box("Inside Light Floor", doorway, new Vector3(12.35f, 0.01f, 41f), new Vector3(1.7f, 0.02f, 1.2f), matDark);
         var hinge = new GameObject("Door Hinge").transform;
-        hinge.SetParent(house, false);
+        hinge.SetParent(doorway, false);
         hinge.position = new Vector3(11.54f, 0f, 40.4f);
         // The door is the same stuff as the wall and sits flush with it: invisible until it's touched.
-        var door = Box("Door", house, Vector3.zero, new Vector3(0.06f, 2.2f, 1.2f), matHouse);
+        var door = Box("Door", doorway, Vector3.zero, new Vector3(0.06f, 2.2f, 1.2f), matHouse);
         door.isStatic = false;
         door.transform.SetParent(hinge, false);
         door.transform.localPosition = new Vector3(-0.01f, 1.1f, 0.6f);
 
-        // Its outline, drawn in when Kate's palm meets the wall (sides grow up, then the top closes).
+        // Its outline: a quick flash of light around the edges when Kate's palm meets the wall.
         var matSeam = MakeMaterial("Greybox_DoorLightLeak", Color.white, "Universal Render Pipeline/Unlit");
-        var outlineL = SeamPiece(house, "Door Outline Left", new Vector3(11.495f, 0f, 40.4f), new Vector3(0f, 0.5f, 0f), matSeam);
-        var outlineR = SeamPiece(house, "Door Outline Right", new Vector3(11.495f, 0f, 41.6f), new Vector3(0f, 0.5f, 0f), matSeam);
-        var outlineTop = SeamPiece(house, "Door Outline Top", new Vector3(11.495f, 2.2f, 41f), Vector3.zero, matSeam);
+        var outlineL = SeamPiece(doorway, "Door Outline Left", new Vector3(11.495f, 0f, 40.4f), new Vector3(0f, 0.5f, 0f), matSeam);
+        var outlineR = SeamPiece(doorway, "Door Outline Right", new Vector3(11.495f, 0f, 41.6f), new Vector3(0f, 0.5f, 0f), matSeam);
+        var outlineTop = SeamPiece(doorway, "Door Outline Top", new Vector3(11.495f, 2.2f, 41f), Vector3.zero, matSeam);
 
         // ---------- One other person, hurrying toward us ----------
         WorldKit.LoadMaterials();
@@ -175,7 +180,7 @@ public static class GreyboxBuilder
 
         // ---------- Ending: palm flat on the door, the door begins to open, fade to black ----------
         var doorLight = new GameObject("Doorway Light").AddComponent<Light>();
-        doorLight.transform.SetParent(house, false);
+        doorLight.transform.SetParent(doorway, false);
         doorLight.transform.position = new Vector3(12.3f, 1.3f, 41f);
         doorLight.type = LightType.Point;
         doorLight.color = new Color(1f, 0.98f, 0.94f);
@@ -185,6 +190,9 @@ public static class GreyboxBuilder
 
         var ending = BuildEnding(glide, camGO.transform, hinge);
         ending.doorLight = doorLight;
+        ending.solidWall = solidFront;
+        ending.doorway = doorway.gameObject;
+        doorway.gameObject.SetActive(false);
         ending.outlineSides = new[] { outlineL, outlineR };
         ending.outlineTop = outlineTop;
 

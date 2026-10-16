@@ -13,10 +13,16 @@ namespace KateVR
         public Transform doorHinge;     // rotates about Y to open the door
         public Renderer fade;           // black quad in front of the eyes
 
-        [Header("Door outline (appears when the palm touches the wall)")]
+        [Header("Wall swap: solid until the touch, then the doorway takes its place")]
+        public GameObject solidWall;
+        public GameObject doorway;
+
+        [Header("Door outline (a flash when the palm touches the wall)")]
         public Transform[] outlineSides;  // pivots at floor level; grow upward
         public Transform outlineTop;      // pivot at centre of the lintel; grows outward
-        public float outlineTime = 0.3f; // a quick flash of light around the edges
+        public float outlineTime = 0.15f; // how fast the flash appears
+        public float flashHold = 0.3f;    // how long it shows
+        public float flashFade = 0.25f;   // how fast it goes
         public float doorHeight = 2.2f, doorWidth = 1.2f, seamWidth = 0.025f;
 
         [Header("Where the palm lands")]
@@ -98,14 +104,25 @@ namespace KateVR
                 hand.rotation = rot;
             }
 
-            // On contact, the outline of a door draws itself into the wall.
-            float ok = Mathf.Clamp01((a - reachTime + 0.1f) / outlineTime);
-            float sides = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(ok * 1.5f));
-            float top = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((ok - 0.6f) / 0.4f));
+            // On contact: the solid wall gives way to the doorway (they look identical),
+            // and a thin line of light flashes around the door's edges, then goes.
+            float sinceTouch = a - reachTime;
+            if (sinceTouch >= 0f && doorway && !doorway.activeSelf)
+            {
+                doorway.SetActive(true);
+                if (solidWall) solidWall.SetActive(false);
+            }
+            float flash = 0f;
+            if (sinceTouch >= 0f)
+            {
+                if (sinceTouch < outlineTime) flash = sinceTouch / outlineTime;
+                else if (sinceTouch < outlineTime + flashHold) flash = 1f;
+                else flash = 1f - Mathf.Clamp01((sinceTouch - outlineTime - flashHold) / flashFade);
+            }
             if (outlineSides != null)
                 foreach (var side in outlineSides)
-                    if (side) side.localScale = new Vector3(0.02f, doorHeight * sides, seamWidth);
-            if (outlineTop) outlineTop.localScale = new Vector3(0.02f, seamWidth, doorWidth * top);
+                    if (side) side.localScale = flash > 0f ? new Vector3(0.02f, doorHeight, seamWidth * flash) : Vector3.zero;
+            if (outlineTop) outlineTop.localScale = flash > 0f ? new Vector3(0.02f, seamWidth * flash, doorWidth) : Vector3.zero;
 
             // As the hand drops away, the door begins to open inward.
             float doorStart = reachTime + holdTime + withdrawTime * 0.3f;
