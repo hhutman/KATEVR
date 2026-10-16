@@ -54,5 +54,9 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 3. Hand + door — first version done (palm on door, door opens, fade).
 4. Visor.
 
+## Next session
+- Sound design: suit (plastic squeaks, hiss of the respirator, breathing), footsteps (in time with the walk), atmosphere (wind, distant city hum). Then the visor.
+- Start of each session: GitHub Desktop → Fetch → Pull, then KateVR → Build Greybox Street. End: ⌘S, Commit, Push.
+
 ## Later
 - VO + audio bed (breathing, suit squeaks, wind, footsteps), Timeline, hand + door, fade, festival loop/reset.
