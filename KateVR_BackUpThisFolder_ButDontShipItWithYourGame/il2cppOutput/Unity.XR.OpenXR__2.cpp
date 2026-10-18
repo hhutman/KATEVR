@@ -2501,7 +2501,7 @@ IL2CPP_EXTERN_C uint8_t STDCALL xr_performance_settings_setPerformanceLevel(int3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45534
+// Method Definition Index: 45537
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* QuestProTouchController_get_thumbstick_m1C3A3F0EB03EADF30E45A98D042F22CE50BBD4B4 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2510,7 +2510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45535
+// Method Definition Index: 45538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstick_m06DBDA359DEBAC02DC1C759030AEEC5251EDB161 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2521,7 +2521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstick_m
 		return;
 	}
 }
-// Method Definition Index: 45536
+// Method Definition Index: 45539
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_grip_m921D25A0E8ABE99CBDC6EC709BC5707CDEFED223 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2530,7 +2530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45537
+// Method Definition Index: 45540
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_grip_m1D1647F0EA2BE27410476A0203B045F09CE150AF (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2541,7 +2541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_grip_m1D1647
 		return;
 	}
 }
-// Method Definition Index: 45538
+// Method Definition Index: 45541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_gripPressed_m4C30FA985480667BF3E198FEDA4B56E1CB8276DA (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2550,7 +2550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45539
+// Method Definition Index: 45542
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_gripPressed_mA0DE041B4AD0C59AE3237E2A17DA2D34A69CA33B (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2561,7 +2561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_gripPressed_
 		return;
 	}
 }
-// Method Definition Index: 45540
+// Method Definition Index: 45543
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_menu_mACAD0CB2F80F3539A5A3E09BECE5F0F24BAD7DF0 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2570,7 +2570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45541
+// Method Definition Index: 45544
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_menu_mAB5E92C1E7821983B68D14328233B69C4932B454 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2581,7 +2581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_menu_mAB5E92
 		return;
 	}
 }
-// Method Definition Index: 45542
+// Method Definition Index: 45545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_primaryButton_m62727F56B859150428028230D26284002C7646BE (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2590,7 +2590,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45543
+// Method Definition Index: 45546
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryButton_mF43BEDCBE7CF91840482438731F99AA27CA8CD69 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2601,7 +2601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryButto
 		return;
 	}
 }
-// Method Definition Index: 45544
+// Method Definition Index: 45547
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_primaryTouched_mD9CFB7AAB7B38D7FE614859097AA6E3B64E94C3B (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2610,7 +2610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45545
+// Method Definition Index: 45548
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryTouched_m05F0C10B7E6734EE7F515F24376E6EEEA866F679 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2621,7 +2621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryTouch
 		return;
 	}
 }
-// Method Definition Index: 45546
+// Method Definition Index: 45549
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_secondaryButton_m4B6DE457BE14AC660FAE570B4AC4766FB647A7EC (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2630,7 +2630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45547
+// Method Definition Index: 45550
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryButton_mB4E8D69CA13B4E5C5D18C11F3B2E8B963952C68B (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2641,7 +2641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryBut
 		return;
 	}
 }
-// Method Definition Index: 45548
+// Method Definition Index: 45551
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_secondaryTouched_m8082544FD52A46184C8ABAF982CD7C2A1A82BED6 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2650,7 +2650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45549
+// Method Definition Index: 45552
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryTouched_m649CDA1613BA1D690513BA5E4036C012BA12028C (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2661,7 +2661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryTou
 		return;
 	}
 }
-// Method Definition Index: 45550
+// Method Definition Index: 45553
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_trigger_mB544B98F41512834BB39699B368C51C46BA2AD7A (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2670,7 +2670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45551
+// Method Definition Index: 45554
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_trigger_mEEF4E8B683D2E7B820DAA291A28F5BF12FFA49D5 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2681,7 +2681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_trigger_mEEF
 		return;
 	}
 }
-// Method Definition Index: 45552
+// Method Definition Index: 45555
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_triggerPressed_m68DBAA93C2EE833BA04C31D6856E0D2303618FFE (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2690,7 +2690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45553
+// Method Definition Index: 45556
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerPressed_m74BC2E0B9D960B5240B3CAA8EAAB20816027D95A (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2701,7 +2701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerPress
 		return;
 	}
 }
-// Method Definition Index: 45554
+// Method Definition Index: 45557
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_triggerTouched_m2C4EC66672C5CD9474157E796CE97EF64C1FA0AC (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2710,7 +2710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45555
+// Method Definition Index: 45558
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerTouched_mE523D9E90458FDE600C414EFEEB959D48B8E85E5 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2721,7 +2721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerTouch
 		return;
 	}
 }
-// Method Definition Index: 45556
+// Method Definition Index: 45559
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_thumbstickClicked_m9E9493D3EEFE69322696C90C2E4AA78AB94C88A7 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2730,7 +2730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45557
+// Method Definition Index: 45560
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickClicked_m317C30157887831A7FF3AE524CF196A67EE73043 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2741,7 +2741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickCl
 		return;
 	}
 }
-// Method Definition Index: 45558
+// Method Definition Index: 45561
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_thumbstickTouched_m11999B8EAE786D3E938713E5E9FA78DA324A26EC (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2750,7 +2750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45559
+// Method Definition Index: 45562
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickTouched_m0A6DC8778E389CB05FDCCC593C623B77501F1EA4 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2761,7 +2761,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickTo
 		return;
 	}
 }
-// Method Definition Index: 45560
+// Method Definition Index: 45563
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_thumbrestTouched_m3BD157BF9480F50B260FBB2FB377EE5CC4243105 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2770,7 +2770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45561
+// Method Definition Index: 45564
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestTouched_mB4971A44F4E3448BA985B0705E523F72467F99E0 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2781,7 +2781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestTou
 		return;
 	}
 }
-// Method Definition Index: 45562
+// Method Definition Index: 45565
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* QuestProTouchController_get_devicePose_m5AFCFA9A7951F4EC3AE30744BDE9FF6A1B68FA5A (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2790,7 +2790,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45563
+// Method Definition Index: 45566
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePose_m008DDD20267EF56D298AA0AEC1E1BC884A599F79 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2801,7 +2801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePose_m
 		return;
 	}
 }
-// Method Definition Index: 45564
+// Method Definition Index: 45567
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* QuestProTouchController_get_pointer_m9DFF137C2DBD8E51F6C42116247D25A6903CF1FF (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2810,7 +2810,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45565
+// Method Definition Index: 45568
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointer_mDE0C5B3AFFDF284F7FDC251BBAF25947C4441C30 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2821,7 +2821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointer_mDE0
 		return;
 	}
 }
-// Method Definition Index: 45566
+// Method Definition Index: 45569
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_isTracked_mCB6AF823475DD793A8B3621664F813575BCD3A92 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2830,7 +2830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45567
+// Method Definition Index: 45570
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_isTracked_m2AE23CCEFBFF77B5B2B1267C393EBE869B90C9C7 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2841,7 +2841,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_isTracked_m2
 		return;
 	}
 }
-// Method Definition Index: 45568
+// Method Definition Index: 45571
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* QuestProTouchController_get_trackingState_m9AB734A21A1C16E7B0A91B7CDE663A2F96147CEC (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2850,7 +2850,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45569
+// Method Definition Index: 45572
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_trackingState_m9E1BEC06B4B6B9FCF5AB308DB7DBA94F7ED619D4 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2861,7 +2861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_trackingStat
 		return;
 	}
 }
-// Method Definition Index: 45570
+// Method Definition Index: 45573
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* QuestProTouchController_get_devicePosition_m7AFED74672A2C8CA76D01154CF124EE936A532E4 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2870,7 +2870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45571
+// Method Definition Index: 45574
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePosition_mB340F6B0EFD84BC5EB3E652F21F8DD90ED05E0BE (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2881,7 +2881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePositi
 		return;
 	}
 }
-// Method Definition Index: 45572
+// Method Definition Index: 45575
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* QuestProTouchController_get_deviceRotation_m42FB3C352A8FF49452CA045FD5182C1BC313FAF3 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2890,7 +2890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45573
+// Method Definition Index: 45576
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_deviceRotation_m866DB9290CD9082276647B6CC1F8BA3FDF89E1A0 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2901,7 +2901,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_deviceRotati
 		return;
 	}
 }
-// Method Definition Index: 45574
+// Method Definition Index: 45577
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* QuestProTouchController_get_pointerPosition_m22282B3666AAFA35F9F74C053E4FD492FCA8ADD8 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2910,7 +2910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45575
+// Method Definition Index: 45578
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerPosition_mA18456E468D37E719C9AD0B86E23E763C3978003 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2921,7 +2921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerPosit
 		return;
 	}
 }
-// Method Definition Index: 45576
+// Method Definition Index: 45579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* QuestProTouchController_get_pointerRotation_m5403184278EAEB80A180F7013D55B2563347FEF5 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2930,7 +2930,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45577
+// Method Definition Index: 45580
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerRotation_mBBC790250C727B3464191B16C5A810FE5C4D86B2 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2941,7 +2941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerRotat
 		return;
 	}
 }
-// Method Definition Index: 45578
+// Method Definition Index: 45581
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* QuestProTouchController_get_haptic_m1B4D531B94C9107A192EA67EB4B596139E5143A3 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2950,7 +2950,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45579
+// Method Definition Index: 45582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_haptic_m554DD119F9791A90CBCAF94DA4E33350F3E55DE3 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2961,7 +2961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_haptic_m554D
 		return;
 	}
 }
-// Method Definition Index: 45580
+// Method Definition Index: 45583
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_thumbrestForce_m3AE1D97130B7246337525F3AC74E3414ECC8D52E (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2970,7 +2970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45581
+// Method Definition Index: 45584
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestForce_m9A21EFB1A27F322BB5673BB8CF9F13C823ACAE34 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2981,7 +2981,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestFor
 		return;
 	}
 }
-// Method Definition Index: 45582
+// Method Definition Index: 45585
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_stylusForce_m96ADE557652F4815C51146C81E6AF55D800F3A78 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2990,7 +2990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45583
+// Method Definition Index: 45586
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_stylusForce_m8FE332B3CC8C606259762DB7E88B0BBFB4CD7AF1 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3001,7 +3001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_stylusForce_
 		return;
 	}
 }
-// Method Definition Index: 45584
+// Method Definition Index: 45587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_triggerCurl_m91E3C9577B5B81E04F7F39363AFA5980EF346E47 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3010,7 +3010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45585
+// Method Definition Index: 45588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerCurl_m741BC2CA64D72F578670AE0DF6947CBA81E12C98 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3021,7 +3021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerCurl_
 		return;
 	}
 }
-// Method Definition Index: 45586
+// Method Definition Index: 45589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* QuestProTouchController_get_triggerSlide_m20640EB429585A92CE3F6E66248DD9A8AB160E2D (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3030,7 +3030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45587
+// Method Definition Index: 45590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerSlide_m7ADF0BB23A528DD621C168EC7B11A2DC82D6EB08 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3041,7 +3041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerSlide
 		return;
 	}
 }
-// Method Definition Index: 45588
+// Method Definition Index: 45591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_triggerProximity_m6094AA99D4F2C1079C2A8A3C8D6805C980FF47F9 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3050,7 +3050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45589
+// Method Definition Index: 45592
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerProximity_mE29AA33740F8228E856C547F9DAF8606FD7E7CA4 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3061,7 +3061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerProxi
 		return;
 	}
 }
-// Method Definition Index: 45590
+// Method Definition Index: 45593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* QuestProTouchController_get_thumbProximity_m003890EAFAB51402BAE2F4C0DDFB9CF902784D95 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3070,7 +3070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45591
+// Method Definition Index: 45594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbProximity_m179FEEB1AE4D34F0EED42D75AE81D66BDD0C38A9 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3081,7 +3081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbProximi
 		return;
 	}
 }
-// Method Definition Index: 45592
+// Method Definition Index: 45595
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* QuestProTouchController_get_hapticTrigger_m15F7B980EE3CFA70231E2F65D693A67DBED445EB (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3090,7 +3090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45593
+// Method Definition Index: 45596
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticTrigger_mBC4A22D74B68439AAFF134AFE9F09EEE7087180F (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3101,7 +3101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticTrigge
 		return;
 	}
 }
-// Method Definition Index: 45594
+// Method Definition Index: 45597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* QuestProTouchController_get_hapticThumb_m950EBE73F87328DA8AD19E940957B858D864FA96 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3110,7 +3110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45595
+// Method Definition Index: 45598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticThumb_m598F4B9279FD476D537E7B83D88C0D120681040C (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3121,7 +3121,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticThumb_
 		return;
 	}
 }
-// Method Definition Index: 45596
+// Method Definition Index: 45599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_FinishSetup_mB1C62B3D47C405635DF0D2C98509DAB9EE669738 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3267,7 +3267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController_FinishSetup_mB1C
 		return;
 	}
 }
-// Method Definition Index: 45597
+// Method Definition Index: 45600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController__ctor_m9B0F6F958FFA6612E9EE483305C558F0A06C3370 (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3284,7 +3284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QuestProTouchController__ctor_m9B0F6F958
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45598
+// Method Definition Index: 45601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_OnEnabledChange_mEDBAD6B263E8F121353781F13F0F0BA555DC7BA4 (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3326,7 +3326,7 @@ IL_002a:
 		return;
 	}
 }
-// Method Definition Index: 45599
+// Method Definition Index: 45602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_RegisterDeviceLayout_m7BD81F73E6945308410329924AA7B6E3B5A7BA8C (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3365,7 +3365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_RegisterDeviceL
 		return;
 	}
 }
-// Method Definition Index: 45600
+// Method Definition Index: 45603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_UnregisterDeviceLayout_m0CBD351E59398369FC8EA5BF22AF9256DB0A9BD6 (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3383,7 +3383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_UnregisterDevic
 		return;
 	}
 }
-// Method Definition Index: 45601
+// Method Definition Index: 45604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MicrosoftHandInteraction_GetDeviceLayoutName_m32AB7DF31D2C85FB52CA205EE65071485711BAD6 (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3397,7 +3397,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MicrosoftHandInteraction_GetDeviceL
 		return _stringLiteral009885D14656573689CACD6C8913F84E5E8C27E0;
 	}
 }
-// Method Definition Index: 45602
+// Method Definition Index: 45605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_RegisterActionMapsWithRuntime_m4547460258DA73EC03C1BE3583FC393D675677B8 (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3781,7 +3781,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction_RegisterActionM
 		return;
 	}
 }
-// Method Definition Index: 45603
+// Method Definition Index: 45606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction__ctor_m5707B3844942385EA6565C5FA7F2A766EA69A7B1 (MicrosoftHandInteraction_t85C6C11118DC64193AB6604049AE7E8D5E2EAC33* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3806,7 +3806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftHandInteraction__ctor_m5707B384
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45604
+// Method Definition Index: 45607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* HoloLensHand_get_select_m4DB9693E79450BC083460B53A732C51FDCD22C81 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3815,7 +3815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45605
+// Method Definition Index: 45608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_select_m7A70E18040FADAF1460D5FF3F8455D97FB4CBA80 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3826,7 +3826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_select_m7A70E18040FADAF
 		return;
 	}
 }
-// Method Definition Index: 45606
+// Method Definition Index: 45609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* HoloLensHand_get_selectPressed_mD28978DDEEC8F4ADE79C2196FC9525AC78385A3B (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3835,7 +3835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45607
+// Method Definition Index: 45610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_selectPressed_m586B7A32EB519785F4F004AE3DFB59D6439893B5 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3846,7 +3846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_selectPressed_m586B7A32
 		return;
 	}
 }
-// Method Definition Index: 45608
+// Method Definition Index: 45611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* HoloLensHand_get_squeeze_mB08A905A7AC303552751FF57DDA4F38E3652E3EC (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3855,7 +3855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45609
+// Method Definition Index: 45612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_squeeze_m3831542A8A964149DA4AAB6A448F3B69D74B9BAC (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3866,7 +3866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_squeeze_m3831542A8A9641
 		return;
 	}
 }
-// Method Definition Index: 45610
+// Method Definition Index: 45613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* HoloLensHand_get_squeezePressed_mF16F0221910E17D2B20E04D1CC23CD5C5A0EABBE (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3875,7 +3875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45611
+// Method Definition Index: 45614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_squeezePressed_mE9A1F74616800FF0B5F8C75A5AD44F59FEE2FDD8 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3886,7 +3886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_squeezePressed_mE9A1F74
 		return;
 	}
 }
-// Method Definition Index: 45612
+// Method Definition Index: 45615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* HoloLensHand_get_devicePose_m4FD39D674E8EC647F74AA30F18F363EEB9358088 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3895,7 +3895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45613
+// Method Definition Index: 45616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePose_m19E6C6E3CF7D04AD6EF67707A67123AB7EA957CE (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3906,7 +3906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePose_m19E6C6E3CF7
 		return;
 	}
 }
-// Method Definition Index: 45614
+// Method Definition Index: 45617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* HoloLensHand_get_pointer_m03CE0924A23152142743D3DB42AE852D076EEE3A (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3915,7 +3915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45615
+// Method Definition Index: 45618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointer_mB9C69FFC3C34D9261289D1CC0C9A857785CAA302 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3926,7 +3926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointer_mB9C69FFC3C34D9
 		return;
 	}
 }
-// Method Definition Index: 45616
+// Method Definition Index: 45619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* HoloLensHand_get_isTracked_m8F7DD216E30FA251E97C643B497324D6942E367D (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3935,7 +3935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45617
+// Method Definition Index: 45620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_isTracked_m52E4936B167C7DB6A53ED1ABF94B8F3E7D17951B (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3946,7 +3946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_isTracked_m52E4936B167C
 		return;
 	}
 }
-// Method Definition Index: 45618
+// Method Definition Index: 45621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* HoloLensHand_get_trackingState_m7B8CB1E48F8D21B3605122E07C5F6EA33AEE6BCF (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3955,7 +3955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45619
+// Method Definition Index: 45622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_trackingState_m93F5CACFD05E63BE17F162BECA9B51B5D5C9C4DC (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3966,7 +3966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_trackingState_m93F5CACF
 		return;
 	}
 }
-// Method Definition Index: 45620
+// Method Definition Index: 45623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* HoloLensHand_get_devicePosition_m5BDFD393A4302101F9028EA8A29B070D69E1B65C (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3975,7 +3975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45621
+// Method Definition Index: 45624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePosition_mA5B9C4AA143291DC184164FB10B636BE1EC576FE (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3986,7 +3986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePosition_mA5B9C4A
 		return;
 	}
 }
-// Method Definition Index: 45622
+// Method Definition Index: 45625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* HoloLensHand_get_deviceRotation_mC6996051F7571B8BF1790C19A387A738851C750D (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3995,7 +3995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45623
+// Method Definition Index: 45626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_deviceRotation_m61DBEE52969492D64513A61B42EDF7C1055F12A8 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4006,7 +4006,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_deviceRotation_m61DBEE5
 		return;
 	}
 }
-// Method Definition Index: 45624
+// Method Definition Index: 45627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* HoloLensHand_get_pointerPosition_mBD0FCE6F229344BEC549639C883025E7053F6755 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4015,7 +4015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45625
+// Method Definition Index: 45628
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerPosition_mC8303D9F9BF94BD844F1476A7EA1A20F5D8C44EC (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4026,7 +4026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerPosition_mC8303D
 		return;
 	}
 }
-// Method Definition Index: 45626
+// Method Definition Index: 45629
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* HoloLensHand_get_pointerRotation_mC45F759969E3234E765E80F84C5A8F587F0F81F5 (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4035,7 +4035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45627
+// Method Definition Index: 45630
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerRotation_m8FEB99991F316AF331BAEA2FB4E78F0CA94E100D (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4046,7 +4046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerRotation_m8FEB99
 		return;
 	}
 }
-// Method Definition Index: 45628
+// Method Definition Index: 45631
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_FinishSetup_m39C786D046D41C6D2F547BDB6E6285DE73E31C5D (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4114,7 +4114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand_FinishSetup_m39C786D046D41C
 		return;
 	}
 }
-// Method Definition Index: 45629
+// Method Definition Index: 45632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand__ctor_m0C52B41E67889CAE5F25870BF1109EA2C70849AF (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4131,7 +4131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HoloLensHand__ctor_m0C52B41E67889CAE5F25
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45630
+// Method Definition Index: 45633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_RegisterDeviceLayout_m24C7B7978E3D06C0C246BBA346DEDAB00E3D92C8 (MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F09* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4170,7 +4170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_Registe
 		return;
 	}
 }
-// Method Definition Index: 45631
+// Method Definition Index: 45634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_UnregisterDeviceLayout_m1EFE46748F5135B10CB3E43C8A63966A8B7F0CEA (MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F09* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4188,7 +4188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_Unregis
 		return;
 	}
 }
-// Method Definition Index: 45632
+// Method Definition Index: 45635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MicrosoftMotionControllerProfile_GetDeviceLayoutName_m4AEA238CA5198A0FA465CA00C78C86E2F49CA7C1 (MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F09* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4202,7 +4202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MicrosoftMotionControllerProfile_Ge
 		return _stringLiteral69CF0F165C1AB396425F23A88DEE45C445EE8FA9;
 	}
 }
-// Method Definition Index: 45633
+// Method Definition Index: 45636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_RegisterActionMapsWithRuntime_m1CC832BE7477EF89961D9E9979A35BA01610E95F (MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F09* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4920,7 +4920,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile_Registe
 		return;
 	}
 }
-// Method Definition Index: 45634
+// Method Definition Index: 45637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile__ctor_m9D56B038197A627B9177A0F7E490079B7489B5B0 (MicrosoftMotionControllerProfile_t53D1023E3C1D2813F704A2EF57F7F980FD558F09* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4945,7 +4945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MicrosoftMotionControllerProfile__ctor_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45635
+// Method Definition Index: 45638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* WMRSpatialController_get_joystick_m27A76A4F88B9378F8F974E72E9BE54C227EACF52 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4954,7 +4954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45636
+// Method Definition Index: 45639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystick_m45C2D5C13F3220B61D94610588EFA33009C002B9 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4965,7 +4965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystick_m45C2D
 		return;
 	}
 }
-// Method Definition Index: 45637
+// Method Definition Index: 45640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* WMRSpatialController_get_touchpad_mA85FB9A5851FB29D05B6D12D3CAA22EEE0E30FD4 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4974,7 +4974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45638
+// Method Definition Index: 45641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpad_m5F1730A18B413449A2335818234E0001A6C7E557 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4985,7 +4985,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpad_m5F173
 		return;
 	}
 }
-// Method Definition Index: 45639
+// Method Definition Index: 45642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* WMRSpatialController_get_grip_mF4870B2606AA25142C0717D9A0B7D278D81E431B (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4994,7 +4994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45640
+// Method Definition Index: 45643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_grip_m3C37B2BDC88753C28209711E4C6E28935B04F905 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5005,7 +5005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_grip_m3C37B2BDC
 		return;
 	}
 }
-// Method Definition Index: 45641
+// Method Definition Index: 45644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_gripPressed_m62A6F8F37FFBE3DA67839983ED69DF260CEA405E (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5014,7 +5014,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45642
+// Method Definition Index: 45645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_gripPressed_mE17E73DF3FDDF6A53856F85A29EB903C9E69D393 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5025,7 +5025,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_gripPressed_mE1
 		return;
 	}
 }
-// Method Definition Index: 45643
+// Method Definition Index: 45646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_menu_m9218CD22E19409A0FAF8EF13032CD53F428F60DD (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5034,7 +5034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45644
+// Method Definition Index: 45647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_menu_m5444CC59F1176B8995EDB43918E8FA6BA0BA585D (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5045,7 +5045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_menu_m5444CC59F
 		return;
 	}
 }
-// Method Definition Index: 45645
+// Method Definition Index: 45648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* WMRSpatialController_get_trigger_mCC5C719A767C4497EE0174906183F8FCCCE894DA (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5054,7 +5054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45646
+// Method Definition Index: 45649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_trigger_mA5DA60A29E1BC1000A3548F08F941BF5C791FBFE (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5065,7 +5065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_trigger_mA5DA60
 		return;
 	}
 }
-// Method Definition Index: 45647
+// Method Definition Index: 45650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_triggerPressed_m94DD79DA99921379033A3DEB73953218B1FA1955 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5074,7 +5074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45648
+// Method Definition Index: 45651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_triggerPressed_mBFE586AA6205036924673A19BBAE2838744EF19F (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5085,7 +5085,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_triggerPressed_
 		return;
 	}
 }
-// Method Definition Index: 45649
+// Method Definition Index: 45652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_joystickClicked_m516C32223237FEDB3F5C398C462E20A3C056E792 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5094,7 +5094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45650
+// Method Definition Index: 45653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystickClicked_mE7CB11D577A7EBD59C7B83E83D73DC0B266DE4B8 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5105,7 +5105,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystickClicked
 		return;
 	}
 }
-// Method Definition Index: 45651
+// Method Definition Index: 45654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_touchpadClicked_mF83170DD903CBBCC300FF7A9003CC189E59171D6 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5114,7 +5114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45652
+// Method Definition Index: 45655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadClicked_m0882A355BF84A246F9D24F1A2DFD7F7751BE3366 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5125,7 +5125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadClicked
 		return;
 	}
 }
-// Method Definition Index: 45653
+// Method Definition Index: 45656
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_touchpadTouched_mBE6894CE810D541504B932DDA76C80F218B6A7B0 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5134,7 +5134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45654
+// Method Definition Index: 45657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadTouched_m7881BC2F92B81FFEF53C77985F7E29117FEC587C (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5145,7 +5145,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadTouched
 		return;
 	}
 }
-// Method Definition Index: 45655
+// Method Definition Index: 45658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* WMRSpatialController_get_devicePose_mB8AFD5292515B99588B23D015BBC6B4A4BA85C74 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5154,7 +5154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45656
+// Method Definition Index: 45659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePose_mDA804F37F60E61B4CE235D0582C0C5E017415DBA (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5165,7 +5165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePose_mDA8
 		return;
 	}
 }
-// Method Definition Index: 45657
+// Method Definition Index: 45660
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* WMRSpatialController_get_pointer_m925441E6BFE5C1FC54CA3B78035F85118237B186 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5174,7 +5174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45658
+// Method Definition Index: 45661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointer_mF962DCE47D42EE22C4FB85F72753FF0E0117B560 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5185,7 +5185,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointer_mF962DC
 		return;
 	}
 }
-// Method Definition Index: 45659
+// Method Definition Index: 45662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* WMRSpatialController_get_isTracked_m991AE17E1320CC7E211A2A1DBA545E076F24C583 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5194,7 +5194,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45660
+// Method Definition Index: 45663
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_isTracked_mB2F9887976872B20EB6D8124F4241248B4C35B08 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5205,7 +5205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_isTracked_mB2F9
 		return;
 	}
 }
-// Method Definition Index: 45661
+// Method Definition Index: 45664
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* WMRSpatialController_get_trackingState_m1715E060863C7F54D0CD2E393E35ADBA61AEF727 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5214,7 +5214,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45662
+// Method Definition Index: 45665
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_trackingState_mD47BB86F5E16A950A84603B6D6CAA1DD40DD5FE2 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5225,7 +5225,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_trackingState_m
 		return;
 	}
 }
-// Method Definition Index: 45663
+// Method Definition Index: 45666
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* WMRSpatialController_get_devicePosition_m0D0A1C3EE1454C5B3FAC3841C4B188A8AA533D04 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5234,7 +5234,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45664
+// Method Definition Index: 45667
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePosition_mFC0C47639EACEBFBA35602451081F5ED567C7F54 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5245,7 +5245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePosition_
 		return;
 	}
 }
-// Method Definition Index: 45665
+// Method Definition Index: 45668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* WMRSpatialController_get_deviceRotation_m8E64BA4107AC63C0BE1BB49F2F8BA30D04394AAD (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5254,7 +5254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45666
+// Method Definition Index: 45669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_deviceRotation_m4007261B3CB2BCEE9E2E64EE8479BEBABD3D7B56 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5265,7 +5265,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_deviceRotation_
 		return;
 	}
 }
-// Method Definition Index: 45667
+// Method Definition Index: 45670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* WMRSpatialController_get_pointerPosition_m80A6DA3D1ED7E6B0E026B1E921570F8486E5B27C (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5274,7 +5274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45668
+// Method Definition Index: 45671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerPosition_mE36324B14942DC2549A100DB5AA28A387F05E610 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5285,7 +5285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerPosition
 		return;
 	}
 }
-// Method Definition Index: 45669
+// Method Definition Index: 45672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* WMRSpatialController_get_pointerRotation_m2B4A1366A53F722BC20678DA2ED3DCEEF6FF5254 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5294,7 +5294,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45670
+// Method Definition Index: 45673
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerRotation_m38309A80082E28959BC6700DAA7DA30D275D4F96 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5305,7 +5305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerRotation
 		return;
 	}
 }
-// Method Definition Index: 45671
+// Method Definition Index: 45674
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* WMRSpatialController_get_haptic_mDEC63C7426BE26ED932ADDF221EC854CBEC8DB3B (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5314,7 +5314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45672
+// Method Definition Index: 45675
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_haptic_m889F1DA9C1E76E8AE80FB18CF130B7B8E77BC0F2 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5325,7 +5325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_set_haptic_m889F1DA
 		return;
 	}
 }
-// Method Definition Index: 45673
+// Method Definition Index: 45676
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_FinishSetup_m0CB8938FC44A382EEEB5C9AA6164F27EC8B548BE (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5423,7 +5423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController_FinishSetup_m0CB893
 		return;
 	}
 }
-// Method Definition Index: 45674
+// Method Definition Index: 45677
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController__ctor_m49C159E66A6DB6203AD017DDAC560B7C87C879F0 (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5440,7 +5440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WMRSpatialController__ctor_m49C159E66A6D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45675
+// Method Definition Index: 45678
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_RegisterDeviceLayout_m5E68A971B5F935EF8638A6C843B6E8F64203F0C3 (OculusTouchControllerProfile_t182BD58E91EF5EFE8FC3F3DCDECD67E87EB3BEC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5479,7 +5479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_RegisterDev
 		return;
 	}
 }
-// Method Definition Index: 45676
+// Method Definition Index: 45679
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_UnregisterDeviceLayout_m6C0CE3D8E269D1613D29BDB9B97746E785D1D923 (OculusTouchControllerProfile_t182BD58E91EF5EFE8FC3F3DCDECD67E87EB3BEC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5497,7 +5497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_UnregisterD
 		return;
 	}
 }
-// Method Definition Index: 45677
+// Method Definition Index: 45680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OculusTouchControllerProfile_GetDeviceLayoutName_m855577242A8EFB8AA8BA2666B0B72423E750A04D (OculusTouchControllerProfile_t182BD58E91EF5EFE8FC3F3DCDECD67E87EB3BEC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5511,7 +5511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* OculusTouchControllerProfile_GetDev
 		return _stringLiteral00796C72379AAD88280C98B0098FB4C080EAB47F;
 	}
 }
-// Method Definition Index: 45678
+// Method Definition Index: 45681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_RegisterActionMapsWithRuntime_m2ED96DED9B418F665C14BF2C9648D68C8CEE7AA7 (OculusTouchControllerProfile_t182BD58E91EF5EFE8FC3F3DCDECD67E87EB3BEC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6581,7 +6581,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile_RegisterAct
 		return;
 	}
 }
-// Method Definition Index: 45679
+// Method Definition Index: 45682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile__ctor_m097F7AA44B3F3A8E80743F1C757F4C75F87471EC (OculusTouchControllerProfile_t182BD58E91EF5EFE8FC3F3DCDECD67E87EB3BEC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6606,7 +6606,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchControllerProfile__ctor_m097F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45680
+// Method Definition Index: 45683
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* OculusTouchController_get_thumbstick_m5458D5521A6DDD3ABCBA84763212CF0D3145DA26 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6615,7 +6615,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45681
+// Method Definition Index: 45684
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_m01111A2D2B09B523459288A9ECE08A6B78B9CDFB (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6626,7 +6626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_m01
 		return;
 	}
 }
-// Method Definition Index: 45682
+// Method Definition Index: 45685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* OculusTouchController_get_grip_m7C53442D91F4BE19E3F69FBDCD7299526558288A (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6635,7 +6635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45683
+// Method Definition Index: 45686
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_m62D13E14A528205D030A39696CE0ED88F4A54ED5 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6646,7 +6646,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_m62D13E14
 		return;
 	}
 }
-// Method Definition Index: 45684
+// Method Definition Index: 45687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_gripPressed_m359D6F52608DA61457F5C8A7E939725A83DAE399 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6655,7 +6655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45685
+// Method Definition Index: 45688
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m3DA395A0D58D4CF39AA07F7DDE54820CE10C9E1D (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6666,7 +6666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m3
 		return;
 	}
 }
-// Method Definition Index: 45686
+// Method Definition Index: 45689
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_menu_mAE02DFE09E59D951B8D3CBE513356283AABA4EE1 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6675,7 +6675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45687
+// Method Definition Index: 45690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_menu_mAD61EF4CAD63A6380F17757C7B768FE22EB961F5 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6686,7 +6686,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_menu_mAD61EF4C
 		return;
 	}
 }
-// Method Definition Index: 45688
+// Method Definition Index: 45691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_primaryButton_m2EE2CBDE8BF5006F2001E17BF1217761155E1CDE (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6695,7 +6695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45689
+// Method Definition Index: 45692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_m98805E1922D2775E3CB77986FF182E23E295B8E0 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6706,7 +6706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_
 		return;
 	}
 }
-// Method Definition Index: 45690
+// Method Definition Index: 45693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_primaryTouched_m4B326B982AC5665630CA911943A3A7A1491C1118 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6715,7 +6715,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45691
+// Method Definition Index: 45694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched_m3FC6488E2D947352B92A900603D004C4958E9A61 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6726,7 +6726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched
 		return;
 	}
 }
-// Method Definition Index: 45692
+// Method Definition Index: 45695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_secondaryButton_m22118D08FD074D220BFFDCC516E8E93DB3FD62EC (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6735,7 +6735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45693
+// Method Definition Index: 45696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButton_m5643634AC8C1D60E52CA39961DEE3313B7623C38 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6746,7 +6746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButto
 		return;
 	}
 }
-// Method Definition Index: 45694
+// Method Definition Index: 45697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_secondaryTouched_mD974030E68BAD04FC9695D42037C8B799B9B40E9 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6755,7 +6755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45695
+// Method Definition Index: 45698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouched_m933F2C0C8BA8DF3090929AF58A7999A99F8D8123 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6766,7 +6766,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouch
 		return;
 	}
 }
-// Method Definition Index: 45696
+// Method Definition Index: 45699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* OculusTouchController_get_trigger_mFF9A425D279EC088EB0830D50A60F36ED2636C5D (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6775,7 +6775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45697
+// Method Definition Index: 45700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m6EDCF420C9305E6C1C1092AF6A5411D1CDF9ED20 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6786,7 +6786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m6EDCF
 		return;
 	}
 }
-// Method Definition Index: 45698
+// Method Definition Index: 45701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_triggerPressed_mB8C2DD2B370E9ADE132995E6BAA130B3B103CA64 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6795,7 +6795,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45699
+// Method Definition Index: 45702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed_m9906811FA9FF2B86AF95ABBADEEA1109689411BD (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6806,7 +6806,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed
 		return;
 	}
 }
-// Method Definition Index: 45700
+// Method Definition Index: 45703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_triggerTouched_mFB89ACD358AA8A8246D1486600588462AB14D07F (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6815,7 +6815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45701
+// Method Definition Index: 45704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched_m5814EB34A5A1F53359CC218258289806B81E5EC8 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6826,7 +6826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched
 		return;
 	}
 }
-// Method Definition Index: 45702
+// Method Definition Index: 45705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_thumbstickClicked_mAAE2388548BECD6BEA90233FE9B9F90D6222BA4F (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6835,7 +6835,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45703
+// Method Definition Index: 45706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClicked_m8818E79FE6C3BD6449CE044C1882DD0F6F6DFDC2 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6846,7 +6846,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClic
 		return;
 	}
 }
-// Method Definition Index: 45704
+// Method Definition Index: 45707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_thumbstickTouched_m1F0AAAFEC9B7D2883A3F132A1D8EF8268413D873 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6855,7 +6855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45705
+// Method Definition Index: 45708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouched_mF5E1476440E6DE77D2A589480486743CE0B74428 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6866,7 +6866,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouc
 		return;
 	}
 }
-// Method Definition Index: 45706
+// Method Definition Index: 45709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_thumbrestTouched_m07C8A238D1E5CF1F6DE4A4459631AD02BFBBE379 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6875,7 +6875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45707
+// Method Definition Index: 45710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbrestTouched_m9BF86704CAE5AC2AADC4F5180974045203C40F7F (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6886,7 +6886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbrestTouch
 		return;
 	}
 }
-// Method Definition Index: 45708
+// Method Definition Index: 45711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* OculusTouchController_get_devicePose_mC351B33CA0D69B959B1D5B502AEC6C4B21A9C04E (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6895,7 +6895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45709
+// Method Definition Index: 45712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePose_m196C6D26091F77A2938B83D671B738691C6BBD5F (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6906,7 +6906,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePose_m19
 		return;
 	}
 }
-// Method Definition Index: 45710
+// Method Definition Index: 45713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* OculusTouchController_get_pointer_mFDEB177EBABF60633FED5FD0BA36C6031DCC385E (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6915,7 +6915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45711
+// Method Definition Index: 45714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointer_mF054C318BE09F667C53B87D061B7EA6F81EAEFEC (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6926,7 +6926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointer_mF054C
 		return;
 	}
 }
-// Method Definition Index: 45712
+// Method Definition Index: 45715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* OculusTouchController_get_isTracked_mFA9C232218A21928C83423C6CC060D8D77221F7B (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6935,7 +6935,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45713
+// Method Definition Index: 45716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_isTracked_m2328E3620924C0D2D16A894125DFF79E113884A4 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6946,7 +6946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_isTracked_m232
 		return;
 	}
 }
-// Method Definition Index: 45714
+// Method Definition Index: 45717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* OculusTouchController_get_trackingState_m2C0803A1B2A337BB2BD4D96E94209E02127CB769 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6955,7 +6955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45715
+// Method Definition Index: 45718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_trackingState_mC3C06CF2B8996262E4E542D25A43D13B3C54C66A (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6966,7 +6966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_trackingState_
 		return;
 	}
 }
-// Method Definition Index: 45716
+// Method Definition Index: 45719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_devicePosition_m8E617EB3988B3364EBA37F8675A140D3B43F7420 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6975,7 +6975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45717
+// Method Definition Index: 45720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePosition_mB362E45B8E14E7C8B99D588466E5BD7986BFBBE6 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6986,7 +6986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePosition
 		return;
 	}
 }
-// Method Definition Index: 45718
+// Method Definition Index: 45721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* OculusTouchController_get_deviceRotation_m6E05E23F26EBF21A0AB2B4D340DA14780E1F3E09 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6995,7 +6995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45719
+// Method Definition Index: 45722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceRotation_mEC06D9EE2723D9F041D9B92F2B904EF7300019F7 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7006,7 +7006,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceRotation
 		return;
 	}
 }
-// Method Definition Index: 45720
+// Method Definition Index: 45723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* OculusTouchController_get_pointerPosition_mAD8282ED6DC95D9013628E5A5B17550993185BC8 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7015,7 +7015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45721
+// Method Definition Index: 45724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerPosition_mA32557798E2BEC7559649559C88C076B6E77694F (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7026,7 +7026,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerPositio
 		return;
 	}
 }
-// Method Definition Index: 45722
+// Method Definition Index: 45725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* OculusTouchController_get_pointerRotation_m20ACD76D514875A0536C262AD314ACD8D0B5438D (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7035,7 +7035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45723
+// Method Definition Index: 45726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerRotation_m8F791E7DEFB312A3CB5802647257F750B09951D2 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7046,7 +7046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerRotatio
 		return;
 	}
 }
-// Method Definition Index: 45724
+// Method Definition Index: 45727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* OculusTouchController_get_haptic_m2D18530B817DE9D7E8EE62F31C858C447EBAB39A (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7055,7 +7055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45725
+// Method Definition Index: 45728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_haptic_mDBCC52DB8CBB8B1CE9FB6369561ED09CB2BDE95C (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7066,7 +7066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_set_haptic_mDBCC52
 		return;
 	}
 }
-// Method Definition Index: 45726
+// Method Definition Index: 45729
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_FinishSetup_mA1AED1EECAAA3028E04EC6D8F07E64D5931E3263 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7180,7 +7180,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController_FinishSetup_mA1AED
 		return;
 	}
 }
-// Method Definition Index: 45727
+// Method Definition Index: 45730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController__ctor_mF4F6341143A59C7F89BFC9A8DFFCDB40D9D24720 (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7197,7 +7197,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OculusTouchController__ctor_mF4F6341143A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45728
+// Method Definition Index: 45731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PalmPoseInteraction_get_IsAdditive_mFA10CCD3B4BC1750701D8A1B28C0127B8B4479CC (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7205,7 +7205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PalmPoseInteraction_get_IsAdditive_mFA10
 		return (bool)1;
 	}
 }
-// Method Definition Index: 45729
+// Method Definition Index: 45732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PalmPoseInteraction_OnInstanceCreate_m9CD6252D6B2D6D3A8C2DC0B7C2E17F382CDF996C (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, uint64_t ___0_instance, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7213,7 +7213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PalmPoseInteraction_OnInstanceCreate_m9C
 		return (bool)1;
 	}
 }
-// Method Definition Index: 45730
+// Method Definition Index: 45733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PalmPoseInteraction_OnExtensionsReady_mD346FFD2D86A05F31D486151104A525BB568C4F4 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, uint64_t ___0_instance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7243,7 +7243,7 @@ IL_000e:
 		return L_2;
 	}
 }
-// Method Definition Index: 45731
+// Method Definition Index: 45734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_RegisterDeviceLayout_m8237337A8F4D4A9AD72A473C05152D0655CC04ED (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7282,7 +7282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_RegisterDeviceLayout
 		return;
 	}
 }
-// Method Definition Index: 45732
+// Method Definition Index: 45735
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_UnregisterDeviceLayout_m2733795FB5671ECFC77850CA0CF05296DA73A528 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7300,7 +7300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_UnregisterDeviceLayo
 		return;
 	}
 }
-// Method Definition Index: 45733
+// Method Definition Index: 45736
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PalmPoseInteraction_GetDeviceLayoutName_m881549264F53B6CE03143996A71D980B1959DF98 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7314,7 +7314,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PalmPoseInteraction_GetDeviceLayout
 		return _stringLiteralDF3669852BCCCD96E96416086745C76D75F834FE;
 	}
 }
-// Method Definition Index: 45734
+// Method Definition Index: 45737
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_RegisterActionMapsWithRuntime_m0BC5160438CB5865DEDD1920315B22FE8DBC8CA6 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7431,7 +7431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_RegisterActionMapsWi
 		return;
 	}
 }
-// Method Definition Index: 45735
+// Method Definition Index: 45738
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4F2C6136C202242DD33CEC8DB9712B4D27B5AE67* PalmPoseInteraction_AddBindingBasedOnRuntimeAPIVersion_m864A708B3DF6D87F06D7F06D4DC6D36C2063600F (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7502,7 +7502,7 @@ IL_0057:
 		return L_11;
 	}
 }
-// Method Definition Index: 45736
+// Method Definition Index: 45739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction_AddAdditiveActions_m05D6C72D019DBEE9CE4707A7B6D2ACE0A879C914 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, List_1_tE79CEF606A673213C362828940E47A9568818414* ___0_actionMaps, ActionMapConfig_t4BFDEAE00006545E278C521EB2609942E47CA726* ___1_additiveMap, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7740,7 +7740,7 @@ IL_00ba:
 		return;
 	}
 }
-// Method Definition Index: 45737
+// Method Definition Index: 45740
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction__ctor_m7B889CD646EA481723883880921DD7799D3141B6 (PalmPoseInteraction_t1BE0E2A4BA9B82B1B8B8D0CB39207779F858F5CE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7765,7 +7765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPoseInteraction__ctor_m7B889CD646EA4
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45738
+// Method Definition Index: 45741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* PalmPose_get_palmPose_mF527E34C2C005F31C606279D26D194AA8AE3CEFD (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7774,7 +7774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45739
+// Method Definition Index: 45742
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmPose_mA3F5B99B5A9331C15000B5C28D3EFD42790EA094 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7785,7 +7785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmPose_mA3F5B99B5A9331C15
 		return;
 	}
 }
-// Method Definition Index: 45740
+// Method Definition Index: 45743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* PalmPose_get_isTracked_m4C5A0A1E697D7AB4032F4E9332C5CAEBA2EEE102 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7794,7 +7794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45741
+// Method Definition Index: 45744
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_isTracked_mBBCE8C050B82B4E792502874CA97539B9DB57200 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7805,7 +7805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_isTracked_mBBCE8C050B82B4E7
 		return;
 	}
 }
-// Method Definition Index: 45742
+// Method Definition Index: 45745
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* PalmPose_get_trackingState_m0DF700EDB70A2D7878D357FB00E2B67F5E25F052 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7814,7 +7814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45743
+// Method Definition Index: 45746
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_trackingState_m12FD040A92410977A682CF2A98D1B3813459FBF6 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7825,7 +7825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_trackingState_m12FD040A9241
 		return;
 	}
 }
-// Method Definition Index: 45744
+// Method Definition Index: 45747
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* PalmPose_get_devicePosition_mBF6C9D5B2567543606BB10B3834B1765B020B240 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7834,7 +7834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45745
+// Method Definition Index: 45748
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_devicePosition_m56DBBACB931B5D61867F395AB4145BF4A00FFAEA (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7845,7 +7845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_devicePosition_m56DBBACB931
 		return;
 	}
 }
-// Method Definition Index: 45746
+// Method Definition Index: 45749
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* PalmPose_get_deviceRotation_m8C2886E8260922F096707817CCE4D42F3A4507A4 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7854,7 +7854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45747
+// Method Definition Index: 45750
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_deviceRotation_mEB8826BFFB7EAEE1591F078E125BA864412042E6 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7865,7 +7865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_deviceRotation_mEB8826BFFB7
 		return;
 	}
 }
-// Method Definition Index: 45748
+// Method Definition Index: 45751
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* PalmPose_get_palmPosition_m69F4C2E22AD25B0ACF13F612F86C69522CEB9E49 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7874,7 +7874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45749
+// Method Definition Index: 45752
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmPosition_m08FE016FAE8770FCFE96A6CA193B39B6FE9EC9DB (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7885,7 +7885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmPosition_m08FE016FAE877
 		return;
 	}
 }
-// Method Definition Index: 45750
+// Method Definition Index: 45753
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* PalmPose_get_palmRotation_m0EE831A5C8FA9A872A400ED98CC5A9D213645DAC (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7894,7 +7894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45751
+// Method Definition Index: 45754
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmRotation_mEEC1D140007A5E5E9AEA94167DB9D0F31AACE45E (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7905,7 +7905,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_set_palmRotation_mEEC1D140007A5
 		return;
 	}
 }
-// Method Definition Index: 45752
+// Method Definition Index: 45755
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_FinishSetup_m46758CEB32EB292C3CB8F07485AEAB4F9720A21B (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7952,7 +7952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose_FinishSetup_m46758CEB32EB292C3C
 		return;
 	}
 }
-// Method Definition Index: 45753
+// Method Definition Index: 45756
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose__ctor_mAF9E924139F9638EF9C90F3113C422EB80C9D0E9 (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7969,7 +7969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PalmPose__ctor_mAF9E924139F9638EF9C90F31
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45754
+// Method Definition Index: 45757
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m41C6FF7F7C8E59A503AE1791A0713555669850D2 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7987,7 +7987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_m41C6FF7F7C8E59A503AE1791
 		return;
 	}
 }
-// Method Definition Index: 45755
+// Method Definition Index: 45758
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mB73B3DC01BA2C8045913E8C0B55CB1073F4B9B62 (U3CU3Ec_t0486DECE5E528983369F8DC9001B08E4E4CD6D84* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7996,7 +7996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mB73B3DC01BA2C8045913E8C0B
 		return;
 	}
 }
-// Method Definition Index: 45756
+// Method Definition Index: 45759
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CAddAdditiveActionsU3Eb__16_0_m0D2789B33717044A16E7E9C7ED0BCEFA74626A5A (U3CU3Ec_t0486DECE5E528983369F8DC9001B08E4E4CD6D84* __this, DeviceConfig_t65D78482C07E722E554489CA5E6042B14332D08F* ___0_d, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8046,7 +8046,7 @@ IL_0030:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 45757
+// Method Definition Index: 45760
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CAddAdditiveActionsU3Eb__16_1_mFB14010DD786AB018BA9BBCF65D41B0A1B0294DC (U3CU3Ec_t0486DECE5E528983369F8DC9001B08E4E4CD6D84* __this, ActionConfig_t91D4C9AF316A6BF187BC31A3ABCDA030A09CB7CE* ___0_a, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8065,7 +8065,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CAddAdditiveActionsU3Eb__16_1_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45758
+// Method Definition Index: 45761
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_RegisterDeviceLayout_mC82745768691EF032FB10AD88087CBE7A3B806CE (ValveIndexControllerProfile_tB00771C9F4DA589B16B2D9C8488CDBFF1ACB169B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8104,7 +8104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_RegisterDevi
 		return;
 	}
 }
-// Method Definition Index: 45759
+// Method Definition Index: 45762
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_UnregisterDeviceLayout_m82760235C860F9E727BAE7FAB6912468F8A4404E (ValveIndexControllerProfile_tB00771C9F4DA589B16B2D9C8488CDBFF1ACB169B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8122,7 +8122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_UnregisterDe
 		return;
 	}
 }
-// Method Definition Index: 45760
+// Method Definition Index: 45763
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ValveIndexControllerProfile_GetDeviceLayoutName_mDABE73EFDF5D2119E666236BF005FB2ECD1A1ED2 (ValveIndexControllerProfile_tB00771C9F4DA589B16B2D9C8488CDBFF1ACB169B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8136,7 +8136,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ValveIndexControllerProfile_GetDevi
 		return _stringLiteralB431EC3F3BA7055A7834536D71F631E56C76E6A9;
 	}
 }
-// Method Definition Index: 45761
+// Method Definition Index: 45764
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_RegisterActionMapsWithRuntime_mC1226DB21257D2A84DD1FA005EEE4CE4BB87FE65 (ValveIndexControllerProfile_tB00771C9F4DA589B16B2D9C8488CDBFF1ACB169B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9239,7 +9239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile_RegisterActi
 		return;
 	}
 }
-// Method Definition Index: 45762
+// Method Definition Index: 45765
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile__ctor_m13A0B667137E862E5E17E4DE87355B3840126F59 (ValveIndexControllerProfile_tB00771C9F4DA589B16B2D9C8488CDBFF1ACB169B* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9264,7 +9264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexControllerProfile__ctor_m13A0B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45763
+// Method Definition Index: 45766
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_system_m9A16247583ECE7D733B1F79EF193487D5B5DB611 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9273,7 +9273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45764
+// Method Definition Index: 45767
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_system_m2F0B3FA9579B2DF148F50A5F5C2F8406FF9A86E9 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9284,7 +9284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_system_m2F0B3FA
 		return;
 	}
 }
-// Method Definition Index: 45765
+// Method Definition Index: 45768
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_systemTouched_mE4723C31BE03742B064D68AFC6794EA9165D0B7A (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9293,7 +9293,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45766
+// Method Definition Index: 45769
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_systemTouched_mAAD1E7291AC82F23A31912D4423C6444EAC091E6 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9304,7 +9304,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_systemTouched_m
 		return;
 	}
 }
-// Method Definition Index: 45767
+// Method Definition Index: 45770
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_primaryButton_m775C83CC970FD424AA1293D7FED0C611AD7CAA6B (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9313,7 +9313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45768
+// Method Definition Index: 45771
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryButton_mD3CA99F0CA31E2B034AE0E14AE082915E125C2BC (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9324,7 +9324,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryButton_m
 		return;
 	}
 }
-// Method Definition Index: 45769
+// Method Definition Index: 45772
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_primaryTouched_mA5BADBFE259BB7E0D3F4EFE25C9F621077848AD1 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9333,7 +9333,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45770
+// Method Definition Index: 45773
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryTouched_m718E1E67F973FA6EE2EE8EC5AC75B4D787BA323E (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9344,7 +9344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryTouched_
 		return;
 	}
 }
-// Method Definition Index: 45771
+// Method Definition Index: 45774
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_secondaryButton_m39AE8D5DAE763E60697156EB0A1E575943EFBE1B (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9353,7 +9353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45772
+// Method Definition Index: 45775
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryButton_m07DF0C935BFF5E8DC09822F3B69E9B22BA4B7B36 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9364,7 +9364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryButton
 		return;
 	}
 }
-// Method Definition Index: 45773
+// Method Definition Index: 45776
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_secondaryTouched_mD9C57A1CB0213EB0CDB3214A49B2027337D54976 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9373,7 +9373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45774
+// Method Definition Index: 45777
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryTouched_m818F0131C4398A77B3D80CEF4C7674BBBA538553 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9384,7 +9384,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryTouche
 		return;
 	}
 }
-// Method Definition Index: 45775
+// Method Definition Index: 45778
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ValveIndexController_get_grip_mA8B1AE3D26EE0E3D87CD8F8446BDCE5618830932 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9393,7 +9393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45776
+// Method Definition Index: 45779
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_grip_m1E91D4A94EBECED921D814106F3379BC8C0253EB (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9404,7 +9404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_grip_m1E91D4A94
 		return;
 	}
 }
-// Method Definition Index: 45777
+// Method Definition Index: 45780
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_gripPressed_mDB944B1663E0512A3C67944E9FA2DC4DD9DBCB58 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9413,7 +9413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45778
+// Method Definition Index: 45781
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_gripPressed_m652BA9990D207D98FABC594A1BD4F9C09A4AFD02 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9424,7 +9424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_gripPressed_m65
 		return;
 	}
 }
-// Method Definition Index: 45779
+// Method Definition Index: 45782
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ValveIndexController_get_gripForce_m210E6E34BB7A239E6C08B48C1ADA6B21E4B73320 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9433,7 +9433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45780
+// Method Definition Index: 45783
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_gripForce_mED4B95F02C32578C0BEBF1CE61AC396968E21573 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9444,7 +9444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_gripForce_mED4B
 		return;
 	}
 }
-// Method Definition Index: 45781
+// Method Definition Index: 45784
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ValveIndexController_get_trigger_m18593A645E935A2AA27C0CBE8EED1591C1945AF9 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9453,7 +9453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45782
+// Method Definition Index: 45785
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trigger_m4FDBB8BFF61480499BFB4D84DA31C5E37774A847 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9464,7 +9464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trigger_m4FDBB8
 		return;
 	}
 }
-// Method Definition Index: 45783
+// Method Definition Index: 45786
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_triggerPressed_m332CC82BCECD5D34336361D0987DCB2A21B28F27 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9473,7 +9473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45784
+// Method Definition Index: 45787
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerPressed_mDF70A8B33FE3B50E4D031E671B5D0EF85986EBFF (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9484,7 +9484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerPressed_
 		return;
 	}
 }
-// Method Definition Index: 45785
+// Method Definition Index: 45788
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_triggerTouched_m0B5C7B3340A6104F14ADC54B02D641EB1224D212 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9493,7 +9493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45786
+// Method Definition Index: 45789
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerTouched_m9C45BD6B08F80B44A7BD34EF6A77EA6C90FB7ED5 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9504,7 +9504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerTouched_
 		return;
 	}
 }
-// Method Definition Index: 45787
+// Method Definition Index: 45790
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ValveIndexController_get_thumbstick_m90BFCDE49519A2DE0602E33A6BD9AEA7CED7E25C (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9513,7 +9513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45788
+// Method Definition Index: 45791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstick_m30860048603716C38416917B8B5637467DAC55E5 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9524,7 +9524,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstick_m308
 		return;
 	}
 }
-// Method Definition Index: 45789
+// Method Definition Index: 45792
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_thumbstickClicked_m30CD53BBA88F83B680433C3B9124E2DAECAF5092 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9533,7 +9533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45790
+// Method Definition Index: 45793
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickClicked_m0A65DF4430DFEC841796BA702B1D2B1A688974BC (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9544,7 +9544,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickClick
 		return;
 	}
 }
-// Method Definition Index: 45791
+// Method Definition Index: 45794
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_thumbstickTouched_mDFD023710CA922E00BE123A4D4B98D2D38F23673 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9553,7 +9553,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45792
+// Method Definition Index: 45795
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickTouched_mAA71E2CABE51EC3C35F5A699CE3FD022952275B9 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9564,7 +9564,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickTouch
 		return;
 	}
 }
-// Method Definition Index: 45793
+// Method Definition Index: 45796
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ValveIndexController_get_trackpad_mD6DA2FD7BEBDC7F76D557C77FA896F101C91AD64 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9573,7 +9573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StickControl_t2608D1388A5015029123635B4B589AC
 		return L_0;
 	}
 }
-// Method Definition Index: 45794
+// Method Definition Index: 45797
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpad_m8BB67ABC6EB0AA0AFB9E50347D08823D3A6B23D7 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9584,7 +9584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpad_m8BB67
 		return;
 	}
 }
-// Method Definition Index: 45795
+// Method Definition Index: 45798
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_trackpadTouched_m8E486A720048A7157D3EDFEEBE3836B2275A1929 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9593,7 +9593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45796
+// Method Definition Index: 45799
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadTouched_m95A90C89D27EF355C586E7E072A6DF5F3151734C (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9604,7 +9604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadTouched
 		return;
 	}
 }
-// Method Definition Index: 45797
+// Method Definition Index: 45800
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ValveIndexController_get_trackpadForce_mFF4684E2224F0B684A30DBF22BEC2EB5DC478485 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9613,7 +9613,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		return L_0;
 	}
 }
-// Method Definition Index: 45798
+// Method Definition Index: 45801
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadForce_mBF65ED356A0EFA5B90025E13678C61DDE856E123 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9624,7 +9624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadForce_m
 		return;
 	}
 }
-// Method Definition Index: 45799
+// Method Definition Index: 45802
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ValveIndexController_get_devicePose_m531ACDD1EB12E69BB8A16F602932BEFCF8CE893A (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9633,7 +9633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45800
+// Method Definition Index: 45803
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePose_m3A93EFC83875C36CC48C64D8E18E07D6C4625994 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9644,7 +9644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePose_m3A9
 		return;
 	}
 }
-// Method Definition Index: 45801
+// Method Definition Index: 45804
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ValveIndexController_get_pointer_mA24CBACB99D13D2A0151280E25E89BD338A9659D (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9653,7 +9653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PoseControl_t28571DE0327FBB52F360251074D1DA29
 		return L_0;
 	}
 }
-// Method Definition Index: 45802
+// Method Definition Index: 45805
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointer_m7B3834B29974B1420F09B97E0078619B8FD7E594 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9664,7 +9664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointer_m7B3834
 		return;
 	}
 }
-// Method Definition Index: 45803
+// Method Definition Index: 45806
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ValveIndexController_get_isTracked_m4794D35AA3BCD3C4046F9FB1B4261EF2FD9DFBCC (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9673,7 +9673,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		return L_0;
 	}
 }
-// Method Definition Index: 45804
+// Method Definition Index: 45807
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_isTracked_m4670035C1289BAEDEE6E4194D33522B0FCD391C1 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9684,7 +9684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_isTracked_m4670
 		return;
 	}
 }
-// Method Definition Index: 45805
+// Method Definition Index: 45808
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ValveIndexController_get_trackingState_mDA7F6987CD1B385DCBA1EFD295C23E093C2C3A04 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9693,7 +9693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		return L_0;
 	}
 }
-// Method Definition Index: 45806
+// Method Definition Index: 45809
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackingState_mE08EF587227D070B7D78458032A3A10DBA8D85FA (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9704,7 +9704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_trackingState_m
 		return;
 	}
 }
-// Method Definition Index: 45807
+// Method Definition Index: 45810
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ValveIndexController_get_devicePosition_m72B5F6C3209771194C2B1563939B314DBC35D660 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9713,7 +9713,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45808
+// Method Definition Index: 45811
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePosition_mB8B58E5C9F2EA185CE229E119DDDB7BFDA7010FC (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9724,7 +9724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePosition_
 		return;
 	}
 }
-// Method Definition Index: 45809
+// Method Definition Index: 45812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ValveIndexController_get_deviceRotation_m2E467C5B934829141E773D8E398780ACBB8D2F76 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9733,7 +9733,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45810
+// Method Definition Index: 45813
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_deviceRotation_m93E44F77DA23AB07D93A57CC04C3D0AC04AF13AD (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9744,7 +9744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_deviceRotation_
 		return;
 	}
 }
-// Method Definition Index: 45811
+// Method Definition Index: 45814
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ValveIndexController_get_pointerPosition_mE49EBA55ABBDBC963C51F7C91C2675E70EC59D03 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9753,7 +9753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Control_t32D7E4836F56C2FDC61BF0D96ED45
 		return L_0;
 	}
 }
-// Method Definition Index: 45812
+// Method Definition Index: 45815
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerPosition_mBDE35E74894D5B8678A314355B308CD57F2768AE (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9764,7 +9764,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerPosition
 		return;
 	}
 }
-// Method Definition Index: 45813
+// Method Definition Index: 45816
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ValveIndexController_get_pointerRotation_m797BCCA74B1F74D1BB2194969DA5A9070376EC9A (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9773,7 +9773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR QuaternionControl_t18A2F742850FC2FD82A1F980A3
 		return L_0;
 	}
 }
-// Method Definition Index: 45814
+// Method Definition Index: 45817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerRotation_mBCAD4F729002EF650D14FB21525AA01737A2AC85 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9784,7 +9784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerRotation
 		return;
 	}
 }
-// Method Definition Index: 45815
+// Method Definition Index: 45818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ValveIndexController_get_haptic_m1EE0AB28FC35588B67FB3A63F4B5EF0449AAE46B (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9793,7 +9793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HapticControl_t55C6C8AF176B500F8A11E14786537F
 		return L_0;
 	}
 }
-// Method Definition Index: 45816
+// Method Definition Index: 45819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_haptic_m63CA7D2D64E9E232638D6FA740699024D4D28314 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9804,7 +9804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_set_haptic_m63CA7D2
 		return;
 	}
 }
-// Method Definition Index: 45817
+// Method Definition Index: 45820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_FinishSetup_m8AEAEC71E0164DD6ED03C33838338357CBE04CE6 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9934,7 +9934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController_FinishSetup_m8AEAEC
 		return;
 	}
 }
-// Method Definition Index: 45818
+// Method Definition Index: 45821
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValveIndexController__ctor_m882913EFA8F2069726B8A455E3DDFD7351CCACF7 (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9958,7 +9958,7 @@ extern "C" void DEFAULT_CALL ReversePInvokeWrapper_XrPerformanceSettingsFeature_
 	XrPerformanceSettingsFeature_OnXrPerformanceNotificationCallback_mDF4DDC25F3DA9160903A0967ABCBC0F43FF1AC44(___0_notification, NULL);
 
 }
-// Method Definition Index: 45819
+// Method Definition Index: 45822
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceSettingsFeature_add_OnXrPerformanceChangeNotification_mF43E9865097C68D6266D354E297001D2BEA76136 (UnityAction_1_t18150305F137BC3A1C4D0A174DBC9819821720F1* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10002,7 +10002,7 @@ IL_0006:
 		return;
 	}
 }
-// Method Definition Index: 45820
+// Method Definition Index: 45823
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceSettingsFeature_remove_OnXrPerformanceChangeNotification_m49EE2D7FA05E093AAC66954DA1B8C08947461A3F (UnityAction_1_t18150305F137BC3A1C4D0A174DBC9819821720F1* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10046,7 +10046,7 @@ IL_0006:
 		return;
 	}
 }
-// Method Definition Index: 45821
+// Method Definition Index: 45824
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XrPerformanceSettingsFeature_SetPerformanceLevelHint_m3AD0810A09B0C817004F9E31EA9753B115BB6262 (int32_t ___0_domain, int32_t ___1_level, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10077,7 +10077,7 @@ IL_0014:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 45822
+// Method Definition Index: 45825
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XrPerformanceSettingsFeature_OnInstanceCreate_m7C0F2EA883CFFD33E3A5ADF410286801437DFFA9 (XrPerformanceSettingsFeature_t10D60E4F72F01A665CC6CB35A1CA0BA1616F0093* __this, uint64_t ___0_xrInstance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10119,7 +10119,7 @@ IL_0027:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 45823
+// Method Definition Index: 45826
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceSettingsFeature_OnXrPerformanceNotificationCallback_mDF4DDC25F3DA9160903A0967ABCBC0F43FF1AC44 (PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F ___0_notification, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10153,7 +10153,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 45824
+// Method Definition Index: 45827
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceSettingsFeature__ctor_m0347F2F522C4400152F83C74B1574F3C1E5B5FF2 (XrPerformanceSettingsFeature_t10D60E4F72F01A665CC6CB35A1CA0BA1616F0093* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10170,7 +10170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceSettingsFeature__ctor_m0347
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45825
+// Method Definition Index: 45828
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_xr_performance_settings_setEventCallback_m7E42F74212C524CAA3A5483A776B963F903D5D52 (XrPerformanceNotificationDelegate_t3F322AD59691C807BFD5212F7962EEF010C90996* ___0_callback, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10196,7 +10196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_xr_performance_settings_setEve
 
 	return static_cast<bool>(returnValue);
 }
-// Method Definition Index: 45826
+// Method Definition Index: 45829
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeApi_xr_performance_settings_setPerformanceLevel_mF65A44F772834E470F218A0D9091F324D52D851C (int32_t ___0_domain, int32_t ___1_level, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10250,7 +10250,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_XrPerformanceNotificationDelegate_t
 	il2cppPInvokeFunc(___0_notification);
 
 }
-// Method Definition Index: 45827
+// Method Definition Index: 45830
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceNotificationDelegate__ctor_m74E155DC07E264FCC2B783CBA69E41E8D7DB6E0F (XrPerformanceNotificationDelegate_t3F322AD59691C807BFD5212F7962EEF010C90996* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10285,14 +10285,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceNotificationDelegate__ctor_
 	}
 	__this->___extra_arg = (intptr_t)XrPerformanceNotificationDelegate_Invoke_m361B53665723238E657C11AFD96F1F13DE5A37F0_Multicast;
 }
-// Method Definition Index: 45828
+// Method Definition Index: 45831
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceNotificationDelegate_Invoke_m361B53665723238E657C11AFD96F1F13DE5A37F0 (XrPerformanceNotificationDelegate_t3F322AD59691C807BFD5212F7962EEF010C90996* __this, PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F ___0_notification, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_notification, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 45829
+// Method Definition Index: 45832
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XrPerformanceNotificationDelegate_BeginInvoke_mA1FFC143766B283119D879C11820CA1221BDC389 (XrPerformanceNotificationDelegate_t3F322AD59691C807BFD5212F7962EEF010C90996* __this, PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F ___0_notification, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___1_callback, RuntimeObject* ___2_object, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10306,7 +10306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* XrPerformanceNotificationDeleg
 	__d_args[0] = Box(PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F_il2cpp_TypeInfo_var, &___0_notification);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___1_callback, (RuntimeObject*)___2_object);
 }
-// Method Definition Index: 45830
+// Method Definition Index: 45833
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceNotificationDelegate_EndInvoke_m3D573E68D8C933FE8F28F79BA97DA69967053EE1 (XrPerformanceNotificationDelegate_t3F322AD59691C807BFD5212F7962EEF010C90996* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10360,7 +10360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XrPerformanceNotificationDelegate_EndInv
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45831
+// Method Definition Index: 45834
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AdditiveActionsAnalytics_Send_m6AF89818550DA94A56BD6A8AC66585770EF03EED (String_t* ___0_additiveProfileName, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___1_augmentedProfiles, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___2_additiveActionNames, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10434,7 +10434,7 @@ IL2CPP_EXTERN_C void Payload_tDD858C50087F5CD901F62E4DBC3DD9A68C360AD7_marshal_c
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 45832
+// Method Definition Index: 45835
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Event__ctor_m6FBF18F19493F0DB444EBFE82683819E83356C73 (Event_tB7F890FCD06589A506EE8D2802C758709AE9199F* __this, Payload_tDD858C50087F5CD901F62E4DBC3DD9A68C360AD7 ___0_data, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10455,7 +10455,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Event__ctor_m6FBF18F19493F0DB444EBFE8268
 		return;
 	}
 }
-// Method Definition Index: 45833
+// Method Definition Index: 45836
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Event_TryGatherData_m50D13F60D0BAB1DCB9A67A05CA96AD3C3A09CB9B (Event_tB7F890FCD06589A506EE8D2802C758709AE9199F* __this, RuntimeObject** ___0_data, Exception_t** ___1_error, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10502,7 +10502,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Event_TryGatherData_m50D13F60D0BAB1DCB9A
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 45535
+// Method Definition Index: 45538
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstick_m06DBDA359DEBAC02DC1C759030AEEC5251EDB161_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10513,7 +10513,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45551
+// Method Definition Index: 45554
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_trigger_mEEF4E8B683D2E7B820DAA291A28F5BF12FFA49D5_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10524,7 +10524,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45553
+// Method Definition Index: 45556
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerPressed_m74BC2E0B9D960B5240B3CAA8EAAB20816027D95A_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10535,7 +10535,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45555
+// Method Definition Index: 45558
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerTouched_mE523D9E90458FDE600C414EFEEB959D48B8E85E5_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10546,7 +10546,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45537
+// Method Definition Index: 45540
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_grip_m1D1647F0EA2BE27410476A0203B045F09CE150AF_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10557,7 +10557,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45539
+// Method Definition Index: 45542
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_gripPressed_mA0DE041B4AD0C59AE3237E2A17DA2D34A69CA33B_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10568,7 +10568,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45541
+// Method Definition Index: 45544
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_menu_mAB5E92C1E7821983B68D14328233B69C4932B454_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10579,7 +10579,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45543
+// Method Definition Index: 45546
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryButton_mF43BEDCBE7CF91840482438731F99AA27CA8CD69_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10590,7 +10590,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45545
+// Method Definition Index: 45548
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_primaryTouched_m05F0C10B7E6734EE7F515F24376E6EEEA866F679_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10601,7 +10601,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45547
+// Method Definition Index: 45550
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryButton_mB4E8D69CA13B4E5C5D18C11F3B2E8B963952C68B_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10612,7 +10612,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45549
+// Method Definition Index: 45552
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_secondaryTouched_m649CDA1613BA1D690513BA5E4036C012BA12028C_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10623,7 +10623,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45557
+// Method Definition Index: 45560
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickClicked_m317C30157887831A7FF3AE524CF196A67EE73043_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10634,7 +10634,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45559
+// Method Definition Index: 45562
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbstickTouched_m0A6DC8778E389CB05FDCCC593C623B77501F1EA4_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10645,7 +10645,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45561
+// Method Definition Index: 45564
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestTouched_mB4971A44F4E3448BA985B0705E523F72467F99E0_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10656,7 +10656,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45563
+// Method Definition Index: 45566
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePose_m008DDD20267EF56D298AA0AEC1E1BC884A599F79_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10667,7 +10667,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45565
+// Method Definition Index: 45568
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointer_mDE0C5B3AFFDF284F7FDC251BBAF25947C4441C30_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10678,7 +10678,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45567
+// Method Definition Index: 45570
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_isTracked_m2AE23CCEFBFF77B5B2B1267C393EBE869B90C9C7_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10689,7 +10689,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45569
+// Method Definition Index: 45572
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_trackingState_m9E1BEC06B4B6B9FCF5AB308DB7DBA94F7ED619D4_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10700,7 +10700,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45571
+// Method Definition Index: 45574
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_devicePosition_mB340F6B0EFD84BC5EB3E652F21F8DD90ED05E0BE_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10711,7 +10711,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45573
+// Method Definition Index: 45576
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_deviceRotation_m866DB9290CD9082276647B6CC1F8BA3FDF89E1A0_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10722,7 +10722,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45575
+// Method Definition Index: 45578
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerPosition_mA18456E468D37E719C9AD0B86E23E763C3978003_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10733,7 +10733,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45577
+// Method Definition Index: 45580
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_pointerRotation_mBBC790250C727B3464191B16C5A810FE5C4D86B2_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10744,7 +10744,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45579
+// Method Definition Index: 45582
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_haptic_m554DD119F9791A90CBCAF94DA4E33350F3E55DE3_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10755,7 +10755,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45581
+// Method Definition Index: 45584
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbrestForce_m9A21EFB1A27F322BB5673BB8CF9F13C823ACAE34_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10766,7 +10766,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45583
+// Method Definition Index: 45586
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_stylusForce_m8FE332B3CC8C606259762DB7E88B0BBFB4CD7AF1_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10777,7 +10777,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45585
+// Method Definition Index: 45588
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerCurl_m741BC2CA64D72F578670AE0DF6947CBA81E12C98_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10788,7 +10788,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45587
+// Method Definition Index: 45590
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerSlide_m7ADF0BB23A528DD621C168EC7B11A2DC82D6EB08_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10799,7 +10799,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45589
+// Method Definition Index: 45592
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_triggerProximity_mE29AA33740F8228E856C547F9DAF8606FD7E7CA4_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10810,7 +10810,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45591
+// Method Definition Index: 45594
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_thumbProximity_m179FEEB1AE4D34F0EED42D75AE81D66BDD0C38A9_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10821,7 +10821,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45593
+// Method Definition Index: 45596
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticTrigger_mBC4A22D74B68439AAFF134AFE9F09EEE7087180F_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10832,7 +10832,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45595
+// Method Definition Index: 45598
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_hapticThumb_m598F4B9279FD476D537E7B83D88C0D120681040C_inline (QuestProTouchController_tCB79E0144F21F70FA84F2064B698E7DA09D39760* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10843,7 +10843,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void QuestProTouchController_set_
 		return;
 	}
 }
-// Method Definition Index: 45605
+// Method Definition Index: 45608
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_select_m7A70E18040FADAF1460D5FF3F8455D97FB4CBA80_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10854,7 +10854,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_select_m7A7
 		return;
 	}
 }
-// Method Definition Index: 45607
+// Method Definition Index: 45610
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_selectPressed_m586B7A32EB519785F4F004AE3DFB59D6439893B5_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10865,7 +10865,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_selectPress
 		return;
 	}
 }
-// Method Definition Index: 45609
+// Method Definition Index: 45612
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_squeeze_m3831542A8A964149DA4AAB6A448F3B69D74B9BAC_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10876,7 +10876,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_squeeze_m38
 		return;
 	}
 }
-// Method Definition Index: 45611
+// Method Definition Index: 45614
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_squeezePressed_mE9A1F74616800FF0B5F8C75A5AD44F59FEE2FDD8_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10887,7 +10887,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_squeezePres
 		return;
 	}
 }
-// Method Definition Index: 45613
+// Method Definition Index: 45616
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePose_m19E6C6E3CF7D04AD6EF67707A67123AB7EA957CE_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10898,7 +10898,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePose_
 		return;
 	}
 }
-// Method Definition Index: 45615
+// Method Definition Index: 45618
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointer_mB9C69FFC3C34D9261289D1CC0C9A857785CAA302_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10909,7 +10909,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointer_mB9
 		return;
 	}
 }
-// Method Definition Index: 45617
+// Method Definition Index: 45620
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_isTracked_m52E4936B167C7DB6A53ED1ABF94B8F3E7D17951B_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10920,7 +10920,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_isTracked_m
 		return;
 	}
 }
-// Method Definition Index: 45619
+// Method Definition Index: 45622
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_trackingState_m93F5CACFD05E63BE17F162BECA9B51B5D5C9C4DC_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10931,7 +10931,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_trackingSta
 		return;
 	}
 }
-// Method Definition Index: 45621
+// Method Definition Index: 45624
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePosition_mA5B9C4AA143291DC184164FB10B636BE1EC576FE_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10942,7 +10942,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_devicePosit
 		return;
 	}
 }
-// Method Definition Index: 45623
+// Method Definition Index: 45626
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_deviceRotation_m61DBEE52969492D64513A61B42EDF7C1055F12A8_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10953,7 +10953,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_deviceRotat
 		return;
 	}
 }
-// Method Definition Index: 45625
+// Method Definition Index: 45628
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerPosition_mC8303D9F9BF94BD844F1476A7EA1A20F5D8C44EC_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10964,7 +10964,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerPosi
 		return;
 	}
 }
-// Method Definition Index: 45627
+// Method Definition Index: 45630
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerRotation_m8FEB99991F316AF331BAEA2FB4E78F0CA94E100D_inline (HoloLensHand_t57D61FFDF7947882A1C4EC7CF5CB707609B93354* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10975,7 +10975,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HoloLensHand_set_pointerRota
 		return;
 	}
 }
-// Method Definition Index: 45636
+// Method Definition Index: 45639
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystick_m45C2D5C13F3220B61D94610588EFA33009C002B9_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10986,7 +10986,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_joy
 		return;
 	}
 }
-// Method Definition Index: 45646
+// Method Definition Index: 45649
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_trigger_mA5DA60A29E1BC1000A3548F08F941BF5C791FBFE_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10997,7 +10997,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tri
 		return;
 	}
 }
-// Method Definition Index: 45638
+// Method Definition Index: 45641
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpad_m5F1730A18B413449A2335818234E0001A6C7E557_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11008,7 +11008,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tou
 		return;
 	}
 }
-// Method Definition Index: 45640
+// Method Definition Index: 45643
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_grip_m3C37B2BDC88753C28209711E4C6E28935B04F905_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11019,7 +11019,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_gri
 		return;
 	}
 }
-// Method Definition Index: 45642
+// Method Definition Index: 45645
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_gripPressed_mE17E73DF3FDDF6A53856F85A29EB903C9E69D393_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11030,7 +11030,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_gri
 		return;
 	}
 }
-// Method Definition Index: 45644
+// Method Definition Index: 45647
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_menu_m5444CC59F1176B8995EDB43918E8FA6BA0BA585D_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11041,7 +11041,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_men
 		return;
 	}
 }
-// Method Definition Index: 45650
+// Method Definition Index: 45653
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_joystickClicked_mE7CB11D577A7EBD59C7B83E83D73DC0B266DE4B8_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11052,7 +11052,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_joy
 		return;
 	}
 }
-// Method Definition Index: 45648
+// Method Definition Index: 45651
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_triggerPressed_mBFE586AA6205036924673A19BBAE2838744EF19F_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11063,7 +11063,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tri
 		return;
 	}
 }
-// Method Definition Index: 45652
+// Method Definition Index: 45655
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadClicked_m0882A355BF84A246F9D24F1A2DFD7F7751BE3366_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11074,7 +11074,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tou
 		return;
 	}
 }
-// Method Definition Index: 45654
+// Method Definition Index: 45657
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_touchpadTouched_m7881BC2F92B81FFEF53C77985F7E29117FEC587C_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11085,7 +11085,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tou
 		return;
 	}
 }
-// Method Definition Index: 45656
+// Method Definition Index: 45659
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePose_mDA804F37F60E61B4CE235D0582C0C5E017415DBA_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11096,7 +11096,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45658
+// Method Definition Index: 45661
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointer_mF962DCE47D42EE22C4FB85F72753FF0E0117B560_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11107,7 +11107,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45660
+// Method Definition Index: 45663
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_isTracked_mB2F9887976872B20EB6D8124F4241248B4C35B08_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11118,7 +11118,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_isT
 		return;
 	}
 }
-// Method Definition Index: 45662
+// Method Definition Index: 45665
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_trackingState_mD47BB86F5E16A950A84603B6D6CAA1DD40DD5FE2_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11129,7 +11129,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_tra
 		return;
 	}
 }
-// Method Definition Index: 45664
+// Method Definition Index: 45667
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_devicePosition_mFC0C47639EACEBFBA35602451081F5ED567C7F54_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11140,7 +11140,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45666
+// Method Definition Index: 45669
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_deviceRotation_m4007261B3CB2BCEE9E2E64EE8479BEBABD3D7B56_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11151,7 +11151,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45668
+// Method Definition Index: 45671
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerPosition_mE36324B14942DC2549A100DB5AA28A387F05E610_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11162,7 +11162,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45670
+// Method Definition Index: 45673
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_pointerRotation_m38309A80082E28959BC6700DAA7DA30D275D4F96_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11173,7 +11173,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45672
+// Method Definition Index: 45675
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_haptic_m889F1DA9C1E76E8AE80FB18CF130B7B8E77BC0F2_inline (WMRSpatialController_tB5C0AFF92881F0929F624D1CE40EFB4FBADD6801* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11184,7 +11184,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WMRSpatialController_set_hap
 		return;
 	}
 }
-// Method Definition Index: 45681
+// Method Definition Index: 45684
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstick_m01111A2D2B09B523459288A9ECE08A6B78B9CDFB_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11195,7 +11195,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_th
 		return;
 	}
 }
-// Method Definition Index: 45697
+// Method Definition Index: 45700
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_trigger_m6EDCF420C9305E6C1C1092AF6A5411D1CDF9ED20_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11206,7 +11206,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_tr
 		return;
 	}
 }
-// Method Definition Index: 45699
+// Method Definition Index: 45702
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerPressed_m9906811FA9FF2B86AF95ABBADEEA1109689411BD_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11217,7 +11217,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_tr
 		return;
 	}
 }
-// Method Definition Index: 45701
+// Method Definition Index: 45704
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_triggerTouched_m5814EB34A5A1F53359CC218258289806B81E5EC8_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11228,7 +11228,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_tr
 		return;
 	}
 }
-// Method Definition Index: 45683
+// Method Definition Index: 45686
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_grip_m62D13E14A528205D030A39696CE0ED88F4A54ED5_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11239,7 +11239,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_gr
 		return;
 	}
 }
-// Method Definition Index: 45685
+// Method Definition Index: 45688
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_gripPressed_m3DA395A0D58D4CF39AA07F7DDE54820CE10C9E1D_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11250,7 +11250,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_gr
 		return;
 	}
 }
-// Method Definition Index: 45687
+// Method Definition Index: 45690
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_menu_mAD61EF4CAD63A6380F17757C7B768FE22EB961F5_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11261,7 +11261,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_me
 		return;
 	}
 }
-// Method Definition Index: 45689
+// Method Definition Index: 45692
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryButton_m98805E1922D2775E3CB77986FF182E23E295B8E0_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11272,7 +11272,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_pr
 		return;
 	}
 }
-// Method Definition Index: 45691
+// Method Definition Index: 45694
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_primaryTouched_m3FC6488E2D947352B92A900603D004C4958E9A61_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11283,7 +11283,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_pr
 		return;
 	}
 }
-// Method Definition Index: 45693
+// Method Definition Index: 45696
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryButton_m5643634AC8C1D60E52CA39961DEE3313B7623C38_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11294,7 +11294,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_se
 		return;
 	}
 }
-// Method Definition Index: 45695
+// Method Definition Index: 45698
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_secondaryTouched_m933F2C0C8BA8DF3090929AF58A7999A99F8D8123_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11305,7 +11305,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_se
 		return;
 	}
 }
-// Method Definition Index: 45703
+// Method Definition Index: 45706
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickClicked_m8818E79FE6C3BD6449CE044C1882DD0F6F6DFDC2_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11316,7 +11316,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_th
 		return;
 	}
 }
-// Method Definition Index: 45705
+// Method Definition Index: 45708
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbstickTouched_mF5E1476440E6DE77D2A589480486743CE0B74428_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11327,7 +11327,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_th
 		return;
 	}
 }
-// Method Definition Index: 45707
+// Method Definition Index: 45710
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_thumbrestTouched_m9BF86704CAE5AC2AADC4F5180974045203C40F7F_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11338,7 +11338,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_th
 		return;
 	}
 }
-// Method Definition Index: 45709
+// Method Definition Index: 45712
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePose_m196C6D26091F77A2938B83D671B738691C6BBD5F_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11349,7 +11349,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_de
 		return;
 	}
 }
-// Method Definition Index: 45711
+// Method Definition Index: 45714
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_pointer_mF054C318BE09F667C53B87D061B7EA6F81EAEFEC_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11360,7 +11360,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_po
 		return;
 	}
 }
-// Method Definition Index: 45713
+// Method Definition Index: 45716
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_isTracked_m2328E3620924C0D2D16A894125DFF79E113884A4_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11371,7 +11371,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_is
 		return;
 	}
 }
-// Method Definition Index: 45715
+// Method Definition Index: 45718
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_trackingState_mC3C06CF2B8996262E4E542D25A43D13B3C54C66A_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11382,7 +11382,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_tr
 		return;
 	}
 }
-// Method Definition Index: 45717
+// Method Definition Index: 45720
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_devicePosition_mB362E45B8E14E7C8B99D588466E5BD7986BFBBE6_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11393,7 +11393,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_de
 		return;
 	}
 }
-// Method Definition Index: 45719
+// Method Definition Index: 45722
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_deviceRotation_mEC06D9EE2723D9F041D9B92F2B904EF7300019F7_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11404,7 +11404,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_de
 		return;
 	}
 }
-// Method Definition Index: 45721
+// Method Definition Index: 45724
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerPosition_mA32557798E2BEC7559649559C88C076B6E77694F_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11415,7 +11415,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_po
 		return;
 	}
 }
-// Method Definition Index: 45723
+// Method Definition Index: 45726
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_pointerRotation_m8F791E7DEFB312A3CB5802647257F750B09951D2_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11426,7 +11426,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_po
 		return;
 	}
 }
-// Method Definition Index: 45725
+// Method Definition Index: 45728
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_haptic_mDBCC52DB8CBB8B1CE9FB6369561ED09CB2BDE95C_inline (OculusTouchController_t8FA9BF7C66DA283CCB11A1761347C0563A776909* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11437,7 +11437,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void OculusTouchController_set_ha
 		return;
 	}
 }
-// Method Definition Index: 45739
+// Method Definition Index: 45742
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmPose_mA3F5B99B5A9331C15000B5C28D3EFD42790EA094_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11448,7 +11448,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmPose_mA3F5B
 		return;
 	}
 }
-// Method Definition Index: 45741
+// Method Definition Index: 45744
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_isTracked_mBBCE8C050B82B4E792502874CA97539B9DB57200_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11459,7 +11459,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_isTracked_mBBCE
 		return;
 	}
 }
-// Method Definition Index: 45743
+// Method Definition Index: 45746
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_trackingState_m12FD040A92410977A682CF2A98D1B3813459FBF6_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11470,7 +11470,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_trackingState_m
 		return;
 	}
 }
-// Method Definition Index: 45745
+// Method Definition Index: 45748
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_devicePosition_m56DBBACB931B5D61867F395AB4145BF4A00FFAEA_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11481,7 +11481,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_devicePosition_
 		return;
 	}
 }
-// Method Definition Index: 45747
+// Method Definition Index: 45750
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_deviceRotation_mEB8826BFFB7EAEE1591F078E125BA864412042E6_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11492,7 +11492,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_deviceRotation_
 		return;
 	}
 }
-// Method Definition Index: 45749
+// Method Definition Index: 45752
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmPosition_m08FE016FAE8770FCFE96A6CA193B39B6FE9EC9DB_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11503,7 +11503,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmPosition_m0
 		return;
 	}
 }
-// Method Definition Index: 45751
+// Method Definition Index: 45754
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmRotation_mEEC1D140007A5E5E9AEA94167DB9D0F31AACE45E_inline (PalmPose_tB7D3340FC55D8EFD2D2B58FB1E8CA3AE86794231* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11514,7 +11514,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PalmPose_set_palmRotation_mE
 		return;
 	}
 }
-// Method Definition Index: 45764
+// Method Definition Index: 45767
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_system_m2F0B3FA9579B2DF148F50A5F5C2F8406FF9A86E9_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11525,7 +11525,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_sys
 		return;
 	}
 }
-// Method Definition Index: 45766
+// Method Definition Index: 45769
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_systemTouched_mAAD1E7291AC82F23A31912D4423C6444EAC091E6_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11536,7 +11536,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_sys
 		return;
 	}
 }
-// Method Definition Index: 45768
+// Method Definition Index: 45771
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryButton_mD3CA99F0CA31E2B034AE0E14AE082915E125C2BC_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11547,7 +11547,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_pri
 		return;
 	}
 }
-// Method Definition Index: 45770
+// Method Definition Index: 45773
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_primaryTouched_m718E1E67F973FA6EE2EE8EC5AC75B4D787BA323E_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11558,7 +11558,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_pri
 		return;
 	}
 }
-// Method Definition Index: 45772
+// Method Definition Index: 45775
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryButton_m07DF0C935BFF5E8DC09822F3B69E9B22BA4B7B36_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11569,7 +11569,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_sec
 		return;
 	}
 }
-// Method Definition Index: 45774
+// Method Definition Index: 45777
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_secondaryTouched_m818F0131C4398A77B3D80CEF4C7674BBBA538553_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11580,7 +11580,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_sec
 		return;
 	}
 }
-// Method Definition Index: 45776
+// Method Definition Index: 45779
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_grip_m1E91D4A94EBECED921D814106F3379BC8C0253EB_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11591,7 +11591,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_gri
 		return;
 	}
 }
-// Method Definition Index: 45778
+// Method Definition Index: 45781
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_gripPressed_m652BA9990D207D98FABC594A1BD4F9C09A4AFD02_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11602,7 +11602,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_gri
 		return;
 	}
 }
-// Method Definition Index: 45780
+// Method Definition Index: 45783
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_gripForce_mED4B95F02C32578C0BEBF1CE61AC396968E21573_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11613,7 +11613,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_gri
 		return;
 	}
 }
-// Method Definition Index: 45782
+// Method Definition Index: 45785
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_trigger_m4FDBB8BFF61480499BFB4D84DA31C5E37774A847_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11624,7 +11624,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tri
 		return;
 	}
 }
-// Method Definition Index: 45784
+// Method Definition Index: 45787
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerPressed_mDF70A8B33FE3B50E4D031E671B5D0EF85986EBFF_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11635,7 +11635,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tri
 		return;
 	}
 }
-// Method Definition Index: 45786
+// Method Definition Index: 45789
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_triggerTouched_m9C45BD6B08F80B44A7BD34EF6A77EA6C90FB7ED5_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11646,7 +11646,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tri
 		return;
 	}
 }
-// Method Definition Index: 45788
+// Method Definition Index: 45791
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstick_m30860048603716C38416917B8B5637467DAC55E5_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11657,7 +11657,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thu
 		return;
 	}
 }
-// Method Definition Index: 45790
+// Method Definition Index: 45793
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickClicked_m0A65DF4430DFEC841796BA702B1D2B1A688974BC_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11668,7 +11668,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thu
 		return;
 	}
 }
-// Method Definition Index: 45792
+// Method Definition Index: 45795
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thumbstickTouched_mAA71E2CABE51EC3C35F5A699CE3FD022952275B9_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11679,7 +11679,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_thu
 		return;
 	}
 }
-// Method Definition Index: 45794
+// Method Definition Index: 45797
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpad_m8BB67ABC6EB0AA0AFB9E50347D08823D3A6B23D7_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, StickControl_t2608D1388A5015029123635B4B589AC7EE20C50B* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11690,7 +11690,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tra
 		return;
 	}
 }
-// Method Definition Index: 45796
+// Method Definition Index: 45799
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadTouched_m95A90C89D27EF355C586E7E072A6DF5F3151734C_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11701,7 +11701,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tra
 		return;
 	}
 }
-// Method Definition Index: 45798
+// Method Definition Index: 45801
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_trackpadForce_mBF65ED356A0EFA5B90025E13678C61DDE856E123_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11712,7 +11712,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tra
 		return;
 	}
 }
-// Method Definition Index: 45800
+// Method Definition Index: 45803
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePose_m3A93EFC83875C36CC48C64D8E18E07D6C4625994_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11723,7 +11723,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45802
+// Method Definition Index: 45805
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_pointer_m7B3834B29974B1420F09B97E0078619B8FD7E594_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, PoseControl_t28571DE0327FBB52F360251074D1DA294A197862* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11734,7 +11734,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45804
+// Method Definition Index: 45807
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_isTracked_m4670035C1289BAEDEE6E4194D33522B0FCD391C1_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11745,7 +11745,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_isT
 		return;
 	}
 }
-// Method Definition Index: 45806
+// Method Definition Index: 45809
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_trackingState_mE08EF587227D070B7D78458032A3A10DBA8D85FA_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11756,7 +11756,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_tra
 		return;
 	}
 }
-// Method Definition Index: 45808
+// Method Definition Index: 45811
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_devicePosition_mB8B58E5C9F2EA185CE229E119DDDB7BFDA7010FC_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11767,7 +11767,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45810
+// Method Definition Index: 45813
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_deviceRotation_m93E44F77DA23AB07D93A57CC04C3D0AC04AF13AD_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11778,7 +11778,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_dev
 		return;
 	}
 }
-// Method Definition Index: 45812
+// Method Definition Index: 45815
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerPosition_mBDE35E74894D5B8678A314355B308CD57F2768AE_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, Vector3Control_t32D7E4836F56C2FDC61BF0D96ED455DEFA6C949A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11789,7 +11789,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45814
+// Method Definition Index: 45817
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_pointerRotation_mBCAD4F729002EF650D14FB21525AA01737A2AC85_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11800,7 +11800,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_poi
 		return;
 	}
 }
-// Method Definition Index: 45816
+// Method Definition Index: 45819
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ValveIndexController_set_haptic_m63CA7D2D64E9E232638D6FA740699024D4D28314_inline (ValveIndexController_tD07C05DA03A885AD4AB22D7BC5744CA8499FBFE3* __this, HapticControl_t55C6C8AF176B500F8A11E14786537FA0923A5D49* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11860,7 +11860,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Enumer
 		return L_0;
 	}
 }
-// Method Definition Index: 35131
+// Method Definition Index: 35134
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnityAction_1_Invoke_mEF261E2B920991C7A927D5348517209D06C2EC3B_inline (UnityAction_1_t18150305F137BC3A1C4D0A174DBC9819821720F1* __this, PerformanceChangeNotification_t68CEE147E0116EB9C4506C2573D8FE5BAFD2803F ___0_arg0, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
