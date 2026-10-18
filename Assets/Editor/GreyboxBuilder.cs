@@ -256,19 +256,9 @@ public static class GreyboxBuilder
 
     static EndingSequence BuildEnding(GlidePath glide, Transform camera, Transform hinge)
     {
-        var glove = MakeMaterial("Suit_Glove", new Color(0.42f, 0.42f, 0.39f));
-        var suit = MakeMaterial("Suit_Sleeve", new Color(0.66f, 0.66f, 0.62f));
-
-        // A bulky hazmat glove. Local +Z = the way the palm faces, +Y = the fingers.
-        var hand = new GameObject("Kate's Hand").transform;
-        hand.localScale = Vector3.one * 1.2f;
-        Part(hand, PrimitiveType.Cube, "Palm", new Vector3(0, 0, 0), new Vector3(0.1f, 0.11f, 0.035f), glove, Vector3.zero);
-        float[] fx = { -0.036f, -0.012f, 0.012f, 0.036f };
-        float[] fl = { 0.075f, 0.088f, 0.084f, 0.068f };
-        for (int i = 0; i < 4; i++)
-            Part(hand, PrimitiveType.Cube, "Finger", new Vector3(fx[i], 0.055f + fl[i] * 0.5f, 0), new Vector3(0.021f, fl[i], 0.026f), glove, Vector3.zero);
-        Part(hand, PrimitiveType.Cube, "Thumb", new Vector3(-0.062f, 0.012f, -0.008f), new Vector3(0.026f, 0.07f, 0.028f), glove, new Vector3(0, 0, 35));
-        Part(hand, PrimitiveType.Cylinder, "Cuff", new Vector3(0, -0.075f, 0), new Vector3(0.12f, 0.035f, 0.12f), suit, Vector3.zero);
+        // Kate's left arm: bunched hazmat sleeve and an organic glove, sculpted in code (SuitBuilder).
+        var arm = SuitBuilder.Build(glide.transform);
+        var hand = arm.hand;
 
         // Black veil just in front of the eyes, for the fade-out.
         var fadeMat = MakeMaterial("Fade", Color.white, "Universal Render Pipeline/Unlit");
@@ -288,6 +278,8 @@ public static class GreyboxBuilder
         var ending = new GameObject("Ending").AddComponent<EndingSequence>();
         ending.glide = glide;
         ending.hand = hand;
+        ending.arm = arm;
+        ending.armRoot = arm.gameObject;
         ending.doorHinge = hinge;
         ending.fade = fr;
         ending.palmPoint = new Vector3(11.5f, 1.35f, 41.2f);
@@ -367,13 +359,23 @@ public static class GreyboxBuilder
         r.receiveShadows = false;
     }
 
+    // Lays a layer of colour (with its own opacity) over a pixel that already has colour and opacity.
+    static Color Over(Color under, float underA, Color top, float topA, out float outA)
+    {
+        outA = topA + underA * (1f - topA);
+        if (outA < 0.0001f) return under;
+        return (top * topA + under * underA * (1f - topA)) / outA;
+    }
+
     static Texture2D MakeVisorTexture(float quadW, float quadH)
     {
         const int w = 1024, h = 896;
         var px = new Color[w * h];
-        var rim = new Color(0.06f, 0.06f, 0.055f);       // rubber seal / hood
-        var tint = new Color(0.82f, 0.90f, 0.84f);       // faint greenish plastic
-        const float tintAlpha = 0.06f;
+        var rim = new Color(0.10f, 0.068f, 0.04f);       // warm dark-brown rubber seal / hood
+        var tint = new Color(0.97f, 0.82f, 0.58f);       // warm smoky amber: lets the ochre world through
+        const float tintAlpha = 0.05f;
+        var glintCol = new Color(1.0f, 0.90f, 0.70f);    // pale warm reflection on the plastic
+        var edgeCol = new Color(1.0f, 0.74f, 0.40f);     // golden light caught along the inside of the seal
 
         for (int y = 0; y < h; y++)
         for (int x = 0; x < w; x++)
@@ -384,11 +386,25 @@ public static class GreyboxBuilder
             float ax = Mathf.Atan2(mx, VisorDistance) * Mathf.Rad2Deg;
             float ay = Mathf.Atan2(my, VisorDistance) * Mathf.Rad2Deg;
             float halfH = ay >= 0 ? VisorHalfHeightTop : VisorHalfHeightBottom;
-            float e = Mathf.Sqrt((ax / VisorHalfWidth) * (ax / VisorHalfWidth) + (ay / halfH) * (ay / halfH));
+            float nx = ax / VisorHalfWidth, ny = ay / halfH;
+            float e = Mathf.Sqrt(nx * nx + ny * ny);
 
             float rimA = Mathf.SmoothStep(0f, 0.97f, Mathf.InverseLerp(0.80f, 1.02f, e));
             float a = 1f - (1f - tintAlpha) * (1f - rimA);
             Color c = Color.Lerp(tint, rim, rimA / Mathf.Max(a, 0.0001f));
+
+            // Glass reflections, kept to the corners so the centre stays clear:
+            // a thin golden line where the seal catches the light (stronger along the top) ...
+            float edge = Mathf.Exp(-Mathf.Pow((e - 0.79f) / 0.022f, 2f)) * (0.45f + 0.55f * Mathf.Clamp01(ny * 0.5f + 0.5f)) * 0.16f;
+            // ... and two soft diagonal streaks across the upper-left and lower-right of the plastic.
+            float corner = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0.42f, 0.70f, e)) * (1f - Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0.74f, 0.82f, e)));
+            float d = nx - ny;
+            float streak = (Mathf.Exp(-Mathf.Pow((d + 1.05f) / 0.10f, 2f)) * 0.07f
+                          + Mathf.Exp(-Mathf.Pow((d + 0.82f) / 0.035f, 2f)) * 0.045f
+                          + Mathf.Exp(-Mathf.Pow((d - 1.12f) / 0.08f, 2f)) * 0.035f) * corner;
+            c = Over(c, a, edgeCol, edge, out a);
+            c = Over(c, a, glintCol, streak, out a);
+
             c.a = a;
             px[y * w + x] = c;
         }
@@ -405,7 +421,7 @@ public static class GreyboxBuilder
                 int xi = (int)(x0 + Mathf.Cos(ang) * i), yi = (int)(y0 + Mathf.Sin(ang) * i);
                 if (xi < 0 || yi < 0 || xi >= w || yi >= h) continue;
                 var p = px[yi * w + xi];
-                px[yi * w + xi] = new Color(Mathf.Lerp(p.r, 0.9f, 0.5f), Mathf.Lerp(p.g, 0.9f, 0.5f), Mathf.Lerp(p.b, 0.9f, 0.5f), Mathf.Max(p.a, 0.12f));
+                px[yi * w + xi] = new Color(Mathf.Lerp(p.r, 0.96f, 0.5f), Mathf.Lerp(p.g, 0.88f, 0.5f), Mathf.Lerp(p.b, 0.72f, 0.5f), Mathf.Max(p.a, 0.10f));
             }
         }
 

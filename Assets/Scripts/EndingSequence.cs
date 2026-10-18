@@ -12,6 +12,8 @@ namespace KateVR
         public Transform hand;          // glove; its local +Z is the palm's facing, +Y the fingers
         public Transform doorHinge;     // rotates about Y to open the door
         public Renderer fade;           // black quad in front of the eyes
+        public KateArm arm;             // sleeve + fingers that follow the glove
+        public GameObject armRoot;      // whole arm (sleeve and glove), shown only during the reach
 
         [Header("Wall swap: solid until the touch, then the doorway takes its place")]
         public GameObject solidWall;
@@ -61,7 +63,8 @@ namespace KateVR
 
         void Show(bool on)
         {
-            if (hand) hand.gameObject.SetActive(on);
+            if (armRoot) armRoot.SetActive(on);
+            else if (hand) hand.gameObject.SetActive(on);
         }
 
         void SetFade(float a)
@@ -88,11 +91,11 @@ namespace KateVR
             float a = _t - pauseBeforeReach;
             if (a < 0f) return;
 
-            // Only the glove: it rises from below the view, presses flat, then drops away. No arm.
-            Vector3 rest = rig.TransformPoint(new Vector3(0.12f, 0.95f, 0.35f)); // out of sight below
+            // Her left arm rises from below the view (bottom-left), the palm presses flat, then drops away.
+            Vector3 rest = rig.TransformPoint(new Vector3(-0.16f, 0.95f, 0.32f)); // out of sight below
             Vector3 press = palmPoint - palmFacing.normalized * 0.025f;
-            Quaternion restRot = Quaternion.LookRotation(rig.forward, Vector3.up) * Quaternion.Euler(-35f, 0f, 0f);
-            Quaternion pressRot = Quaternion.LookRotation(palmFacing.normalized, Vector3.up);
+            Quaternion restRot = Quaternion.LookRotation(rig.forward, Vector3.up) * Quaternion.Euler(50f, 0f, 0f); // reaching: fingers forward
+            Quaternion pressRot = Quaternion.LookRotation(palmFacing.normalized, Vector3.up) * Quaternion.Euler(0f, 0f, -12f);
 
             float up = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01(a / reachTime));                    // rise and touch
             float down = Mathf.SmoothStep(0f, 1f, Mathf.Clamp01((a - reachTime - holdTime) / withdrawTime)); // drop away
@@ -106,6 +109,13 @@ namespace KateVR
             {
                 hand.position = pos;
                 hand.rotation = rot;
+            }
+            if (arm)
+            {
+                // Relaxed, slightly curled while reaching; fingers flatten and spread on the wall.
+                float flat = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0.7f, 1f, k));
+                arm.curl = Mathf.Lerp(0.55f, 0.04f, flat);
+                arm.spread = flat * 0.6f;
             }
 
             // On contact: the solid wall gives way to the doorway (they look identical),
