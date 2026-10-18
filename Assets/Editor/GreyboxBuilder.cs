@@ -20,9 +20,10 @@ public static class GreyboxBuilder
     const string MaterialFolder = "Assets/Materials";
 
     // Look of the air. Tweak these, then re-run the menu item.
-    static readonly Color FogColor = new Color(0.47f, 0.445f, 0.40f);
-    const float FogStart = 1.5f;
-    const float FogEnd = 30f;
+    // Ochre art direction: see OchreWorld.cs for the palette and the air.
+    static readonly Color FogColor = OchreWorld.Fog;
+    const float FogStart = OchreWorld.FogStart;
+    const float FogEnd = OchreWorld.FogEnd;
     const float EyeHeight = 1.65f;
 
     [MenuItem("KateVR/Build Greybox Street")]
@@ -32,37 +33,26 @@ public static class GreyboxBuilder
 
         var scene = EditorSceneManager.NewScene(NewSceneSetup.EmptyScene, NewSceneMode.Single);
 
-        var matGround = MakeMaterial("Greybox_Ground", new Color(0.30f, 0.29f, 0.27f));
-        var matStreet = MakeMaterial("Greybox_Street", new Color(0.22f, 0.22f, 0.22f));
-        var matBuilding = MakeMaterial("Greybox_Building", new Color(0.42f, 0.41f, 0.39f));
-        var matHouse = MakeMaterial("Greybox_House", new Color(0.36f, 0.33f, 0.30f));
-        var matDoor = MakeMaterial("Greybox_Door", new Color(0.20f, 0.17f, 0.15f));
-        var matFigure = MakeMaterial("Greybox_Figure", new Color(0.62f, 0.60f, 0.52f));
+        WorldKit.LoadMaterials();
+        var matBuilding = MakeMaterial("Greybox_Building", OchreWorld.Silhouette);         // distant houses: soft silhouettes
+        var matHouse = MakeMaterial("Greybox_House", new Color(0.52f, 0.36f, 0.19f));     // Kate's house, seen up close
+        var matWood = OchreWorld.Mat("Ochre_PorchWood", OchreWorld.PorchWood);
+        var matConcrete = OchreWorld.Mat("Ochre_Concrete", OchreWorld.Concrete);
+        var matPole = OchreWorld.Mat("Ochre_PoleWood", OchreWorld.DarkWood);
+        var matWire = OchreWorld.Mat("Ochre_Wire", new Color(0.16f, 0.10f, 0.05f), 0.2f);
+        var matCloth = OchreWorld.DoubleSided("Ochre_ClothStrip", OchreWorld.Cloth);
+        var matTape = OchreWorld.DoubleSided("Ochre_TapeStrip", OchreWorld.Tape);
+        // The walkers become dark, soft silhouettes in the haze.
+        WorldKit.ClothDark = OchreWorld.Mat("Ochre_FigureDark", OchreWorld.DarkWood, 0.1f);
+        WorldKit.ClothMid = OchreWorld.Mat("Ochre_FigureMid", new Color(0.30f, 0.20f, 0.10f), 0.1f);
+        WorldKit.ClothLight = OchreWorld.Mat("Ochre_FigureLight", new Color(0.40f, 0.28f, 0.15f), 0.1f);
+        WorldKit.MaskMat = OchreWorld.Mat("Ochre_FigureMask", new Color(0.55f, 0.40f, 0.22f), 0.2f);
 
-        // ---------- Atmosphere ----------
-        RenderSettings.skybox = null;
-        RenderSettings.fog = true;
-        RenderSettings.fogMode = FogMode.Linear;
-        RenderSettings.fogColor = FogColor;
-        RenderSettings.fogStartDistance = FogStart;
-        RenderSettings.fogEndDistance = FogEnd;
-        RenderSettings.ambientMode = AmbientMode.Flat;
-        RenderSettings.ambientLight = new Color(0.55f, 0.53f, 0.50f);
+        // ---------- Atmosphere: golden haze, a low sun ahead ----------
+        OchreWorld.Atmosphere();
 
-        var sun = new GameObject("Hazy Sun");
-        var light = sun.AddComponent<Light>();
-        light.type = LightType.Directional;
-        light.color = new Color(0.85f, 0.80f, 0.70f);
-        light.intensity = 0.5f;
-        light.shadows = LightShadows.None; // cheap on Quest
-        sun.transform.rotation = Quaternion.Euler(40f, 30f, 0f);
-
-        // ---------- Ground & street ----------
+        // ---------- Ground: ash dunes (built below, once Kate's path is known) ----------
         var world = new GameObject("World").transform;
-        Box("Ground", world, new Vector3(0, -0.05f, 40), new Vector3(140, 0.1f, 160), matGround);
-        Box("Street", world, new Vector3(0, 0.0f, 40), new Vector3(8, 0.02f, 160), matStreet);
-        Box("Sidewalk L", world, new Vector3(-5, 0.08f, 40), new Vector3(2, 0.16f, 160), matGround);
-        Box("Sidewalk R", world, new Vector3(5, 0.08f, 40), new Vector3(2, 0.16f, 160), matGround);
 
         // ---------- Buildings (fog turns them into silhouettes) ----------
         var buildings = new GameObject("Buildings").transform;
@@ -74,13 +64,21 @@ public static class GreyboxBuilder
             {
                 float width = Range(rng, 6f, 12f);
                 float depth = Range(rng, 8f, 14f);
-                float height = Range(rng, 5f, 22f);
+                float height = Range(rng, 4f, 12f);
                 bool gap = rng.NextDouble() < 0.45;               // lots of empty space
                 bool houseLot = side > 0 && z + width > 32f && z < 50f; // keep space for Kate's house
                 if (!gap && !houseLot)
                 {
                     float x = side * (7f + depth * 0.5f + Range(rng, 0f, 2f));
-                    Box("Building", buildings, new Vector3(x, height * 0.5f, z + width * 0.5f), new Vector3(depth, height, width), matBuilding);
+                    if (rng.NextDouble() < 0.65)
+                    {
+                        // A gabled house, gable end to the street, like the reference.
+                        float wallH = Range(rng, 3.2f, 6f);
+                        OchreWorld.GabledHouse(buildings, new Vector3(side * (7f + Range(rng, 0f, 2f)), 0f, z + width * 0.5f),
+                                               side > 0 ? 90f : -90f, width, depth, wallH, Range(rng, 1.6f, 3.2f), matBuilding);
+                    }
+                    else
+                        Box("Building", buildings, new Vector3(x, height * 0.5f, z + width * 0.5f), new Vector3(depth, height, width), matBuilding);
                 }
                 z += width + Range(rng, 3f, 9f);
             }
@@ -99,7 +97,9 @@ public static class GreyboxBuilder
         Box("Front Left", doorway, new Vector3(12.35f, 3f, 38.45f), new Vector3(1.7f, 6f, 3.9f), matHouse);
         Box("Front Right", doorway, new Vector3(12.35f, 3f, 43.55f), new Vector3(1.7f, 6f, 3.9f), matHouse);
         Box("Lintel", doorway, new Vector3(12.35f, 4.1f, 41f), new Vector3(1.7f, 3.8f, 1.2f), matHouse);
-        Box("Roof", house, new Vector3(16f, 6.6f, 41f), new Vector3(9.6f, 1.2f, 9.6f), matHouse);
+        var roof = WorldKit.Prism("Gable Roof", house, new Vector3(16.5f, 6f, 41f), new Vector3(9.8f, 2.6f, 10.4f), matHouse);
+        roof.transform.rotation = Quaternion.Euler(0f, 90f, 0f); // gable end faces the street
+        OchreWorld.Porch(house, matWood, matConcrete);
         Box("Inside Light Back", doorway, new Vector3(13.15f, 1.1f, 41f), new Vector3(0.1f, 2.2f, 1.2f), matDark);
         Box("Inside Light Side", doorway, new Vector3(12.35f, 1.1f, 40.42f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
         Box("Inside Light Side", doorway, new Vector3(12.35f, 1.1f, 41.58f), new Vector3(1.7f, 2.2f, 0.04f), matDark);
@@ -121,9 +121,9 @@ public static class GreyboxBuilder
         var outlineTop = SeamPiece(doorway, "Door Outline Top", new Vector3(11.495f, 2.2f, 41f), Vector3.zero, matSeam);
 
         // ---------- One other person, hurrying toward us ----------
-        WorldKit.LoadMaterials();
         var walkers = new GameObject("Other Walkers").transform;
-        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.16f, 55f), 180f, 1.9f); // long coat, hood, gas mask
+        WorldKit.Figure(walkers, 0, new Vector3(-4.8f, 0.05f, 55f), 180f, 1.9f); // long coat, hood, gas mask (wading the ash)
+        WorldKit.Figure(walkers, 2, new Vector3(3.2f, 0.25f, 78f), 175f, 0.7f);  // a second figure, far off in the haze
 
         // ---------- Kate's path ----------
         var path = new GameObject("Kate Path").transform;
@@ -137,6 +137,15 @@ public static class GreyboxBuilder
             Waypoint(path, "P5 Approach",    new Vector3(8.8f, 0, 40.7f)),
             Waypoint(path, "P6 At the door", new Vector3(10.85f, 0, 41f)),
         };
+
+        // ---------- Ash dunes, poles and wires ----------
+        var pathPoints = new List<Vector3>();
+        foreach (var t in points) pathPoints.Add(t.position);
+        OchreWorld.Dunes(world, pathPoints, -4.8f);
+        var poles = new GameObject("Poles & Wires").transform;
+        var poleRng = new System.Random(19);
+        OchreWorld.PolesAndWires(poles, -5.8f, new[] { -6f, 16f, 38f, 60f, 82f, 104f }, matPole, matWire, matCloth, matTape, poleRng);
+        OchreWorld.PolesAndWires(poles, 5.8f, new[] { 4f, 26f, 52f, 74f, 96f }, matPole, matWire, matCloth, matTape, poleRng);
 
         // ---------- Kate's rig (the viewer's head) ----------
         var rig = new GameObject("Kate Rig");
@@ -173,7 +182,11 @@ public static class GreyboxBuilder
         BuildVoice(camGO.transform);
 
         // ---------- Smog: drifting ash around Kate ----------
-        WorldKit.Ash(rig.transform);
+        WorldKit.Ash(rig.transform, new Color(0.98f, 0.86f, 0.62f, 0.6f));
+
+        // ---------- Low drifting dust pooling in the mid-ground, and the glow at the end of the street ----------
+        WorldKit.GroundFog(world, new Vector3(1f, 0.45f, 52f), new Vector3(34f, 0.8f, 70f), new Color(0.97f, 0.86f, 0.62f, 0.45f));
+        OchreWorld.HorizonGlow(world, rig.transform);
 
         // ---------- Memories: point clouds at 10, 25 and 40 seconds ----------
         MemoryBuilder.BuildAll(world);

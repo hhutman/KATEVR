@@ -381,12 +381,12 @@ public static class WorldKit
 
     // ---------------- Ground fog ----------------
 
-    public static void GroundFog(Transform parent, Vector3 center, Vector3 size)
+    public static void GroundFog(Transform parent, Vector3 center, Vector3 size, Color? tint = null)
     {
         var tex = FogPuffTexture();
         var mat = MakeMaterial("World_GroundFog", Color.white, 0f, "Universal Render Pipeline/Particles/Unlit");
         mat.SetTexture("_BaseMap", tex);
-        mat.SetColor("_BaseColor", new Color(0.66f, 0.64f, 0.60f, 0.5f));
+        mat.SetColor("_BaseColor", tint ?? new Color(0.66f, 0.64f, 0.60f, 0.5f));
         mat.SetFloat("_Surface", 1f);
         mat.SetFloat("_Blend", 0f);
         mat.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);
@@ -495,11 +495,11 @@ public static class WorldKit
     // ---------------- Ash ----------------
 
     /// <summary>Fine ash drifting in the air around Kate. Emitted around the rig, but left behind in the world as she walks.</summary>
-    public static void Ash(Transform rig)
+    public static void Ash(Transform rig, Color? tint = null)
     {
         var mat = MakeMaterial("World_Ash", Color.white, 0f, "Universal Render Pipeline/Particles/Unlit");
         mat.SetTexture("_BaseMap", FogPuffTexture());
-        mat.SetColor("_BaseColor", new Color(0.78f, 0.76f, 0.72f, 0.7f));
+        mat.SetColor("_BaseColor", tint ?? new Color(0.78f, 0.76f, 0.72f, 0.7f));
         mat.SetFloat("_Surface", 1f);
         mat.SetFloat("_Blend", 0f);
         mat.SetFloat("_SrcBlend", (float)BlendMode.SrcAlpha);

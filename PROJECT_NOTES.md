@@ -30,6 +30,17 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - Memories feedback (editor, 2026-10-15): not readable — look like clusters of metal sequins; Hope likes them atmospherically and wants to keep them. Judge readability in the headset before changing. Fixed: points that drifted near the head now fade out (they looked 'inside the headset').
 - Visor: currently unclear what you're looking through — Hope is thinking about direction.
 
+## Ochre art direction (Hope's concept image, 2026-10-17) — current look
+- Monochrome amber / golden-ochre / buttercream (#C88A3B → #F5D799). Palette + air in `Editor/OchreWorld.cs`.
+- Golden linear fog (1 → 34 m), low sun straight ahead (backlight → silhouettes), warm flat ambient.
+- Fake bloom: `Shaders/HorizonGlow.shader` additive glow quad ~34 m ahead that turns with Kate (`Scripts/HorizonGlow.cs`). No post-processing (Quest).
+- Ground = smooth drifted ash dunes (`OchreWorld.Dunes`, heightfield mesh, `Shaders/AshDune.shader`: wrapped soft diffuse, velvet sheen, golden backlit rims, low mist pooling with distance). Shallow lanes where Kate walks and the walker wades; nearly clear at the porch/walkway.
+- Houses: 65% gabled silhouettes (gable to the street), rest plain blocks; lower (4–12 m). Kate's house: gable roof + low wooden porch (railing gap where she passes, step, concrete walkway edge).
+- Poles lean slightly; three sagging wires per span with tattered cloth/tape strips that flutter (`Scripts/Flutter.cs`).
+- Figures recoloured to dark silhouettes; second distant figure far ahead (z≈78). Ash specks and low ground dust recoloured warm.
+- Camera path, timing, VO, memories and ending triggers unchanged.
+- Next: foreground arm + hand overhaul (Hope's next prompt). Visor tint is still faintly green — revisit with the visor.
+
 ## Voice-over
 - Scratch VO: ElevenLabs free plan (no commercial use; must credit ElevenLabs) → replace with a real performer or paid licence before ticketed showings. File: `Assets/Audio/Kate_VO_Scratch.wav` — Hope's chosen ElevenLabs v3 take (voice 'Regina', bracketed cues), 44.1 kHz mono.
 - Head-locked inside the suit (2D AudioSource on the camera, low-pass 5 kHz). Starts at 6 s; last line ends ~33–34 s, a few seconds before Kate reaches the door (~40 s).
