@@ -79,3 +79,8 @@ POV: Kate, in a full hazmat suit, walks through a grey, smoggy street to the doo
 - `Assets/Scripts/KateArm.cs`: two-bone IK keeps the sleeve attached (shoulder fixed to the body, out of view); fingers relaxed/curled while reaching, flatten + spread on contact.
 - `Assets/Shaders/SuitFabric.shader`: Quest-safe matte fabric/leather/rubber, object-space grain bumps, ash dust on top, dark creases and underside, golden-amber rim on top ridges.
 - Unchanged: reach timing, palm touch point, flash, door, light, fade. No doorknob (palm-flat touch kept, per earlier decision).
+- Headset check (Oct 17): Hope likes the new hand. No doorknob — palm-flat touch is final.
+
+## Next session: depth
+- Hope: the scene "still feels very flat." Next pass = giving the street depth.
+- Ideas to discuss: layered fog (near / mid / far planes with different density + colour), stronger light-to-dark falloff with distance, close foreground objects passing by (poles, debris, drifting ash near the face) for parallax, varied silhouette values per distance band, ground detail near the feet, contact shadows / dark bases under objects.
